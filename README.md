@@ -2,7 +2,7 @@
 
 
 #USBPIO
-USB-PIOを使用したVB.NETによる通信ソリューションの開発・バージョン管理
+USB-PIO8/16BX-FTを使用したVB.NETによる通信ソリューションの開発・バージョン管理
 USB-PIOを使用した自動機の監視
 
 # Dependency
@@ -34,4 +34,4 @@ none
 yr1102
 
 # References
-参考にした情報源（サイト・論文）などの情報、リンク
+http://www.sacom.co.jp/product/products_detail.php?group=59&cat=650&prid=usb_pio_8_16_bx_ft
