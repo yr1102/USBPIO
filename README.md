@@ -1,8 +1,8 @@
 # USBPIO
 
 
-#USBPIO
-USB-PIO8/16BX-FTを使用したVB.NETによる通信ソリューションの開発・バージョン管理
+USBPIO
+USB-PIO8/16BX-FTを使用したVB.NETによる通信ソリューションの開発・バージョン管理  
 USB-PIOを使用した自動機の監視
 
 # Dependency
