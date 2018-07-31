@@ -13,13 +13,13 @@ VisualStudio.15.Release/15.7.3+27703.2026
 Microsoft .NET Framework
 Version 4.7.03056
 
-library
-/lib/
-sacom_usb_io_ft.dll
-sacom_usb_io_ft.h
-sacom_usb_io_ft.lib
-sacom_usb_io_ft.bas
-sacom_usb_io_ft.vb
+library  
+/lib/  
+sacom_usb_io_ft.dll  
+sacom_usb_io_ft.h  
+sacom_usb_io_ft.lib  
+sacom_usb_io_ft.bas  
+sacom_usb_io_ft.vb  
 
 # Setup
 ...
