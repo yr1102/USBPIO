@@ -34,4 +34,4 @@ none
 yr1102
 
 # References
-http://www.sacom.co.jp/product/products_detail.php?group=59&cat=650&prid=usb_pio_8_16_bx_ft
+[USB PIO8/16 BXFT .dll files](http://www.sacom.co.jp/product/products_detail.php?group=59&cat=650&prid=usb_pio_8_16_bx_ft)
