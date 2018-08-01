@@ -408,7 +408,7 @@ Public Class Form1
         'ここから
         'Timer1の設定
         Label2.Text = "表示します。"
-        Timer1.Interval = 10 '.1秒のインターバルで情報を更新
+        Timer1.Interval = 10 '.01秒のインターバルで情報を更新
         Timer1.Enabled = True 'タイマーを有効にする
 
 
@@ -421,7 +421,7 @@ Public Class Form1
 
 
         sacomUsbIoRead(IDNUM.SelectedIndex, dat)
-        Label2.Text = Hex(dat)                  'ラベル2に現在の8byte情報を16進数で表示
+        Label2.Text = Hex(dat)                  'ラベル2に現在の入力情報を16進数で表示
         dathex = Hex(dat)
 
         Label4.Text = cntred
@@ -433,28 +433,32 @@ Public Class Form1
         PictureBox2.BackColor = Color.DarkGoldenrod                         'なぜかdarkyellowが無い、代わりにgoldを使ってみたが思ったよりもしっくり
         PictureBox3.BackColor = Color.DarkRed                               'darkred基本的にこの状態のままであってほしい
 
+
+
+
+
         '～～～～～以下エラー時の点灯処理　今回の回路はデフォルトがFのため点灯すればするほど数が小さくなる～～
 
-        If dathex.EndsWith("8") Then
-            PictureBox1.BackColor = Color.LightGreen
+        If dathex.EndsWith("8") Then                                    'dathexに入っている情報をチェック　endwithは16bit情報の最後の4bitのみを参照する機能である
+            PictureBox1.BackColor = Color.LightGreen                    '最後の4bitにはパトライトの状態が書き込まれているのでその数値を判断しそれに対応したパトライト色を点灯させれば良い
             PictureBox2.BackColor = Color.Yellow
+            PictureBox3.BackColor = Color.Red                           '送られてくる数値が8ならば全点灯のはずなので仮想パトライトPictureBox1,2,3をdark色→明るい色に変えている
+
+            flag_light = "8"                                            '点灯状態(flag_light)に8を書き込んでおく、あとで重要になる
+
+
+        ElseIf dathex.EndsWith("9") Then                                '数値が9であった場合の処理、この場合は黄色と赤色の点灯になる。
+            PictureBox2.BackColor = Color.Yellow                        'PictureBox2,3を明るくする
             PictureBox3.BackColor = Color.Red
 
-            flag_light = "8"
-
-
-        ElseIf dathex.EndsWith("9") Then
-            PictureBox2.BackColor = Color.Yellow
-            PictureBox3.BackColor = Color.Red
-
-            If flag_light <> "9" Then
-                If flag_light = "B" Then
+            If flag_light <> "9" Then                                   '点灯点滅チェック処理をいれる　点灯状態(flag_light)の情報をもとに
+                If flag_light = "B" Then                                '黄色点灯回数｛c(ou)ntyellow｝　赤色点灯回数｛c(ou)ntred｝に点灯回数を1増やすということを行っている
                     cntyellow += 1
                     flag_light = "9"
-                ElseIf flag_light = "A" Then
-                    cntyellow += 1
-                    flag_light = "9"
-                ElseIf flag_light <> "9" Then
+                ElseIf flag_light = "A" Then                            'たとえば黄色が点灯したときに黄色点灯が＋1される処理にしてしまうと、黄＋赤点灯→黄のみ点灯と変化したときにも
+                    cntyellow += 1                                      '黄色を2回点灯とカウントしてしまう(見ている側からすると光りっぱなし)
+                    flag_light = "9"                                    'それを回避するために、点灯状態(flag_light)に情報を蓄え直前に何色が光っていたかの情報を
+                ElseIf flag_light <> "9" Then                           '引き継ぐようにしている
                     cntred += 1
                 End If
 
@@ -463,7 +467,7 @@ Public Class Form1
 
             flag_light = "9"
 
-        ElseIf dathex.EndsWith("A") Then
+        ElseIf dathex.EndsWith("A") Then                                '数値がAであった場合の処理、この場合は緑色と赤色の点灯になる。    
             PictureBox1.BackColor = Color.LightGreen
             PictureBox3.BackColor = Color.Red
 
@@ -482,7 +486,7 @@ Public Class Form1
 
             End If
 
-        ElseIf dathex.EndsWith("B") Then
+        ElseIf dathex.EndsWith("B") Then                                 '数値がBであった場合の処理、この場合は赤色の点灯になる。    
             PictureBox3.BackColor = Color.Red
 
             If flag_light <> "B" Then
@@ -499,7 +503,7 @@ Public Class Form1
 
             End If
 
-        ElseIf dathex.EndsWith("C") Then
+        ElseIf dathex.EndsWith("C") Then                                 '数値がCであった場合の処理、この場合は緑色と黄色の点灯になる。  
             PictureBox1.BackColor = Color.LightGreen
             PictureBox2.BackColor = Color.Yellow
 
@@ -509,8 +513,8 @@ Public Class Form1
             End If
             flag_light = "C"
 
-
-        ElseIf dathex.EndsWith("D") Then
+        ElseIf dathex.EndsWith("D") Then                              　 '数値がDであった場合の処理、この場合は赤色と黄色の点灯になる。    
+            PictureBox3.BackColor = Color.Red
             PictureBox2.BackColor = Color.Yellow
 
             If flag_light <> "D" Then
@@ -518,7 +522,7 @@ Public Class Form1
             End If
             flag_light = "D"
 
-        ElseIf dathex.EndsWith("E") Then
+        ElseIf dathex.EndsWith("E") Then                                 '数値がEであった場合の処理、この場合は緑色の点灯になる。
             PictureBox1.BackColor = Color.LightGreen
 
             flag_light = "E"
