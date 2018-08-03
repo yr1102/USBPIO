@@ -25,54 +25,106 @@ Public Class Form1
 
     ' Windows フォーム デザイナで必要です。
     Private components As System.ComponentModel.IContainer
-
-    ' メモ : 以下のプロシージャは、Windows フォーム デザイナで必要です。
-    ' Windows フォーム デザイナを使って変更してください。  
-    ' コード エディタは使用しないでください。
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents IDNUM As System.Windows.Forms.ComboBox
-    Friend WithEvents DevOpen As System.Windows.Forms.Button
-    Friend WithEvents DevClose As System.Windows.Forms.Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents SaveCheck As CheckBox
     Friend WithEvents OnlineCheck As CheckBox
     Friend WithEvents SavePic As PictureBox
     Friend WithEvents OnlinePic As PictureBox
     Friend WithEvents TextBox79 As TextBox
     Friend WithEvents TextBox80 As TextBox
+    Friend WithEvents Label36 As Label
+    Friend WithEvents TextBox30 As TextBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents TextBox31 As TextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.DevOpen = New System.Windows.Forms.Button()
-        Me.DevClose = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.IDNUM = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.SaveCheck = New System.Windows.Forms.CheckBox()
         Me.OnlineCheck = New System.Windows.Forms.CheckBox()
         Me.SavePic = New System.Windows.Forms.PictureBox()
         Me.OnlinePic = New System.Windows.Forms.PictureBox()
         Me.TextBox79 = New System.Windows.Forms.TextBox()
         Me.TextBox80 = New System.Windows.Forms.TextBox()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.TextBox30 = New System.Windows.Forms.TextBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.TextBox31 = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,134 +132,46 @@ Public Class Form1
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DevOpen
-        '
-        Me.DevOpen.Location = New System.Drawing.Point(557, 561)
-        Me.DevOpen.Name = "DevOpen"
-        Me.DevOpen.Size = New System.Drawing.Size(88, 32)
-        Me.DevOpen.TabIndex = 8
-        Me.DevOpen.Text = "Dev_Open"
-        '
-        'DevClose
-        '
-        Me.DevClose.Location = New System.Drawing.Point(786, 561)
-        Me.DevClose.Name = "DevClose"
-        Me.DevClose.Size = New System.Drawing.Size(88, 32)
-        Me.DevClose.TabIndex = 9
-        Me.DevClose.Text = "Dev_Close"
-        '
-        'Label1
-        '
-        Me.Label1.Location = New System.Drawing.Point(621, 424)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(24, 19)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "ID"
-        '
         'IDNUM
         '
         Me.IDNUM.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"})
-        Me.IDNUM.Location = New System.Drawing.Point(701, 573)
+        Me.IDNUM.Location = New System.Drawing.Point(377, 588)
         Me.IDNUM.Name = "IDNUM"
         Me.IDNUM.Size = New System.Drawing.Size(48, 20)
         Me.IDNUM.TabIndex = 11
-        Me.IDNUM.Text = "ComboBox1"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(32, 50)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(209, 68)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.IDNUM.Text = "ID"
         '
         'Timer1
         '
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(67, 173)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(195, 37)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "現在の状態"
-        '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(665, 85)
+        Me.PictureBox1.Location = New System.Drawing.Point(166, 70)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(132, 44)
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 44)
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(663, 59)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 12)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "パトライト状態"
-        '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(665, 126)
+        Me.PictureBox2.Location = New System.Drawing.Point(94, 70)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(132, 44)
+        Me.PictureBox2.Size = New System.Drawing.Size(79, 44)
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(665, 166)
+        Me.PictureBox3.Location = New System.Drawing.Point(23, 70)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(132, 44)
+        Me.PictureBox3.Size = New System.Drawing.Size(75, 44)
         Me.PictureBox3.TabIndex = 17
         Me.PictureBox3.TabStop = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(663, 279)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 12)
-        Me.Label4.TabIndex = 18
-        Me.Label4.Text = "赤点灯"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(663, 316)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 12)
-        Me.Label5.TabIndex = 19
-        Me.Label5.Text = "黄点灯"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(533, 278)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 12)
-        Me.Label6.TabIndex = 20
-        Me.Label6.Text = "赤点灯回数"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(533, 316)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(77, 12)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "黄色点灯回数"
         '
         'SaveCheck
         '
         Me.SaveCheck.AutoSize = True
-        Me.SaveCheck.Location = New System.Drawing.Point(185, 570)
+        Me.SaveCheck.Location = New System.Drawing.Point(219, 614)
         Me.SaveCheck.Name = "SaveCheck"
         Me.SaveCheck.Size = New System.Drawing.Size(77, 16)
         Me.SaveCheck.TabIndex = 183
@@ -217,7 +181,7 @@ Public Class Form1
         'OnlineCheck
         '
         Me.OnlineCheck.AutoSize = True
-        Me.OnlineCheck.Location = New System.Drawing.Point(185, 546)
+        Me.OnlineCheck.Location = New System.Drawing.Point(219, 590)
         Me.OnlineCheck.Name = "OnlineCheck"
         Me.OnlineCheck.Size = New System.Drawing.Size(54, 16)
         Me.OnlineCheck.TabIndex = 182
@@ -228,7 +192,7 @@ Public Class Form1
         '
         Me.SavePic.BackColor = System.Drawing.Color.DarkGreen
         Me.SavePic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.SavePic.Location = New System.Drawing.Point(274, 566)
+        Me.SavePic.Location = New System.Drawing.Point(308, 610)
         Me.SavePic.Name = "SavePic"
         Me.SavePic.Size = New System.Drawing.Size(63, 26)
         Me.SavePic.TabIndex = 181
@@ -238,7 +202,7 @@ Public Class Form1
         '
         Me.OnlinePic.BackColor = System.Drawing.Color.DarkGreen
         Me.OnlinePic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.OnlinePic.Location = New System.Drawing.Point(274, 540)
+        Me.OnlinePic.Location = New System.Drawing.Point(308, 584)
         Me.OnlinePic.Name = "OnlinePic"
         Me.OnlinePic.Size = New System.Drawing.Size(63, 27)
         Me.OnlinePic.TabIndex = 180
@@ -247,7 +211,8 @@ Public Class Form1
         'TextBox79
         '
         Me.TextBox79.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox79.Location = New System.Drawing.Point(177, 540)
+        Me.TextBox79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox79.Location = New System.Drawing.Point(211, 584)
         Me.TextBox79.Multiline = True
         Me.TextBox79.Name = "TextBox79"
         Me.TextBox79.Size = New System.Drawing.Size(160, 27)
@@ -256,38 +221,447 @@ Public Class Form1
         'TextBox80
         '
         Me.TextBox80.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox80.Location = New System.Drawing.Point(177, 566)
+        Me.TextBox80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox80.Location = New System.Drawing.Point(211, 610)
         Me.TextBox80.Multiline = True
         Me.TextBox80.Name = "TextBox80"
         Me.TextBox80.Size = New System.Drawing.Size(160, 26)
         Me.TextBox80.TabIndex = 178
         '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label36.Location = New System.Drawing.Point(81, 510)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(63, 42)
+        Me.Label36.TabIndex = 215
+        Me.Label36.Text = "コメント" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "記入にて" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "復帰受付"
+        '
+        'TextBox30
+        '
+        Me.TextBox30.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox30.Location = New System.Drawing.Point(69, 497)
+        Me.TextBox30.Multiline = True
+        Me.TextBox30.Name = "TextBox30"
+        Me.TextBox30.Size = New System.Drawing.Size(83, 69)
+        Me.TextBox30.TabIndex = 214
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label38.Location = New System.Drawing.Point(31, 518)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(35, 28)
+        Me.Label38.TabIndex = 213
+        Me.Label38.Text = "原因" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "対策"
+        '
+        'TextBox31
+        '
+        Me.TextBox31.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox31.Location = New System.Drawing.Point(22, 497)
+        Me.TextBox31.Multiline = True
+        Me.TextBox31.Name = "TextBox31"
+        Me.TextBox31.Size = New System.Drawing.Size(130, 69)
+        Me.TextBox31.TabIndex = 212
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label28.Location = New System.Drawing.Point(105, 615)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(59, 14)
+        Me.Label28.TabIndex = 211
+        Me.Label28.Text = "hh:mm:ss"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label27.Location = New System.Drawing.Point(102, 591)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(75, 14)
+        Me.Label27.TabIndex = 210
+        Me.Label27.Text = "yyyy:mm:dd"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label29.Location = New System.Drawing.Point(34, 591)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(49, 14)
+        Me.Label29.TabIndex = 209
+        Me.Label29.Text = "年月日"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label22.Location = New System.Drawing.Point(36, 615)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(35, 14)
+        Me.Label22.TabIndex = 208
+        Me.Label22.Text = "時刻"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox15.Location = New System.Drawing.Point(22, 584)
+        Me.TextBox15.Multiline = True
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(160, 27)
+        Me.TextBox15.TabIndex = 207
+        '
+        'TextBox16
+        '
+        Me.TextBox16.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox16.Location = New System.Drawing.Point(22, 610)
+        Me.TextBox16.Multiline = True
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(160, 26)
+        Me.TextBox16.TabIndex = 206
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label24.Location = New System.Drawing.Point(81, 427)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(63, 14)
+        Me.Label24.TabIndex = 205
+        Me.Label24.Text = "発生時刻"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label25.Location = New System.Drawing.Point(81, 458)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(63, 14)
+        Me.Label25.TabIndex = 204
+        Me.Label25.Text = "保存復帰"
+        '
+        'TextBox13
+        '
+        Me.TextBox13.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox13.Location = New System.Drawing.Point(69, 422)
+        Me.TextBox13.Multiline = True
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(83, 69)
+        Me.TextBox13.TabIndex = 203
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label26.Location = New System.Drawing.Point(31, 443)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(35, 28)
+        Me.Label26.TabIndex = 202
+        Me.Label26.Text = "警告" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "表示"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox14.Location = New System.Drawing.Point(22, 422)
+        Me.TextBox14.Multiline = True
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(130, 69)
+        Me.TextBox14.TabIndex = 201
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label19.Location = New System.Drawing.Point(74, 384)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(77, 14)
+        Me.Label19.TabIndex = 200
+        Me.Label19.Text = "区分内不良"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label20.Location = New System.Drawing.Point(86, 335)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(49, 14)
+        Me.Label20.TabIndex = 199
+        Me.Label20.Text = "不良数"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label21.Location = New System.Drawing.Point(86, 360)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(49, 14)
+        Me.Label21.TabIndex = 198
+        Me.Label21.Text = "区分数"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox11.Location = New System.Drawing.Point(69, 328)
+        Me.TextBox11.Multiline = True
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(83, 75)
+        Me.TextBox11.TabIndex = 197
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label23.Location = New System.Drawing.Point(31, 350)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(35, 28)
+        Me.Label23.TabIndex = 196
+        Me.Label23.Text = "警告" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "設定"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox12.Location = New System.Drawing.Point(22, 328)
+        Me.TextBox12.Multiline = True
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(130, 75)
+        Me.TextBox12.TabIndex = 195
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label18.Location = New System.Drawing.Point(86, 289)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(49, 14)
+        Me.Label18.TabIndex = 194
+        Me.Label18.Text = "不良率"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label17.Location = New System.Drawing.Point(86, 265)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(49, 14)
+        Me.Label17.TabIndex = 193
+        Me.Label17.Text = "不良数"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label16.Location = New System.Drawing.Point(86, 239)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(49, 14)
+        Me.Label16.TabIndex = 192
+        Me.Label16.Text = "良品数"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label14.Location = New System.Drawing.Point(86, 213)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(49, 14)
+        Me.Label14.TabIndex = 191
+        Me.Label14.Text = "検査数"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox8.Location = New System.Drawing.Point(69, 208)
+        Me.TextBox8.Multiline = True
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(83, 103)
+        Me.TextBox8.TabIndex = 190
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label15.Location = New System.Drawing.Point(31, 252)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(35, 28)
+        Me.Label15.TabIndex = 189
+        Me.Label15.Text = "生産" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "情報"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox9.Location = New System.Drawing.Point(22, 208)
+        Me.TextBox9.Multiline = True
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(130, 103)
+        Me.TextBox9.TabIndex = 188
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label12.Location = New System.Drawing.Point(92, 157)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(38, 14)
+        Me.Label12.TabIndex = 187
+        Me.Label12.Text = "モニタ"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox7.Location = New System.Drawing.Point(69, 139)
+        Me.TextBox7.Multiline = True
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(83, 48)
+        Me.TextBox7.TabIndex = 186
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label13.Location = New System.Drawing.Point(31, 157)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(35, 14)
+        Me.Label13.TabIndex = 185
+        Me.Label13.Text = "検査"
+        '
+        'TextBox10
+        '
+        Me.TextBox10.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox10.Location = New System.Drawing.Point(22, 139)
+        Me.TextBox10.Multiline = True
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(130, 48)
+        Me.TextBox10.TabIndex = 184
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label8.Location = New System.Drawing.Point(188, 49)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(49, 14)
+        Me.Label8.TabIndex = 219
+        Me.Label8.Text = "稼働中"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label9.Location = New System.Drawing.Point(121, 49)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(35, 14)
+        Me.Label9.TabIndex = 218
+        Me.Label9.Text = "待機"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label10.Location = New System.Drawing.Point(32, 48)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(63, 14)
+        Me.Label10.TabIndex = 217
+        Me.Label10.Text = "異常停止"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("MS UI Gothic", 18.0!)
+        Me.Label11.Location = New System.Drawing.Point(29, 9)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(219, 24)
+        Me.Label11.TabIndex = 216
+        Me.Label11.Text = "4号機生産工程モニタ"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(663, 59)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 12)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "パトライト状態"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.Location = New System.Drawing.Point(540, 139)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(195, 37)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "現在の状態"
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
-        Me.ClientSize = New System.Drawing.Size(912, 605)
+        Me.ClientSize = New System.Drawing.Size(912, 660)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label36)
+        Me.Controls.Add(Me.TextBox30)
+        Me.Controls.Add(Me.Label38)
+        Me.Controls.Add(Me.TextBox31)
+        Me.Controls.Add(Me.Label28)
+        Me.Controls.Add(Me.Label27)
+        Me.Controls.Add(Me.Label29)
+        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.TextBox15)
+        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.Label24)
+        Me.Controls.Add(Me.Label25)
+        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.Label26)
+        Me.Controls.Add(Me.TextBox14)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.Label23)
+        Me.Controls.Add(Me.TextBox12)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.SaveCheck)
         Me.Controls.Add(Me.OnlineCheck)
         Me.Controls.Add(Me.SavePic)
         Me.Controls.Add(Me.OnlinePic)
         Me.Controls.Add(Me.TextBox79)
         Me.Controls.Add(Me.TextBox80)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.IDNUM)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DevClose)
-        Me.Controls.Add(Me.DevOpen)
         Me.Name = "Form1"
-        Me.Text = "USB-PIO 入力結果"
+        Me.Text = "　"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -300,184 +674,175 @@ Public Class Form1
 
 #End Region
 
-    Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        '***フォームの表示開始時の初期化処理***
-        Function_Disable() '***
-        IDNUM.SelectedIndex = 0 '***初期選択IDを0にする
-    End Sub
-    Private Sub Function_Disable()
-        '***オープンとID選択ボタン以外の各ボタン機能を無効にする***
-        DevClose.Enabled = False '***クローズボタン無効
-        DevOpen.Enabled = True '***オープンボタン有効
-        IDNUM.Enabled = True '***ID選択ボタン有効
-        '***以下のボタンすべて無効
-    End Sub
-    Private Sub Function_Enable()
-        '***オープンとID選択ボタンのみを無効にする。***
-        DevOpen.Enabled = False '***オープンボタン無効
-        DevClose.Enabled = True '***クローズボタン有効
-        IDNUM.Enabled = False '***ID選択ボタン無効
-        '***以下のボタンすべて有効
-    End Sub
+    'Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    '    '***フォームの表示開始時の初期化処理***
+    '    Function_Disable() '***
+    '    IDNUM.SelectedIndex = 0 '***初期選択IDを0にする
+    'End Sub
+    'Private Sub Function_Disable()
+    '    '***オープンとID選択ボタン以外の各ボタン機能を無効にする***
+    '    DevClose.Enabled = False '***クローズボタン無効
+    '    DevOpen.Enabled = True '***オープンボタン有効
+    '    IDNUM.Enabled = True '***ID選択ボタン有効
+    '    '***以下のボタンすべて無効
+    'End Sub
 
-    Private Sub DevOpen_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DevOpen.Click
-        '***デバイスのオープン***
-        If (sacomUsbIoOpen(IDNUM.SelectedIndex) = True) Then
-            Function_Enable() '***各機能ボタンを有効にする
-        Else
-            MsgBox("オープンできませんでした") '***オープンに失敗した場合
-        End If
-    End Sub
+    'Private Sub Function_Enable()
+    '    '***オープンとID選択ボタンのみを無効にする。***
+    '    DevOpen.Enabled = False '***オープンボタン無効
+    '    DevClose.Enabled = True '***クローズボタン有効
+    '    IDNUM.Enabled = False '***ID選択ボタン無効
+    '    '***以下のボタンすべて有効
+    'End Sub
 
-    Private Sub DevClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DevClose.Click
-        '***デバイスのクローズ***
-        sacomUsbIoClose(IDNUM.SelectedIndex) '***デバイスクローズ
-        Function_Disable() '***ボタンの有効無効切り替え12
-    End Sub
+    'Private Sub DevOpen_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***デバイスのオープン***
+    '    If (sacomUsbIoOpen(IDNUM.SelectedIndex) = True) Then
+    '        Function_Enable() '***各機能ボタンを有効にする
+    '    Else
+    '        MsgBox("オープンできませんでした") '***オープンに失敗した場合
+    '    End If
+    'End Sub
 
-    Private Sub LowDir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***下位バイトの入出力方向設定
-        Dim Ret As String
-        Dim Dir As Byte
-        Ret = InputBox("下位バイトの入出力定義値を入力してください(HEX)", "Pio_LowDirection", "0")
-        If Ret.Length > 0 Then '***OKで返ってきているか
-            If IsNumeric("&h" & Ret) Then
-                Dir = CByte("&h" & Ret)
-                If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
-                    If sacomUsbIoDirL(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
-                        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
-                        DevClose_Click(DevClose, New System.EventArgs())
-                    End If
-                Else
-                    MsgBox("データの範囲は0～FF(HEX)です。")
-                End If
-            Else
-                MsgBox("データの入力形式が間違っています->[" & Ret & "]")
-            End If
-        End If
-    End Sub
+    'Private Sub DevClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***デバイスのクローズ***
+    '    sacomUsbIoClose(IDNUM.SelectedIndex) '***デバイスクローズ
+    '    Function_Disable() '***ボタンの有効無効切り替え12
+    'End Sub
 
-    Private Sub HighDir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***上位バイトの入出力方向設定
-        Dim Ret As String
-        Dim Dir As Byte
-        Ret = InputBox("上位バイトの入出力定義値を入力してください(HEX)", "Pio_HighDirection", "0")
-        If Ret.Length > 0 Then '***OKで返ってきているか
-            If IsNumeric("&h" & Ret) Then
-                Dir = CByte("&h" & Ret)
-                If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
-                    If sacomUsbIoDirH(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
-                        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
-                        DevClose_Click(DevClose, New System.EventArgs())
-                    End If
-                Else
-                    MsgBox("データの範囲は0～FF(HEX)です。")
-                End If
-            Else
-                MsgBox("データの入力形式が間違っています->[" & Ret & "]")
-            End If
-        End If
-    End Sub
+    'Private Sub LowDir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***下位バイトの入出力方向設定
+    '    Dim Ret As String
+    '    Dim Dir As Byte
+    '    Ret = InputBox("下位バイトの入出力定義値を入力してください(HEX)", "Pio_LowDirection", "0")
+    '    If Ret.Length > 0 Then '***OKで返ってきているか
+    '        If IsNumeric("&h" & Ret) Then
+    '            Dir = CByte("&h" & Ret)
+    '            If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
+    '                If sacomUsbIoDirL(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
+    '                    MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
+    '                    DevClose_Click(DevClose, New System.EventArgs())
+    '                End If
+    '            Else
+    '                MsgBox("データの範囲は0～FF(HEX)です。")
+    '            End If
+    '        Else
+    '            MsgBox("データの入力形式が間違っています->[" & Ret & "]")
+    '        End If
+    '    End If
+    'End Sub
 
-    Private Sub LowWrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***下位バイトの出力
-        Dim Ret As String
-        Dim Dir As Byte
-        Ret = InputBox("下位バイトの出力値を入力してください(HEX)", "Pio_LowByteWrite", "0")
-        If Ret.Length > 0 Then '***OKで返ってきているか
-            If IsNumeric("&h" & Ret) Then
-                Dir = CByte("&h" & Ret)
-                If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
-                    If sacomUsbIoWriteL(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
-                        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
-                        DevClose_Click(DevClose, New System.EventArgs())
-                    End If
-                Else
-                    MsgBox("データの範囲は0～FF(HEX)です。")
-                End If
-            Else
-                MsgBox("データの入力形式が間違っています->[" & Ret & "]")
-            End If
-        End If
-    End Sub
+    'Private Sub HighDir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***上位バイトの入出力方向設定
+    '    Dim Ret As String
+    '    Dim Dir As Byte
+    '    Ret = InputBox("上位バイトの入出力定義値を入力してください(HEX)", "Pio_HighDirection", "0")
+    '    If Ret.Length > 0 Then '***OKで返ってきているか
+    '        If IsNumeric("&h" & Ret) Then
+    '            Dir = CByte("&h" & Ret)
+    '            If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
+    '                If sacomUsbIoDirH(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
+    '                    MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
+    '                    DevClose_Click(DevClose, New System.EventArgs())
+    '                End If
+    '            Else
+    '                MsgBox("データの範囲は0～FF(HEX)です。")
+    '            End If
+    '        Else
+    '            MsgBox("データの入力形式が間違っています->[" & Ret & "]")
+    '        End If
+    '    End If
+    'End Sub
 
-    Private Sub HighWrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***上位バイトの出力
-        Dim Ret As String
-        Dim Dir As Byte
-        Ret = InputBox("上位バイトの出力値を入力してください(HEX)", "Pio_HighByteWrite", "0")
-        If Ret.Length > 0 Then '***OKで返ってきているか
-            If IsNumeric("&h" & Ret) Then
-                Dir = CByte("&h" & Ret)
-                If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
-                    If sacomUsbIoWriteH(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
-                        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
-                        DevClose_Click(DevClose, New System.EventArgs())
-                    End If
-                Else
-                    MsgBox("データの範囲は0～FF(HEX)です。")
-                End If
-            Else
-                MsgBox("データの入力形式が間違っています->[" & Ret & "]")
-            End If
-        End If
-    End Sub
+    'Private Sub LowWrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***下位バイトの出力
+    '    Dim Ret As String
+    '    Dim Dir As Byte
+    '    Ret = InputBox("下位バイトの出力値を入力してください(HEX)", "Pio_LowByteWrite", "0")
+    '    If Ret.Length > 0 Then '***OKで返ってきているか
+    '        If IsNumeric("&h" & Ret) Then
+    '            Dir = CByte("&h" & Ret)
+    '            If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
+    '                If sacomUsbIoWriteL(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
+    '                    MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
+    '                    DevClose_Click(DevClose, New System.EventArgs())
+    '                End If
+    '            Else
+    '                MsgBox("データの範囲は0～FF(HEX)です。")
+    '            End If
+    '        Else
+    '            MsgBox("データの入力形式が間違っています->[" & Ret & "]")
+    '        End If
+    '    End If
+    'End Sub
 
-    Private Sub LowRead_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***下位バイトの入力データの取得
-        Dim dat As Byte
-        If sacomUsbIoReadL(IDNUM.SelectedIndex, dat) <> True Then '***DLL関数の実行
-            MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみ失敗
-            DevClose_Click(DevClose, New System.EventArgs())
-        Else
-            MsgBox("下位バイト入力値は " & Hex(dat) & "(HEX) です")
-        End If
-    End Sub
+    'Private Sub HighWrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***上位バイトの出力
+    '    Dim Ret As String
+    '    Dim Dir As Byte
+    '    Ret = InputBox("上位バイトの出力値を入力してください(HEX)", "Pio_HighByteWrite", "0")
+    '    If Ret.Length > 0 Then '***OKで返ってきているか
+    '        If IsNumeric("&h" & Ret) Then
+    '            Dir = CByte("&h" & Ret)
+    '            If (Dir >= 0 And Dir <= &HFFS) Then '*** データの範囲にあるか
+    '                If sacomUsbIoWriteH(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
+    '                    MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
+    '                    DevClose_Click(DevClose, New System.EventArgs())
+    '                End If
+    '            Else
+    '                MsgBox("データの範囲は0～FF(HEX)です。")
+    '            End If
+    '        Else
+    '            MsgBox("データの入力形式が間違っています->[" & Ret & "]")
+    '        End If
+    '    End If
+    'End Sub
 
-    Private Sub HighRead_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***上位バイトの入力データの取得
-        Dim dat As Byte
-        If sacomUsbIoReadH(IDNUM.SelectedIndex, dat) <> True Then '***DLL関数の実行
-            MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみ失敗
-            DevClose_Click(DevClose, New System.EventArgs())
-        Else
-            MsgBox("上位バイト入力値は " & Hex(dat) & "(HEX) です")
-        End If
-    End Sub
+    'Private Sub LowRead_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***下位バイトの入力データの取得
+    '    Dim dat As Byte
+    '    If sacomUsbIoReadL(IDNUM.SelectedIndex, dat) <> True Then '***DLL関数の実行
+    '        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみ失敗
+    '        DevClose_Click(DevClose, New System.EventArgs())
+    '    Else
+    '        MsgBox("下位バイト入力値は " & Hex(dat) & "(HEX) です")
+    '    End If
+    'End Sub
 
-    Private Sub WordWrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        '***ワード出力
-        Dim Ret As String
-        Dim Dir As Integer
-        Ret = InputBox("出力値を入力してください(HEX)", "Pio_WordWrite", "0")
-        If Ret.Length > 0 Then '***OKで返ってきているか
-            If IsNumeric("&h" & Ret) Then
-                Dir = CInt("&h" & Ret)
-                If (Dir >= 0 And Dir <= &HFFFF) Then '*** データの範囲にあるか
-                    If sacomUsbIoWrite(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
-                        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
-                        DevClose_Click(DevClose, New System.EventArgs())
-                    End If
-                Else
-                    MsgBox("データの範囲は0～FFFF(HEX)です。")
-                End If
-            Else
-                MsgBox("データの入力形式が間違っています->[" & Ret & "]")
-            End If
-        End If
-    End Sub
+    'Private Sub HighRead_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***上位バイトの入力データの取得
+    '    Dim dat As Byte
+    '    If sacomUsbIoReadH(IDNUM.SelectedIndex, dat) <> True Then '***DLL関数の実行
+    '        MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみ失敗
+    '        DevClose_Click(DevClose, New System.EventArgs())
+    '    Else
+    '        MsgBox("上位バイト入力値は " & Hex(dat) & "(HEX) です")
+    '    End If
+    'End Sub
+
+    'Private Sub WordWrite_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    '***ワード出力
+    '    Dim Ret As String
+    '    Dim Dir As Integer
+    '    Ret = InputBox("出力値を入力してください(HEX)", "Pio_WordWrite", "0")
+    '    If Ret.Length > 0 Then '***OKで返ってきているか
+    '        If IsNumeric("&h" & Ret) Then
+    '            Dir = CInt("&h" & Ret)
+    '            If (Dir >= 0 And Dir <= &HFFFF) Then '*** データの範囲にあるか
+    '                If sacomUsbIoWrite(IDNUM.SelectedIndex, Dir) <> True Then '***DLL関数の実行
+    '                    MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみに失敗
+    '                    DevClose_Click(DevClose, New System.EventArgs())
+    '                End If
+    '            Else
+    '                MsgBox("データの範囲は0～FFFF(HEX)です。")
+    '            End If
+    '        Else
+    '            MsgBox("データの入力形式が間違っています->[" & Ret & "]")
+    '        End If
+    '    End If
+    'End Sub
 
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim dat As Integer
-        If sacomUsbIoRead(IDNUM.SelectedIndex, dat) <> True Then '***DLL関数の実行
-            MsgBox("DLL関数の実行に失敗しました。デバイスをクローズします。") '***書きこみ失敗
-            DevClose_Click(DevClose, New System.EventArgs())
-        Else
-            MsgBox("ワード入力値は " & (dat) & "(HEX) です")
-        End If
-
-    End Sub
 
 
     Private cntred As Integer       '赤点灯の回数をカウントしておく
@@ -504,8 +869,8 @@ Public Class Form1
         Label2.Text = Hex(dat)                  'ラベル2に現在の入力情報を16進数で表示
         dathex = Hex(dat)
 
-        Label4.Text = cntred
-        Label5.Text = cntyellow
+        'Label4.Text = cntred　　　　　　カウント表示現在停止中
+        'Label5.Text = cntyellow
 
 
 
@@ -624,14 +989,13 @@ Public Class Form1
         '***デバイスのオープン***
 
         If OnlineCheck.Checked = True Then                                          　'チェックが入っているかどうかの確認
-            If (sacomUsbIoOpen(IDNUM.SelectedIndex) = True) Then                      'チェックが入っている場合
-                Function_Enable() '***各機能ボタンを有効にする                        'USBPIOと通信開始
+            If (sacomUsbIoOpen(IDNUM.SelectedIndex) = True) Then                      'チェックが入っている場合　USBPIOと通信開始
                 OnlinePic.BackColor = Color.LightGreen                              　'Online状態を明るい緑に変更
             Else
                 MsgBox("オープンできませんでした")                                    '***オープンに失敗した場合orチェックが取り消された場合
             End If
         Else
-            DevClose_Click(DevClose, New System.EventArgs())                          'USBPIOと通信を終了
+            sacomUsbIoClose(IDNUM.SelectedIndex)                          'USBPIOと通信を終了
             OnlinePic.BackColor = Color.DarkGreen                                     'Online状態を暗い緑のままに
         End If
     End Sub
@@ -649,20 +1013,6 @@ Public Class Form1
 
 
     End Sub
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     '～～～～～～～～～～～～～～～～～～～ここまで～～～～～～～～～～～～～～～～～～～～～～～～～～
