@@ -25,7 +25,6 @@ Public Class Form1
 
     ' Windows ƒtƒH[ƒ€ ƒfƒUƒCƒi‚Å•K—v‚Å‚·B
     Private components As System.ComponentModel.IContainer
-    Friend WithEvents IDNUM As System.Windows.Forms.ComboBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
@@ -73,10 +72,11 @@ Public Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Timer2 As Timer
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.IDNUM = New System.Windows.Forms.ComboBox()
+        '       Me.IDNUM = New System.Windows.Forms.ComboBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -125,6 +125,7 @@ Public Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,17 +133,15 @@ Public Class Form1
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'IDNUM
-        '
-        Me.IDNUM.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"})
-        Me.IDNUM.Location = New System.Drawing.Point(377, 588)
-        Me.IDNUM.Name = "IDNUM"
-        Me.IDNUM.Size = New System.Drawing.Size(48, 20)
-        Me.IDNUM.TabIndex = 11
-        Me.IDNUM.Text = "ID"
-        '
-        'Timer1
-        '
+        ''IDNUM  IDƒiƒ“ƒo[‚ğƒRƒ“ƒ{ƒ{ƒbƒNƒX‚Å‚µ‚Ä‚¢‚µ‚½‚¢‚Æ‚«
+        ''
+        'Me.IDNUM.Location = New System.Drawing.Point(299, 252)
+        'Me.IDNUM.Name = "IDNUM"
+        'Me.IDNUM.Size = New System.Drawing.Size(121, 20)
+        'Me.IDNUM.TabIndex = 220
+        ''
+        ''Timer1
+        ''
         '
         'PictureBox1
         '
@@ -272,7 +271,7 @@ Public Class Form1
         '
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label28.Location = New System.Drawing.Point(105, 615)
+        Me.Label28.Location = New System.Drawing.Point(80, 615)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(59, 14)
         Me.Label28.TabIndex = 211
@@ -282,7 +281,7 @@ Public Class Form1
         '
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label27.Location = New System.Drawing.Point(102, 591)
+        Me.Label27.Location = New System.Drawing.Point(81, 591)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(75, 14)
         Me.Label27.TabIndex = 210
@@ -292,7 +291,7 @@ Public Class Form1
         '
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label29.Location = New System.Drawing.Point(34, 591)
+        Me.Label29.Location = New System.Drawing.Point(27, 591)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(49, 14)
         Me.Label29.TabIndex = 209
@@ -302,7 +301,7 @@ Public Class Form1
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label22.Location = New System.Drawing.Point(36, 615)
+        Me.Label22.Location = New System.Drawing.Point(29, 615)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(35, 14)
         Me.Label22.TabIndex = 208
@@ -608,6 +607,9 @@ Public Class Form1
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Œ»İ‚Ìó‘Ô"
         '
+        'Timer2
+        '
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
@@ -659,9 +661,9 @@ Public Class Form1
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.IDNUM)
+        '        Me.Controls.Add(Me.IDNUM)
         Me.Name = "Form1"
-        Me.Text = "@"
+        Me.Text = "4†‹@¶YH’öƒ‚ƒjƒ^"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -844,7 +846,7 @@ Public Class Form1
 
 
 
-
+    Private pio_id As Integer = 0
     Private cntred As Integer       'Ô“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private cntyellow As Integer    '‰©“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private flag_light As String    '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄ‹ƒtƒ‰ƒO
@@ -865,7 +867,7 @@ Public Class Form1
         Dim dathex As String   'HEX‰»‚µ‚½dat‚ğ•¶š—ñ‚Æ‚µ‚ÄŠi”[‚µ‚Ä‚¨‚­‚½‚ß‚Ì•Ï”@String’è‹`‚¶‚á‚È‚¢‚Æendswith‚ªg‚¦‚È‚¢‚Á‚Ä‚Ì‚à‚ ‚é
 
 
-        sacomUsbIoRead(IDNUM.SelectedIndex, dat)
+        sacomUsbIoRead(pio_id, dat)
         Label2.Text = Hex(dat)                  'ƒ‰ƒxƒ‹2‚ÉŒ»İ‚Ì“ü—Íî•ñ‚ğ16i”‚Å•\¦
         dathex = Hex(dat)
 
@@ -982,20 +984,20 @@ Public Class Form1
 
     End Sub
 
-    '`````ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Ìˆ—@DataSave‚ÆOnline‚ªƒ`ƒFƒbƒNƒ{ƒbƒNƒX‘Î‰````````````````
+    '`````ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Ìˆ—@DataSave‚ÆOnline‚ªƒ`ƒFƒbƒNƒ{ƒbƒNƒX‘Î‰``````````````
 
 
     Private Sub OnlineCheck_CheckedChanged(sender As Object, e As EventArgs) Handles OnlineCheck.CheckedChanged         'Online‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚É•ÏX‚ª‰Á‚í‚Á‚½ê‡
         '***ƒfƒoƒCƒX‚ÌƒI[ƒvƒ“***
 
         If OnlineCheck.Checked = True Then                                          @'ƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ÌŠm”F
-            If (sacomUsbIoOpen(IDNUM.SelectedIndex) = True) Then                      'ƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚éê‡@USBPIO‚Æ’ÊMŠJn
-                OnlinePic.BackColor = Color.LightGreen                              @'Onlineó‘Ô‚ğ–¾‚é‚¢—Î‚É•ÏX
+            If (sacomUsbIoOpen(pio_id) = True) Then                                   'ƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚éê‡@USBPIO‚Æ’ÊMŠJn@
+                OnlinePic.BackColor = Color.LightGreen                              @'INDNUM‚ÍID”’l‚ÌƒRƒ“ƒ{ƒ{ƒbƒNƒXAOnlineó‘Ô‚ğ–¾‚é‚¢—Î‚É•ÏX
             Else
                 MsgBox("ƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½")                                    '***ƒI[ƒvƒ“‚É¸”s‚µ‚½ê‡orƒ`ƒFƒbƒN‚ªæ‚èÁ‚³‚ê‚½ê‡
             End If
         Else
-            sacomUsbIoClose(IDNUM.SelectedIndex)                          'USBPIO‚Æ’ÊM‚ğI—¹
+            sacomUsbIoClose(pio_id)                                                   'USBPIO‚Æ’ÊM‚ğI—¹
             OnlinePic.BackColor = Color.DarkGreen                                     'Onlineó‘Ô‚ğˆÃ‚¢—Î‚Ì‚Ü‚Ü‚É
         End If
     End Sub
@@ -1013,6 +1015,42 @@ Public Class Form1
 
 
     End Sub
+
+
+    '```````````````````‚±‚±‚Ü‚Å``````````````````````````
+
+
+
+
+
+    '`````````````````”NŒ“ú‚Æ‚Ì•\¦ˆ—`````````````````````
+
+    Private Sub Form1_Load3(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
+        '‚±‚±‚©‚ç
+        'Timer1‚Ìİ’è
+        Timer2.Interval = 1000 '1•b‚ÌƒCƒ“ƒ^[ƒoƒ‹‚Åî•ñ‚ğXV
+        Timer2.Enabled = True 'ƒ^ƒCƒ}[‚ğ—LŒø‚É‚·‚é
+
+    End Sub
+
+    Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick         'ã‚Ìƒ^ƒCƒ}[‚ªXV‚³‚ê‚é‚½‚Ñ‚ÉƒCƒxƒ“ƒg”­¶
+
+
+        Dim Dy As Integer = DateAndTime.Day(Now)    ' dayŠÖ”‚Å–{“ú‚Ì“ú‚ğæ“¾
+        Dim Yr As Integer = Year(Now)           @  ' YearŠÖ”‚Å–{“ú‚Ì¼—ï”N†‚ğæ“¾
+        Dim Mon As Integer = Month(Now)          @ ' MonthŠÖ”‚Å–{“ú‚ÌŒ‚ğæ“¾
+
+        Dim Hr As Integer = Hour(Now)               ' HourŠÖ”‚ÅŒ»İ‚Ì‚ğæ“¾
+        Dim Min As Integer = Minute(Now)            ' MinuteŠÖ”‚ÅŒ»İ‚Ì•ª‚ğæ“¾
+        Dim Sec As Integer = Second(Now)            ' SecondŠÖ”‚ÅŒ»İ‚Ì•b‚ğæ“¾
+
+        ' ƒ‰ƒxƒ‹27,28‚ÌTextƒvƒƒpƒeƒB‚É‘ã“ü
+        Label27.Text = Yr & "”N" & Mon & "Œ" & Dy & "“ú"
+
+        Label28.Text = Hr & "" & Min & "•ª" & Sec & "•b"
+
+    End Sub
+
 
 
     '```````````````````‚±‚±‚Ü‚Å``````````````````````````
