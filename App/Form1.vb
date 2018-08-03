@@ -43,6 +43,12 @@ Public Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents SaveCheck As CheckBox
+    Friend WithEvents OnlineCheck As CheckBox
+    Friend WithEvents SavePic As PictureBox
+    Friend WithEvents OnlinePic As PictureBox
+    Friend WithEvents TextBox79 As TextBox
+    Friend WithEvents TextBox80 As TextBox
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -61,14 +67,22 @@ Public Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.SaveCheck = New System.Windows.Forms.CheckBox()
+        Me.OnlineCheck = New System.Windows.Forms.CheckBox()
+        Me.SavePic = New System.Windows.Forms.PictureBox()
+        Me.OnlinePic = New System.Windows.Forms.PictureBox()
+        Me.TextBox79 = New System.Windows.Forms.TextBox()
+        Me.TextBox80 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SavePic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DevOpen
         '
-        Me.DevOpen.Location = New System.Drawing.Point(517, 412)
+        Me.DevOpen.Location = New System.Drawing.Point(557, 561)
         Me.DevOpen.Name = "DevOpen"
         Me.DevOpen.Size = New System.Drawing.Size(88, 32)
         Me.DevOpen.TabIndex = 8
@@ -76,7 +90,7 @@ Public Class Form1
         '
         'DevClose
         '
-        Me.DevClose.Location = New System.Drawing.Point(729, 411)
+        Me.DevClose.Location = New System.Drawing.Point(786, 561)
         Me.DevClose.Name = "DevClose"
         Me.DevClose.Size = New System.Drawing.Size(88, 32)
         Me.DevClose.TabIndex = 9
@@ -93,7 +107,7 @@ Public Class Form1
         'IDNUM
         '
         Me.IDNUM.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"})
-        Me.IDNUM.Location = New System.Drawing.Point(665, 424)
+        Me.IDNUM.Location = New System.Drawing.Point(701, 573)
         Me.IDNUM.Name = "IDNUM"
         Me.IDNUM.Size = New System.Drawing.Size(48, 20)
         Me.IDNUM.TabIndex = 11
@@ -190,10 +204,74 @@ Public Class Form1
         Me.Label7.TabIndex = 21
         Me.Label7.Text = "‰©F“_“”‰ñ”"
         '
+        'SaveCheck
+        '
+        Me.SaveCheck.AutoSize = True
+        Me.SaveCheck.Location = New System.Drawing.Point(185, 570)
+        Me.SaveCheck.Name = "SaveCheck"
+        Me.SaveCheck.Size = New System.Drawing.Size(77, 16)
+        Me.SaveCheck.TabIndex = 183
+        Me.SaveCheck.Text = "Data Save"
+        Me.SaveCheck.UseVisualStyleBackColor = True
+        '
+        'OnlineCheck
+        '
+        Me.OnlineCheck.AutoSize = True
+        Me.OnlineCheck.Location = New System.Drawing.Point(185, 546)
+        Me.OnlineCheck.Name = "OnlineCheck"
+        Me.OnlineCheck.Size = New System.Drawing.Size(54, 16)
+        Me.OnlineCheck.TabIndex = 182
+        Me.OnlineCheck.Text = "online"
+        Me.OnlineCheck.UseVisualStyleBackColor = True
+        '
+        'SavePic
+        '
+        Me.SavePic.BackColor = System.Drawing.Color.DarkGreen
+        Me.SavePic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.SavePic.Location = New System.Drawing.Point(274, 566)
+        Me.SavePic.Name = "SavePic"
+        Me.SavePic.Size = New System.Drawing.Size(63, 26)
+        Me.SavePic.TabIndex = 181
+        Me.SavePic.TabStop = False
+        '
+        'OnlinePic
+        '
+        Me.OnlinePic.BackColor = System.Drawing.Color.DarkGreen
+        Me.OnlinePic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.OnlinePic.Location = New System.Drawing.Point(274, 540)
+        Me.OnlinePic.Name = "OnlinePic"
+        Me.OnlinePic.Size = New System.Drawing.Size(63, 27)
+        Me.OnlinePic.TabIndex = 180
+        Me.OnlinePic.TabStop = False
+        '
+        'TextBox79
+        '
+        Me.TextBox79.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox79.Location = New System.Drawing.Point(177, 540)
+        Me.TextBox79.Multiline = True
+        Me.TextBox79.Name = "TextBox79"
+        Me.TextBox79.Size = New System.Drawing.Size(160, 27)
+        Me.TextBox79.TabIndex = 179
+        '
+        'TextBox80
+        '
+        Me.TextBox80.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox80.Location = New System.Drawing.Point(177, 566)
+        Me.TextBox80.Multiline = True
+        Me.TextBox80.Name = "TextBox80"
+        Me.TextBox80.Size = New System.Drawing.Size(160, 26)
+        Me.TextBox80.TabIndex = 178
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
-        Me.ClientSize = New System.Drawing.Size(849, 464)
+        Me.ClientSize = New System.Drawing.Size(912, 605)
+        Me.Controls.Add(Me.SaveCheck)
+        Me.Controls.Add(Me.OnlineCheck)
+        Me.Controls.Add(Me.SavePic)
+        Me.Controls.Add(Me.OnlinePic)
+        Me.Controls.Add(Me.TextBox79)
+        Me.Controls.Add(Me.TextBox80)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -213,6 +291,8 @@ Public Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SavePic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -402,7 +482,7 @@ Public Class Form1
 
     Private cntred As Integer       'Ô“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private cntyellow As Integer    '‰©“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
-    Private flag_light As String          '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄ‹ƒtƒ‰ƒO
+    Private flag_light As String    '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄ‹ƒtƒ‰ƒO
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
         '‚±‚±‚©‚ç
@@ -532,9 +612,64 @@ Public Class Form1
 
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
-        'ƒGƒ‰[‚ÌƒJƒEƒ“ƒgƒeƒXƒg
 
 
 
     End Sub
+
+    '`````ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Ìˆ—@DataSave‚ÆOnline‚ªƒ`ƒFƒbƒNƒ{ƒbƒNƒX‘Î‰````````````````
+
+
+    Private Sub OnlineCheck_CheckedChanged(sender As Object, e As EventArgs) Handles OnlineCheck.CheckedChanged         'Online‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚É•ÏX‚ª‰Á‚í‚Á‚½ê‡
+        '***ƒfƒoƒCƒX‚ÌƒI[ƒvƒ“***
+
+        If OnlineCheck.Checked = True Then                                          @'ƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ÌŠm”F
+            If (sacomUsbIoOpen(IDNUM.SelectedIndex) = True) Then                      'ƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚éê‡
+                Function_Enable() '***Še‹@”\ƒ{ƒ^ƒ“‚ğ—LŒø‚É‚·‚é                        'USBPIO‚Æ’ÊMŠJn
+                OnlinePic.BackColor = Color.LightGreen                              @'Onlineó‘Ô‚ğ–¾‚é‚¢—Î‚É•ÏX
+            Else
+                MsgBox("ƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½")                                    '***ƒI[ƒvƒ“‚É¸”s‚µ‚½ê‡orƒ`ƒFƒbƒN‚ªæ‚èÁ‚³‚ê‚½ê‡
+            End If
+        Else
+            DevClose_Click(DevClose, New System.EventArgs())                          'USBPIO‚Æ’ÊM‚ğI—¹
+            OnlinePic.BackColor = Color.DarkGreen                                     'Onlineó‘Ô‚ğˆÃ‚¢—Î‚Ì‚Ü‚Ü‚É
+        End If
+    End Sub
+
+    Private Sub SaveCheck_CheckedChanged(sender As Object, e As EventArgs) Handles SaveCheck.CheckedChanged
+
+        If SaveCheck.Checked = True Then                                       'ƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ÌŠm”F
+
+            SavePic.BackColor = Color.LightGreen                               'Saveó‘Ô‚ğ–¾‚é‚¢—Î‚É•ÏX
+        Else
+            SavePic.BackColor = Color.DarkGreen                                'Saveó‘Ô‚ğˆÃ‚¢—Î‚Ì‚Ü‚Ü‚É
+        End If
+
+        'DataSave‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒXˆ—‚ğ‹Lq
+
+
+    End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '```````````````````‚±‚±‚Ü‚Å``````````````````````````
+
+
+
+
+
+
 End Class
