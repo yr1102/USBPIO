@@ -70,13 +70,24 @@ Public Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        '       Me.IDNUM = New System.Windows.Forms.ComboBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -123,9 +134,21 @@ Public Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -133,15 +156,8 @@ Public Class Form1
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        ''IDNUM  IDƒiƒ“ƒo[‚ğƒRƒ“ƒ{ƒ{ƒbƒNƒX‚Å‚µ‚Ä‚¢‚µ‚½‚¢‚Æ‚«
-        ''
-        'Me.IDNUM.Location = New System.Drawing.Point(299, 252)
-        'Me.IDNUM.Name = "IDNUM"
-        'Me.IDNUM.Size = New System.Drawing.Size(121, 20)
-        'Me.IDNUM.TabIndex = 220
-        ''
-        ''Timer1
-        ''
+        'Timer1
+        '
         '
         'PictureBox1
         '
@@ -588,32 +604,166 @@ Public Class Form1
         Me.Label11.TabIndex = 216
         Me.Label11.Text = "4†‹@¶YH’öƒ‚ƒjƒ^"
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(663, 59)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 12)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "ƒpƒgƒ‰ƒCƒgó‘Ô"
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(540, 139)
+        Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.Location = New System.Drawing.Point(444, 117)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(195, 37)
+        Me.Label2.Size = New System.Drawing.Size(101, 19)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Œ»İ‚Ìó‘Ô"
         '
         'Timer2
         '
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label1.Location = New System.Drawing.Point(466, 79)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 24)
+        Me.Label1.TabIndex = 226
+        Me.Label1.Text = "1,500"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label7.Location = New System.Drawing.Point(351, 80)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(63, 24)
+        Me.Label7.TabIndex = 225
+        Me.Label7.Text = "6,000"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label6.Location = New System.Drawing.Point(472, 45)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(49, 14)
+        Me.Label6.TabIndex = 224
+        Me.Label6.Text = "“Š“ü”"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label5.Location = New System.Drawing.Point(348, 45)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(63, 14)
+        Me.Label5.TabIndex = 223
+        Me.Label5.Text = "Œv‰æ”—Ê"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Location = New System.Drawing.Point(424, 70)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(144, 44)
+        Me.TextBox2.TabIndex = 222
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Location = New System.Drawing.Point(335, 70)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(96, 44)
+        Me.TextBox1.TabIndex = 221
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox5.Location = New System.Drawing.Point(728, 38)
+        Me.TextBox5.Multiline = True
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(120, 27)
+        Me.TextBox5.TabIndex = 233
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Location = New System.Drawing.Point(728, 64)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(120, 26)
+        Me.TextBox4.TabIndex = 232
+        '
+        'TextBox6
+        '
+        Me.TextBox6.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox6.Location = New System.Drawing.Point(728, 87)
+        Me.TextBox6.Multiline = True
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(120, 27)
+        Me.TextBox6.TabIndex = 231
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label3.Location = New System.Drawing.Point(661, 95)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(46, 14)
+        Me.Label3.TabIndex = 230
+        Me.Label3.Text = "Lot.No"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label4.Location = New System.Drawing.Point(654, 72)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(63, 14)
+        Me.Label4.TabIndex = 229
+        Me.Label4.Text = "»•iŒ^®"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label30.Location = New System.Drawing.Point(650, 45)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(77, 14)
+        Me.Label30.TabIndex = 228
+        Me.Label30.Text = "•i¿Ó”CÒ"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Location = New System.Drawing.Point(640, 38)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(172, 76)
+        Me.TextBox3.TabIndex = 227
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
         Me.ClientSize = New System.Drawing.Size(912, 660)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label30)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label10)
@@ -658,10 +808,8 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox80)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
-        '        Me.Controls.Add(Me.IDNUM)
         Me.Name = "Form1"
         Me.Text = "4†‹@¶YH’öƒ‚ƒjƒ^"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -847,9 +995,12 @@ Public Class Form1
 
 
     Private pio_id As Integer = 0
+    Private cntslot As Integer      '“Š“ü‚ğslot‚Æ•\Œ»@“Š“ü‚ÌƒJƒEƒ“ƒg
     Private cntred As Integer       'Ô“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private cntyellow As Integer    '‰©“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private flag_light As String    '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄ‹ƒtƒ‰ƒO
+    Private flag_cnt As String      '“Š“ü‚ÌƒJƒEƒ“ƒgˆ——p
+    Private flag_ch As String       '“¯ˆêCH‚©‚Ç‚¤‚©‚ÌŠÄ‹
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
         '‚±‚±‚©‚ç
@@ -864,12 +1015,14 @@ Public Class Form1
     'Timer
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
         Dim dat As Integer
-        Dim dathex As String   'HEX‰»‚µ‚½dat‚ğ•¶š—ñ‚Æ‚µ‚ÄŠi”[‚µ‚Ä‚¨‚­‚½‚ß‚Ì•Ï”@String’è‹`‚¶‚á‚È‚¢‚Æendswith‚ªg‚¦‚È‚¢‚Á‚Ä‚Ì‚à‚ ‚é
+        Dim dathex As String   'HEX‰»‚µ‚½dat‚ğ•¶š—ñ‚Æ‚µ‚ÄŠi”[‚µ‚Ä‚¨‚­‚½‚ß‚Ì•Ï”@String’è‹`‚É•ÏŠ·‚µ‚È‚¢‚Æwith‚ğg—p‚Å‚«‚È‚¢
 
 
         sacomUsbIoRead(pio_id, dat)
         Label2.Text = Hex(dat)                  'ƒ‰ƒxƒ‹2‚ÉŒ»İ‚Ì“ü—Íî•ñ‚ğ16i”‚Å•\¦
         dathex = Hex(dat)
+
+        Label1.Text = cntslot             'ƒ‰ƒxƒ‹1‚ÉŒ»İ‚Ì“Š“ü”‚ğ•\¦
 
         'Label4.Text = cntred@@@@@@ƒJƒEƒ“ƒg•\¦Œ»İ’â~’†
         'Label5.Text = cntyellow
@@ -894,7 +1047,7 @@ Public Class Form1
             flag_light = "8"                                            '“_“”ó‘Ô(flag_light)‚É8‚ğ‘‚«‚ñ‚Å‚¨‚­A‚ ‚Æ‚Åd—v‚É‚È‚é
 
 
-        ElseIf dathex.EndsWith("9") Then                                '”’l‚ª9‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í‰©F‚ÆÔF‚Ì“_“”‚É‚È‚éB
+        ElseIf dathex.EndsWith("9") Then                                '’l‚ª9‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í‰©F‚ÆÔF‚Ì“_“”‚É‚È‚éB
             PictureBox2.BackColor = Color.Yellow                        'PictureBox2,3‚ğ–¾‚é‚­‚·‚é
             PictureBox3.BackColor = Color.Red
 
@@ -914,7 +1067,7 @@ Public Class Form1
 
             flag_light = "9"
 
-        ElseIf dathex.EndsWith("A") Then                                '”’l‚ªA‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í—ÎF‚ÆÔF‚Ì“_“”‚É‚È‚éB    
+        ElseIf dathex.EndsWith("A") Then                                '’l‚ªA‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í—ÎF‚ÆÔF‚Ì“_“”‚É‚È‚éB    
             PictureBox1.BackColor = Color.LightGreen
             PictureBox3.BackColor = Color.Red
 
@@ -933,7 +1086,7 @@ Public Class Form1
 
             End If
 
-        ElseIf dathex.EndsWith("B") Then                                 '”’l‚ªB‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍÔF‚Ì“_“”‚É‚È‚éB    
+        ElseIf dathex.EndsWith("B") Then                                 '’l‚ªB‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍÔF‚Ì“_“”‚É‚È‚éB    
             PictureBox3.BackColor = Color.Red
 
             If flag_light <> "B" Then
@@ -950,7 +1103,7 @@ Public Class Form1
 
             End If
 
-        ElseIf dathex.EndsWith("C") Then                                 '”’l‚ªC‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í—ÎF‚Æ‰©F‚Ì“_“”‚É‚È‚éB  
+        ElseIf dathex.EndsWith("C") Then                                 '’l‚ªC‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í—ÎF‚Æ‰©F‚Ì“_“”‚É‚È‚éB  
             PictureBox1.BackColor = Color.LightGreen
             PictureBox2.BackColor = Color.Yellow
 
@@ -960,7 +1113,7 @@ Public Class Form1
             End If
             flag_light = "C"
 
-        ElseIf dathex.EndsWith("D") Then                              @ '”’l‚ªD‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍÔF‚Æ‰©F‚Ì“_“”‚É‚È‚éB    
+        ElseIf dathex.EndsWith("D") Then                              @ '’l‚ªD‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍÔF‚Æ‰©F‚Ì“_“”‚É‚È‚éB    
             PictureBox3.BackColor = Color.Red
             PictureBox2.BackColor = Color.Yellow
 
@@ -969,7 +1122,7 @@ Public Class Form1
             End If
             flag_light = "D"
 
-        ElseIf dathex.EndsWith("E") Then                                 '”’l‚ªE‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í—ÎF‚Ì“_“”‚É‚È‚éB
+        ElseIf dathex.EndsWith("E") Then                                 '’l‚ªE‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í—ÎF‚Ì“_“”‚É‚È‚éB
             PictureBox1.BackColor = Color.LightGreen
 
             flag_light = "E"
@@ -979,7 +1132,38 @@ Public Class Form1
 
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
+        '```````````````````ƒJƒEƒ“ƒgˆ—````````````````````````
+        If dathex.StartsWith("6") Then                                    'dathex‚É“ü‚Á‚Ä‚¢‚éî•ñ‚ğƒ`ƒFƒbƒN@startswith‚Í16bitî•ñ‚ÌÅ‰‚Ì4bit‚Ì‚İ‚ğQÆ‚·‚é‹@”\‚Å‚ ‚é
+            If flag_cnt <> "6" Then                                       '’l‚ª6‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH4‚É“Š“ü‚ ‚è‚É‚È‚éB
+                cntslot += 1                                              '“Š“ü”‚ğ1‘‚â‚·
+            End If
+            flag_cnt = "6"                                                '˜A‘±‚Å“¯‚¶M†‚ğƒJƒEƒ“ƒg‚µ‚È‚¢‚æ‚¤‚Éflag_cnt‚Éó‘Ô‚ğ‹L“ü‚·‚é
 
+        ElseIf dathex.StartsWith("8") Then
+            If flag_cnt <> "8" Then                                       '’l‚ª8‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH3‚É“Š“ü‚ ‚è‚É‚È‚éB
+                cntslot += 1                                              '‚±‚Ì‚ ‚Æ‚Ìˆ—‚Íã‚Æ“¯‚¶
+            End If
+            flag_cnt = "8"
+
+        ElseIf dathex.StartsWith("A") Then
+            If flag_cnt <> "A" Then                                       '’l‚ªA‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH2‚É“Š“ü‚ ‚è‚É‚È‚éB
+                cntslot += 1
+            End If
+            flag_cnt = "A"
+
+        ElseIf dathex.StartsWith("C") Then
+            If flag_cnt <> "C" Then                                       '’l‚ªC‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH1‚É“Š“ü‚ ‚è‚É‚È‚éB
+                cntslot += 1
+            End If
+            flag_cnt = "C"
+
+        Else                                                              'ã‹L‘S‚Ä‚Ìó‘Ô‚É‘Î‰‚µ‚È‚©‚Á‚½ê‡“Š“ü‚È‚µ‚Æ”»’f‚µflag_cnt‚ğƒŠƒZƒbƒg‚·‚é
+            flag_cnt = "0"                                              @'‚±‚ê‚ğƒRƒƒ“ƒgƒAƒEƒg‚·‚é‚ÆCH1‚É“Š“üCH2~4‚È‚µ‚ª˜A‘±‚Å‘±‚¢‚½ê‡ƒJƒEƒ“ƒg‚ğs‚í‚È‚¢
+        End If
+
+
+
+        '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
 
     End Sub
@@ -1014,10 +1198,17 @@ Public Class Form1
         'DataSave‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒXˆ—‚ğ‹Lq
 
 
+
     End Sub
 
 
     '```````````````````‚±‚±‚Ü‚Å``````````````````````````
+
+
+
+
+
+
 
 
 
@@ -1056,8 +1247,16 @@ Public Class Form1
     '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
 
+    '`````````````````ƒAƒ‰[ƒ€o—Í‹@”\‚ÌƒeƒXƒg`````````````````````
+    Sub PlayBackgroundSoundFile()                                             'Œx‰¹Ä¶‹@”\
+        My.Computer.Audio.Play("C:\test.wav", AudioPlayMode.BackgroundLoop)   '‚±‚Ì‰¹ºƒtƒ@ƒCƒ‹‚Í”ñ‰c—˜‚Ì‚İg—p‰Â‚Ì‘fŞ‚È‚Ì‚Å’ˆÓ
+    End Sub
+
+    Sub StopBackgroundSound()                                                 'Œx‰¹’â~
+        My.Computer.Audio.Stop()                                              'Œx‰¹‚ğ’â~‚·‚é
+    End Sub
 
 
-
+    '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
 End Class
