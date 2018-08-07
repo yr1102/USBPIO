@@ -174,6 +174,24 @@ Public Class Form1
     Friend WithEvents Slot4 As Label
     Friend WithEvents Slot7 As Label
     Friend WithEvents Slot6 As Label
+    Friend WithEvents Good1 As Label
+    Friend WithEvents DefLbl1 As Label
+    Friend WithEvents DefLbl2 As Label
+    Friend WithEvents DefLbl3 As Label
+    Friend WithEvents DefLbl4 As Label
+    Friend WithEvents DefLbl5 As Label
+    Friend WithEvents DefLbl6 As Label
+    Friend WithEvents Good2 As Label
+    Friend WithEvents Good3 As Label
+    Friend WithEvents Good4 As Label
+    Friend WithEvents Good5 As Label
+    Friend WithEvents Good6 As Label
+    Friend WithEvents DefRate1 As Label
+    Friend WithEvents DefRate2 As Label
+    Friend WithEvents DefRate3 As Label
+    Friend WithEvents DefRate4 As Label
+    Friend WithEvents DefRate5 As Label
+    Friend WithEvents DefRate6 As Label
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -327,6 +345,24 @@ Public Class Form1
         Me.Slot4 = New System.Windows.Forms.Label()
         Me.Slot7 = New System.Windows.Forms.Label()
         Me.Slot6 = New System.Windows.Forms.Label()
+        Me.Good1 = New System.Windows.Forms.Label()
+        Me.DefLbl1 = New System.Windows.Forms.Label()
+        Me.DefLbl2 = New System.Windows.Forms.Label()
+        Me.DefLbl3 = New System.Windows.Forms.Label()
+        Me.DefLbl4 = New System.Windows.Forms.Label()
+        Me.DefLbl5 = New System.Windows.Forms.Label()
+        Me.DefLbl6 = New System.Windows.Forms.Label()
+        Me.Good2 = New System.Windows.Forms.Label()
+        Me.Good3 = New System.Windows.Forms.Label()
+        Me.Good4 = New System.Windows.Forms.Label()
+        Me.Good5 = New System.Windows.Forms.Label()
+        Me.Good6 = New System.Windows.Forms.Label()
+        Me.DefRate1 = New System.Windows.Forms.Label()
+        Me.DefRate2 = New System.Windows.Forms.Label()
+        Me.DefRate3 = New System.Windows.Forms.Label()
+        Me.DefRate4 = New System.Windows.Forms.Label()
+        Me.DefRate5 = New System.Windows.Forms.Label()
+        Me.DefRate6 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -941,7 +977,7 @@ Public Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Enabled = False
         Me.Label4.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label4.Location = New System.Drawing.Point(620, 65)
+        Me.Label4.Location = New System.Drawing.Point(619, 65)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(63, 14)
         Me.Label4.TabIndex = 229
@@ -952,7 +988,7 @@ Public Class Form1
         Me.Label30.AutoSize = True
         Me.Label30.Enabled = False
         Me.Label30.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label30.Location = New System.Drawing.Point(616, 38)
+        Me.Label30.Location = New System.Drawing.Point(615, 38)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(77, 14)
         Me.Label30.TabIndex = 228
@@ -1866,7 +1902,7 @@ Public Class Form1
         'Slot2
         '
         Me.Slot2.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot2.Location = New System.Drawing.Point(197, 221)
+        Me.Slot2.Location = New System.Drawing.Point(194, 221)
         Me.Slot2.Name = "Slot2"
         Me.Slot2.Size = New System.Drawing.Size(63, 24)
         Me.Slot2.TabIndex = 318
@@ -1923,10 +1959,208 @@ Public Class Form1
         Me.Slot6.Text = "100"
         Me.Slot6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Good1
+        '
+        Me.Good1.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Good1.Location = New System.Drawing.Point(194, 246)
+        Me.Good1.Name = "Good1"
+        Me.Good1.Size = New System.Drawing.Size(63, 24)
+        Me.Good1.TabIndex = 324
+        Me.Good1.Text = "100"
+        Me.Good1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefLbl1
+        '
+        Me.DefLbl1.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefLbl1.Location = New System.Drawing.Point(194, 272)
+        Me.DefLbl1.Name = "DefLbl1"
+        Me.DefLbl1.Size = New System.Drawing.Size(63, 20)
+        Me.DefLbl1.TabIndex = 325
+        Me.DefLbl1.Text = "100"
+        Me.DefLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefLbl2
+        '
+        Me.DefLbl2.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefLbl2.Location = New System.Drawing.Point(295, 273)
+        Me.DefLbl2.Name = "DefLbl2"
+        Me.DefLbl2.Size = New System.Drawing.Size(63, 20)
+        Me.DefLbl2.TabIndex = 326
+        Me.DefLbl2.Text = "100"
+        Me.DefLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefLbl3
+        '
+        Me.DefLbl3.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefLbl3.Location = New System.Drawing.Point(401, 273)
+        Me.DefLbl3.Name = "DefLbl3"
+        Me.DefLbl3.Size = New System.Drawing.Size(63, 20)
+        Me.DefLbl3.TabIndex = 327
+        Me.DefLbl3.Text = "100"
+        Me.DefLbl3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefLbl4
+        '
+        Me.DefLbl4.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefLbl4.Location = New System.Drawing.Point(509, 272)
+        Me.DefLbl4.Name = "DefLbl4"
+        Me.DefLbl4.Size = New System.Drawing.Size(63, 20)
+        Me.DefLbl4.TabIndex = 328
+        Me.DefLbl4.Text = "100"
+        Me.DefLbl4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefLbl5
+        '
+        Me.DefLbl5.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefLbl5.Location = New System.Drawing.Point(616, 273)
+        Me.DefLbl5.Name = "DefLbl5"
+        Me.DefLbl5.Size = New System.Drawing.Size(63, 20)
+        Me.DefLbl5.TabIndex = 329
+        Me.DefLbl5.Text = "100"
+        Me.DefLbl5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefLbl6
+        '
+        Me.DefLbl6.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefLbl6.Location = New System.Drawing.Point(724, 273)
+        Me.DefLbl6.Name = "DefLbl6"
+        Me.DefLbl6.Size = New System.Drawing.Size(63, 20)
+        Me.DefLbl6.TabIndex = 330
+        Me.DefLbl6.Text = "100"
+        Me.DefLbl6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Good2
+        '
+        Me.Good2.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Good2.Location = New System.Drawing.Point(295, 248)
+        Me.Good2.Name = "Good2"
+        Me.Good2.Size = New System.Drawing.Size(63, 20)
+        Me.Good2.TabIndex = 331
+        Me.Good2.Text = "100"
+        Me.Good2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Good3
+        '
+        Me.Good3.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Good3.Location = New System.Drawing.Point(401, 249)
+        Me.Good3.Name = "Good3"
+        Me.Good3.Size = New System.Drawing.Size(63, 20)
+        Me.Good3.TabIndex = 332
+        Me.Good3.Text = "100"
+        Me.Good3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Good4
+        '
+        Me.Good4.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Good4.Location = New System.Drawing.Point(509, 248)
+        Me.Good4.Name = "Good4"
+        Me.Good4.Size = New System.Drawing.Size(63, 20)
+        Me.Good4.TabIndex = 333
+        Me.Good4.Text = "100"
+        Me.Good4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Good5
+        '
+        Me.Good5.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Good5.Location = New System.Drawing.Point(616, 248)
+        Me.Good5.Name = "Good5"
+        Me.Good5.Size = New System.Drawing.Size(63, 20)
+        Me.Good5.TabIndex = 334
+        Me.Good5.Text = "100"
+        Me.Good5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Good6
+        '
+        Me.Good6.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Good6.Location = New System.Drawing.Point(724, 248)
+        Me.Good6.Name = "Good6"
+        Me.Good6.Size = New System.Drawing.Size(63, 20)
+        Me.Good6.TabIndex = 335
+        Me.Good6.Text = "100"
+        Me.Good6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefRate1
+        '
+        Me.DefRate1.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefRate1.Location = New System.Drawing.Point(203, 297)
+        Me.DefRate1.Name = "DefRate1"
+        Me.DefRate1.Size = New System.Drawing.Size(63, 20)
+        Me.DefRate1.TabIndex = 336
+        Me.DefRate1.Text = "0%"
+        Me.DefRate1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefRate2
+        '
+        Me.DefRate2.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefRate2.Location = New System.Drawing.Point(305, 297)
+        Me.DefRate2.Name = "DefRate2"
+        Me.DefRate2.Size = New System.Drawing.Size(63, 20)
+        Me.DefRate2.TabIndex = 337
+        Me.DefRate2.Text = "0%"
+        Me.DefRate2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefRate3
+        '
+        Me.DefRate3.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefRate3.Location = New System.Drawing.Point(411, 297)
+        Me.DefRate3.Name = "DefRate3"
+        Me.DefRate3.Size = New System.Drawing.Size(63, 20)
+        Me.DefRate3.TabIndex = 338
+        Me.DefRate3.Text = "0%"
+        Me.DefRate3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefRate4
+        '
+        Me.DefRate4.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefRate4.Location = New System.Drawing.Point(518, 297)
+        Me.DefRate4.Name = "DefRate4"
+        Me.DefRate4.Size = New System.Drawing.Size(63, 20)
+        Me.DefRate4.TabIndex = 339
+        Me.DefRate4.Text = "0%"
+        Me.DefRate4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefRate5
+        '
+        Me.DefRate5.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefRate5.Location = New System.Drawing.Point(625, 298)
+        Me.DefRate5.Name = "DefRate5"
+        Me.DefRate5.Size = New System.Drawing.Size(63, 20)
+        Me.DefRate5.TabIndex = 340
+        Me.DefRate5.Text = "0%"
+        Me.DefRate5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DefRate6
+        '
+        Me.DefRate6.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.DefRate6.Location = New System.Drawing.Point(734, 297)
+        Me.DefRate6.Name = "DefRate6"
+        Me.DefRate6.Size = New System.Drawing.Size(63, 20)
+        Me.DefRate6.TabIndex = 341
+        Me.DefRate6.Text = "0%"
+        Me.DefRate6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
         Me.ClientSize = New System.Drawing.Size(841, 660)
+        Me.Controls.Add(Me.DefRate6)
+        Me.Controls.Add(Me.DefRate5)
+        Me.Controls.Add(Me.DefRate4)
+        Me.Controls.Add(Me.DefRate3)
+        Me.Controls.Add(Me.DefRate2)
+        Me.Controls.Add(Me.DefRate1)
+        Me.Controls.Add(Me.Good6)
+        Me.Controls.Add(Me.Good5)
+        Me.Controls.Add(Me.Good4)
+        Me.Controls.Add(Me.Good3)
+        Me.Controls.Add(Me.Good2)
+        Me.Controls.Add(Me.DefLbl6)
+        Me.Controls.Add(Me.DefLbl5)
+        Me.Controls.Add(Me.DefLbl4)
+        Me.Controls.Add(Me.DefLbl3)
+        Me.Controls.Add(Me.DefLbl2)
+        Me.Controls.Add(Me.DefLbl1)
+        Me.Controls.Add(Me.Good1)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Slot7)
@@ -2076,7 +2310,7 @@ Public Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Name = "Form1"
-        Me.Text = "4†‹@¶YH’öƒ‚ƒjƒ^"
+        Me.Text = " "
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2273,11 +2507,21 @@ Public Class Form1
 
     Private Const pio_id As Integer = 0   'USBPIO ‚ÌID@4†‹@‚Í0”Ô‚ğg—p
     Private cntslot As Integer      '“Š“ü‚ğslot‚Æ•\Œ»@“Š“ü‚ÌƒJƒEƒ“ƒg
+    Private cnttable As Integer     'ƒe[ƒuƒ‹‚É‚¢‚­‚Â‚ ‚é‚©‚ğ‹L‰¯‚·‚é•Ï”
+    Private Table(37) As Short      'Šeƒe[ƒuƒ‹—p‚Ì”z—ñ@ŒŸ¸€–Ú‚Í38”Ô–Ú(‰ñ˜H’ïR‚Ì‘O)‚Ü‚Å‚í‚©‚ê‚Î‚¢‚¢‚Ì‚Å‘Sƒe[ƒuƒ‹•ª(54ŒÂ)Šm•Û‚µ‚È‚¢
+
     Private cntred As Integer       'Ô“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private cntyellow As Integer    '‰©“_“”‚Ì‰ñ”‚ğƒJƒEƒ“ƒg‚µ‚Ä‚¨‚­
     Private flag_light As String    '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄ‹ƒtƒ‰ƒO
     Private flag_cnt As String      '“Š“ü‚ÌƒJƒEƒ“ƒgˆ——p
     Private flag_ch As String       '“¯ˆêCH‚©‚Ç‚¤‚©‚ÌŠÄ‹
+
+    Private cntdef1 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì’á
+    Private cntdef2 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì‚
+    Private cntdef3 As Integer     '•s—ÇƒJƒEƒ“ƒg•œ‹A’á
+    Private cntdef4 As Integer@@ '•s—ÇƒJƒEƒ“ƒg•œ‹A‚
+    Private cntdef5 As Integer     '•s—ÇƒJƒEƒ“ƒg‘Ïˆ³â‰
+    Private cntdef6 As Integer@   '•s—ÇƒJƒEƒ“ƒg‰ñ˜H’ïR
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
         '‚±‚±‚©‚ç
@@ -2410,25 +2654,34 @@ Public Class Form1
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
         '```````````````````ƒJƒEƒ“ƒgˆ—````````````````````````
-        If dathex.StartsWith("6") Then                                    'dathex‚É“ü‚Á‚Ä‚¢‚éî•ñ‚ğƒ`ƒFƒbƒN@startswith‚Í16bitî•ñ‚ÌÅ‰‚Ì4bit‚Ì‚İ‚ğQÆ‚·‚é‹@”\‚Å‚ ‚é
+        If dathex.StartsWith("6") Or dathex.StartsWith("7") Then           'dathex‚É“ü‚Á‚Ä‚¢‚éî•ñ‚ğƒ`ƒFƒbƒN@startswith‚Í16bitî•ñ‚ÌÅ‰‚Ì4bit‚Ì‚İ‚ğQÆ‚·‚é‹@”\‚Å‚ ‚é
+
             If flag_cnt <> "6" Then                                       '’l‚ª6‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH4‚É“Š“ü‚ ‚è‚É‚È‚éB
                 cntslot += 1                                              '“Š“ü”‚ğ1‘‚â‚·
             End If
             flag_cnt = "6"                                                '˜A‘±‚Å“¯‚¶M†‚ğƒJƒEƒ“ƒg‚µ‚È‚¢‚æ‚¤‚Éflag_cnt‚Éó‘Ô‚ğ‹L“ü‚·‚é
 
-        ElseIf dathex.StartsWith("8") Then
+        ElseIf dathex.StartsWith("8") Or dathex.StartsWith("9") Then      'CH3ƒ`ƒFƒbƒN
             If flag_cnt <> "8" Then                                       '’l‚ª8‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH3‚É“Š“ü‚ ‚è‚É‚È‚éB
                 cntslot += 1                                              '‚±‚Ì‚ ‚Æ‚Ìˆ—‚Íã‚Æ“¯‚¶
             End If
             flag_cnt = "8"
 
-        ElseIf dathex.StartsWith("A") Then
+        ElseIf dathex.StartsWith("A") Or dathex.StartsWith("B") Then      'CH2ƒ`ƒFƒbƒN
             If flag_cnt <> "A" Then                                       '’l‚ªA‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH2‚É“Š“ü‚ ‚è‚É‚È‚éB
                 cntslot += 1
             End If
             flag_cnt = "A"
 
-        ElseIf dathex.StartsWith("C") Then
+
+
+        ElseIf dathex.StartsWith("C") Or dathex.StartsWith("D") Then      'CH1ƒ`ƒFƒbƒN
+            If dathex Like "CE??" Or "DE??" Then
+                cntdef5 += 1
+
+
+            End If
+
             If flag_cnt <> "C" Then                                       '’l‚ªC‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH1‚É“Š“ü‚ ‚è‚É‚È‚éB
                 cntslot += 1
             End If
@@ -2447,12 +2700,47 @@ Public Class Form1
 
     Private Sub Slot_LabelChanged(sender As Object, e As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
 
-        Slot2.Text = Slot1.Text
-        Slot3.Text = Slot1.Text '-•s—Ç1
-        Slot4.Text = Slot3.Text '-•s—Ç2
-        Slot5.Text = Slot4.Text '-•s—Ç3
-        Slot6.Text = Slot5.Text '-•s—Ç4
-        Slot7.Text = Slot6.Text '-•s—Ç5
+        Slot2.Text = Slot1.Text  '-Table(0~3)              'ŒŸ¸”‚Ì”½‰f(“®ì’á)       
+        Slot3.Text = Slot1.Text - cntdef1      'ŒŸ¸”‚Ì”½‰f(“®ì‚)@ŒŸ¸”‚Í‘OŒŸ¸H’ö‚Å‚Ì•s—Ç‚Ì”Œ¸‚é‚Ì‚Å“¯‚¶‚Æ‚ÍŒÀ‚ç‚È‚¢
+        Slot4.Text = Slot3.Text - cntdef2      'ŒŸ¸”‚Ì”½‰f(•œ‹A‚)
+        Slot5.Text = Slot4.Text - cntdef3      'ŒŸ¸”‚Ì”½‰f(•œ‹A’á)
+        Slot6.Text = Slot5.Text - cntdef4      'ŒŸ¸”‚Ì”½‰f(‘Ïˆ³â‰)
+        Slot7.Text = Slot6.Text - cntdef5       'ŒŸ¸”‚Ì”½‰f(‰ñ˜H’ïR)
+
+        Good1.Text = Slot2.Text - cntdef1     '—Ç•i”‚Ì”½‰f(“®ì‚)
+        Good2.Text = Slot3.Text - cntdef2     '—Ç•i”‚Ì”½‰f(“®ì‚)
+        Good3.Text = Slot4.Text - cntdef3   @'—Ç•i”‚Ì”½‰f(•œ‹A‚)
+        Good4.Text = Slot5.Text - cntdef4     '—Ç•i”‚Ì”½‰f(•œ‹A‚)
+        Good5.Text = Slot6.Text - cntdef5     '—Ç•i”‚Ì”½‰f(‘Ïˆ³â‰)
+        Good6.Text = Slot7.Text - cntdef6     '—Ç•i”‚Ì”½‰f(‰ñ˜H’ïR)
+
+        DefLbl1.Text = cntdef1
+        DefLbl2.Text = cntdef2
+        DefLbl3.Text = cntdef3
+        DefLbl4.Text = cntdef4
+        DefLbl5.Text = cntdef5
+        DefLbl6.Text = cntdef6
+
+
+        If cntdef1 <> 0 Then
+            DefRate1.Text = Slot2.Text / cntdef1 & "%"
+        End If
+        If cntdef2 <> 0 Then
+            DefRate2.Text = Slot3.Text / cntdef2 & "%"
+        End If
+        If cntdef3 <> 0 Then
+            DefRate3.Text = Slot4.Text / cntdef3 & "%"
+        End If
+        If cntdef4 <> 0 Then
+            DefRate4.Text = Slot5.Text / cntdef4 & "%"
+        End If
+        If cntdef5 <> 0 Then
+            DefRate5.Text = Slot6.Text / cntdef5 & "%"
+        End If
+        If cntdef6 <> 0 Then
+            DefRate6.Text = Slot7.Text / cntdef6 & "%"
+        End If
+
 
     End Sub
 
