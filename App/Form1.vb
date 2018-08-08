@@ -415,7 +415,7 @@ Public Class Form1
         Me.SaveCheck.Location = New System.Drawing.Point(212, 614)
         Me.SaveCheck.Name = "SaveCheck"
         Me.SaveCheck.Size = New System.Drawing.Size(77, 16)
-        Me.SaveCheck.TabIndex = 183
+        Me.SaveCheck.TabIndex = 5
         Me.SaveCheck.Text = "Data Save"
         Me.SaveCheck.UseVisualStyleBackColor = True
         '
@@ -425,7 +425,7 @@ Public Class Form1
         Me.OnlineCheck.Location = New System.Drawing.Point(212, 590)
         Me.OnlineCheck.Name = "OnlineCheck"
         Me.OnlineCheck.Size = New System.Drawing.Size(54, 16)
-        Me.OnlineCheck.TabIndex = 182
+        Me.OnlineCheck.TabIndex = 4
         Me.OnlineCheck.Text = "online"
         Me.OnlineCheck.UseVisualStyleBackColor = True
         '
@@ -928,7 +928,7 @@ Public Class Form1
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(96, 44)
-        Me.TextBox1.TabIndex = 221
+        Me.TextBox1.TabIndex = 0
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
@@ -939,7 +939,7 @@ Public Class Form1
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(120, 27)
-        Me.TextBox5.TabIndex = 233
+        Me.TextBox5.TabIndex = 3
         '
         'TextBox4
         '
@@ -949,7 +949,7 @@ Public Class Form1
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(120, 26)
-        Me.TextBox4.TabIndex = 232
+        Me.TextBox4.TabIndex = 2
         '
         'TextBox6
         '
@@ -959,7 +959,7 @@ Public Class Form1
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(120, 27)
-        Me.TextBox6.TabIndex = 231
+        Me.TextBox6.TabIndex = 1
         '
         'Label3
         '
@@ -1584,7 +1584,7 @@ Public Class Form1
         Me.TextBox37.Multiline = True
         Me.TextBox37.Name = "TextBox37"
         Me.TextBox37.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox37.TabIndex = 264
+        Me.TextBox37.TabIndex = 11
         '
         'TextBox36
         '
@@ -1594,7 +1594,7 @@ Public Class Form1
         Me.TextBox36.Multiline = True
         Me.TextBox36.Name = "TextBox36"
         Me.TextBox36.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox36.TabIndex = 263
+        Me.TextBox36.TabIndex = 10
         '
         'TextBox35
         '
@@ -1604,7 +1604,7 @@ Public Class Form1
         Me.TextBox35.Multiline = True
         Me.TextBox35.Name = "TextBox35"
         Me.TextBox35.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox35.TabIndex = 262
+        Me.TextBox35.TabIndex = 9
         '
         'TextBox34
         '
@@ -1614,7 +1614,7 @@ Public Class Form1
         Me.TextBox34.Multiline = True
         Me.TextBox34.Name = "TextBox34"
         Me.TextBox34.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox34.TabIndex = 261
+        Me.TextBox34.TabIndex = 8
         '
         'TextBox33
         '
@@ -1624,7 +1624,7 @@ Public Class Form1
         Me.TextBox33.Multiline = True
         Me.TextBox33.Name = "TextBox33"
         Me.TextBox33.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox33.TabIndex = 260
+        Me.TextBox33.TabIndex = 7
         '
         'TextBox32
         '
@@ -1634,7 +1634,7 @@ Public Class Form1
         Me.TextBox32.Multiline = True
         Me.TextBox32.Name = "TextBox32"
         Me.TextBox32.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox32.TabIndex = 259
+        Me.TextBox32.TabIndex = 6
         '
         'TextBox27
         '
@@ -1797,7 +1797,7 @@ Public Class Form1
         '
         Me.Label33.AutoSize = True
         Me.Label33.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label33.Location = New System.Drawing.Point(517, 119)
+        Me.Label33.Location = New System.Drawing.Point(409, 119)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(63, 14)
         Me.Label33.TabIndex = 243
@@ -1807,7 +1807,7 @@ Public Class Form1
         '
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label32.Location = New System.Drawing.Point(409, 119)
+        Me.Label32.Location = New System.Drawing.Point(513, 120)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(63, 14)
         Me.Label32.TabIndex = 242
@@ -2515,6 +2515,7 @@ Public Class Form1
     Private flag_light As String    '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄ‹ƒtƒ‰ƒO
     Private flag_cnt As String      '“Š“ü‚ÌƒJƒEƒ“ƒgˆ——p
     Private flag_ch As String       '“¯ˆêCH‚©‚Ç‚¤‚©‚ÌŠÄ‹
+    Private flag_def As String      '“¯ˆê•s—Ç‚©‚Ç‚¤‚©‚ÌŠÄ‹
 
     Private cntdef1 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì’á
     Private cntdef2 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì‚
@@ -2527,7 +2528,7 @@ Public Class Form1
         '‚±‚±‚©‚ç
         'Timer1‚Ìİ’è
         Label2.Text = "•\¦‚µ‚Ü‚·B"
-        Timer1.Interval = 10 '.01•b‚ÌƒCƒ“ƒ^[ƒoƒ‹‚Åî•ñ‚ğXV
+        Timer1.Interval = 100 '.1•b‚ÌƒCƒ“ƒ^[ƒoƒ‹‚Åî•ñ‚ğXV
         Timer1.Enabled = True 'ƒ^ƒCƒ}[‚ğ—LŒø‚É‚·‚é
 
 
@@ -2656,47 +2657,149 @@ Public Class Form1
         '```````````````````ƒJƒEƒ“ƒgˆ—````````````````````````
         If dathex.StartsWith("6") Or dathex.StartsWith("7") Then           'dathex‚É“ü‚Á‚Ä‚¢‚éî•ñ‚ğƒ`ƒFƒbƒN@startswith‚Í16bitî•ñ‚ÌÅ‰‚Ì4bit‚Ì‚İ‚ğQÆ‚·‚é‹@”\‚Å‚ ‚é
 
-            If flag_cnt <> "6" Then                                       '’l‚ª6‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH4‚É“Š“ü‚ ‚è‚É‚È‚éB
-                cntslot += 1                                              '“Š“ü”‚ğ1‘‚â‚·
+
+            If dathex.StartsWith("6") Then
+
+                If flag_cnt <> "6" Then                                       '’l‚ª6‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH4‚É“Š“ü‚ ‚è‚É‚È‚éB
+
+                    cntslot += 1                                              '“Š“ü”‚ğ1‘‚â‚·
+
+                End If
+                flag_cnt = "6"                                                '˜A‘±‚Å“¯‚¶M†‚ğƒJƒEƒ“ƒg‚µ‚È‚¢‚æ‚¤‚Éflag_cnt‚Éó‘Ô‚ğ‹L“ü‚·‚é
+
             End If
-            flag_cnt = "6"                                                '˜A‘±‚Å“¯‚¶M†‚ğƒJƒEƒ“ƒg‚µ‚È‚¢‚æ‚¤‚Éflag_cnt‚Éó‘Ô‚ğ‹L“ü‚·‚é
+
+            If flag_def <> "CH4" Then
+                Def_count(dathex, "CH4")
+            End If
 
         ElseIf dathex.StartsWith("8") Or dathex.StartsWith("9") Then      'CH3ƒ`ƒFƒbƒN
-            If flag_cnt <> "8" Then                                       '’l‚ª8‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH3‚É“Š“ü‚ ‚è‚É‚È‚éB
-                cntslot += 1                                              '‚±‚Ì‚ ‚Æ‚Ìˆ—‚Íã‚Æ“¯‚¶
-            End If
-            flag_cnt = "8"
 
+            If flag_def <> "CH3" Then
+                Def_count(dathex, "CH3")
+            End If
+
+
+
+            If dathex.StartsWith("8") Then
+                If flag_cnt <> "8" Then                                       '’l‚ª8‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH3‚É“Š“ü‚ ‚è‚É‚È‚éB
+                    cntslot += 1                                              '‚±‚Ì‚ ‚Æ‚Ìˆ—‚Íã‚Æ“¯‚¶
+                End If
+                flag_cnt = "8"
+            End If
         ElseIf dathex.StartsWith("A") Or dathex.StartsWith("B") Then      'CH2ƒ`ƒFƒbƒN
-            If flag_cnt <> "A" Then                                       '’l‚ªA‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH2‚É“Š“ü‚ ‚è‚É‚È‚éB
-                cntslot += 1
-            End If
-            flag_cnt = "A"
 
+            If flag_def <> "CH2" Then
+                Def_count(dathex, "CH2")
+            End If
+
+            If dathex.StartsWith("A") Then
+                If flag_cnt <> "A" Then                                       '’l‚ªA‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH2‚É“Š“ü‚ ‚è‚É‚È‚éB
+                    cntslot += 1
+                End If
+                flag_cnt = "A"
+            End If
 
 
         ElseIf dathex.StartsWith("C") Or dathex.StartsWith("D") Then      'CH1ƒ`ƒFƒbƒN
-            If dathex Like "CE??" Or "DE??" Then
-                cntdef5 += 1
 
-
+            If flag_def <> "CH1" Then
+                Def_count(dathex, "CH1")
             End If
 
-            If flag_cnt <> "C" Then                                       '’l‚ªC‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH1‚É“Š“ü‚ ‚è‚É‚È‚éB
-                cntslot += 1
+            If dathex.StartsWith("C") Then
+                If flag_cnt <> "C" Then                                       '’l‚ªC‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚ÍCH1‚É“Š“ü‚ ‚è‚É‚È‚éB
+                    cntslot += 1
+                End If
+                flag_cnt = "C"
             End If
-            flag_cnt = "C"
-
         Else                                                              'ã‹L‘S‚Ä‚Ìó‘Ô‚É‘Î‰‚µ‚È‚©‚Á‚½ê‡“Š“ü‚È‚µ‚Æ”»’f‚µflag_cnt‚ğƒŠƒZƒbƒg‚·‚é
-            flag_cnt = "0"                                              @'‚±‚ê‚ğƒRƒƒ“ƒgƒAƒEƒg‚·‚é‚ÆCH1‚É“Š“üCH2~4‚È‚µ‚ª˜A‘±‚Å‘±‚¢‚½ê‡ƒJƒEƒ“ƒg‚ğs‚í‚È‚¢
+            flag_cnt = "0"                                               '‚±‚ê‚ğƒRƒƒ“ƒgƒAƒEƒg‚·‚é‚ÆCH1‚É“Š“üCH2~4‚È‚µ‚ª˜A‘±‚Å‘±‚¢‚½ê‡ƒJƒEƒ“ƒg‚ğs‚í‚È‚¢
         End If
 
 
 
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
+    End Sub
+
+
+
+    Private Sub Def_count(datdef As String, ch As String)
+
+        If flag_ch <> ch Then
+
+            If datdef Like "?E??" Then
+
+                cntdef5 += 1
+
+            ElseIf datdef Like "?D??" Then
+
+                cntdef6 += 1
+
+            ElseIf datdef Like "?C??" Then
+
+                cntdef5 += 1
+                cntdef6 += 1
+
+            End If
+
+            If datdef Like "??E?" Then
+                cntdef1 += 1
+            ElseIf datdef Like "??D?" Then
+                cntdef2 += 1
+            ElseIf datdef Like "??C?" Then
+                cntdef1 += 1
+                cntdef2 += 1
+            ElseIf datdef Like "??B?" Then
+                cntdef1 += 1
+                cntdef3 += 1
+            ElseIf datdef Like "??A?" Then
+                cntdef1 += 1
+                cntdef3 += 1
+            ElseIf datdef Like "??9?" Then
+                cntdef2 += 1
+                cntdef3 += 1
+            ElseIf datdef Like "??8?" Then
+                cntdef1 += 1
+                cntdef2 += 1
+                cntdef3 += 1
+            ElseIf datdef Like "??7?" Then
+                cntdef4 += 1
+            ElseIf datdef Like "??6?" Then
+                cntdef1 += 1
+                cntdef4 += 1
+            ElseIf datdef Like "??5?" Then
+                cntdef2 += 1
+                cntdef4 += 1
+            ElseIf datdef Like "??4?" Then
+                cntdef1 += 1
+                cntdef2 += 1
+                cntdef4 += 1
+            ElseIf datdef Like "??3?" Then
+                cntdef3 += 1
+                cntdef4 += 1
+            ElseIf datdef Like "??2?" Then
+                cntdef1 += 1
+                cntdef3 += 1
+                cntdef4 += 1
+            ElseIf datdef Like "??1?" Then
+                cntdef2 += 1
+                cntdef3 += 1
+                cntdef4 += 1
+            ElseIf datdef Like "??0?" Then
+                cntdef1 += 1
+                cntdef2 += 1
+                cntdef3 += 1
+                cntdef4 += 1
+            End If
+
+            flag_ch = ch
+
+        End If
 
 
     End Sub
+
 
     Private Sub Slot_LabelChanged(sender As Object, e As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
 
@@ -2705,12 +2808,12 @@ Public Class Form1
         Slot4.Text = Slot3.Text - cntdef2      'ŒŸ¸”‚Ì”½‰f(•œ‹A‚)
         Slot5.Text = Slot4.Text - cntdef3      'ŒŸ¸”‚Ì”½‰f(•œ‹A’á)
         Slot6.Text = Slot5.Text - cntdef4      'ŒŸ¸”‚Ì”½‰f(‘Ïˆ³â‰)
-        Slot7.Text = Slot6.Text - cntdef5       'ŒŸ¸”‚Ì”½‰f(‰ñ˜H’ïR)
+        Slot7.Text = Slot6.Text - cntdef5      'ŒŸ¸”‚Ì”½‰f(‰ñ˜H’ïR)
 
-        Good1.Text = Slot2.Text - cntdef1     '—Ç•i”‚Ì”½‰f(“®ì‚)
+        Good1.Text = Slot2.Text - cntdef1     '—Ç•i”‚Ì”½‰f(“®ì’á)
         Good2.Text = Slot3.Text - cntdef2     '—Ç•i”‚Ì”½‰f(“®ì‚)
         Good3.Text = Slot4.Text - cntdef3   @'—Ç•i”‚Ì”½‰f(•œ‹A‚)
-        Good4.Text = Slot5.Text - cntdef4     '—Ç•i”‚Ì”½‰f(•œ‹A‚)
+        Good4.Text = Slot5.Text - cntdef4     '—Ç•i”‚Ì”½‰f(•œ‹A’á)
         Good5.Text = Slot6.Text - cntdef5     '—Ç•i”‚Ì”½‰f(‘Ïˆ³â‰)
         Good6.Text = Slot7.Text - cntdef6     '—Ç•i”‚Ì”½‰f(‰ñ˜H’ïR)
 
@@ -2723,22 +2826,22 @@ Public Class Form1
 
 
         If cntdef1 <> 0 Then
-            DefRate1.Text = Slot2.Text / cntdef1 & "%"
+            DefRate1.Text = Math.Round(cntdef1 / Slot2.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"  '¬”“_3ˆÊˆÈ‰º‚ÉlÌŒÜ“ü‚ğs‚¤
         End If
         If cntdef2 <> 0 Then
-            DefRate2.Text = Slot3.Text / cntdef2 & "%"
+            DefRate2.Text = Math.Round(cntdef2 / Slot3.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"
         End If
         If cntdef3 <> 0 Then
-            DefRate3.Text = Slot4.Text / cntdef3 & "%"
+            DefRate3.Text = Math.Round(cntdef3 / Slot4.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"
         End If
         If cntdef4 <> 0 Then
-            DefRate4.Text = Slot5.Text / cntdef4 & "%"
+            DefRate4.Text = Math.Round(cntdef4 / Slot5.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"
         End If
         If cntdef5 <> 0 Then
-            DefRate5.Text = Slot6.Text / cntdef5 & "%"
+            DefRate5.Text = Math.Round(cntdef5 / Slot6.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"
         End If
         If cntdef6 <> 0 Then
-            DefRate6.Text = Slot7.Text / cntdef6 & "%"
+            DefRate6.Text = Math.Round(cntdef6 / Slot7.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"
         End If
 
 
@@ -2773,7 +2876,6 @@ Public Class Form1
         End If
 
         'DataSave‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒXˆ—‚ğ‹Lq
-
 
 
     End Sub
