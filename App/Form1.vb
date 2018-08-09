@@ -2512,6 +2512,7 @@ Public Class Form1
 
     Private Const pio_id As Integer = 0   'USBPIO のID　4号機は0番を使用
     Private cntslot As Integer      '投入をslotと表現　投入のカウント
+    Private numtable As Integer    '1テーブルあたりの投入数
     Private cnttable As Integer     'テーブルにいくつあるかを記憶する変数
     Private Table(37) As Short      '各テーブル用の配列　検査項目は38番目(回路抵抗の前)までわかればいいので全テーブル分(54個)確保しない
 
@@ -2521,6 +2522,7 @@ Public Class Form1
     Private flag_cnt As String      '投入時のカウント処理用
     Private flag_ch As String       '同一CHかどうかの監視
     Private flag_def As String      '同一不良かどうかの監視
+
 
     Private cntdef1 As Integer     '不良カウント動作低
     Private cntdef2 As Integer     '不良カウント動作高
@@ -2533,8 +2535,11 @@ Public Class Form1
         'ここから
         'Timer1の設定
         Label2.Text = "表示します。"
-        Timer1.Interval = 100 '.1秒のインターバルで情報を更新
+        Timer1.Interval = 100 '0.1秒のインターバルで情報を更新
         Timer1.Enabled = True 'タイマーを有効にする
+
+        Timer2.Interval = 1000 '1秒のインターバルで情報を更新
+        Timer2.Enabled = True 'タイマーを有効にする
 
         Timer3.Interval = 5000 '5秒のインターバルで情報を更新
         Timer3.Enabled = True 'タイマーを有効にする
@@ -2670,13 +2675,23 @@ Public Class Form1
                 If flag_cnt <> "6" Then                                       '値が6であった場合の処理、この場合はCH4時に投入ありになる。
 
                     cntslot += 1                                              '投入数を1増やす
-
+                    cnttable += 1
                 End If
                 flag_cnt = "6"                                                '連続で同じ信号をカウントしないようにflag_cntに状態を記入する
 
             End If
 
             If flag_def <> "CH4" Then
+
+                If numtable <> 37 Then
+                    Table(numtable) = cnttable
+                    cnttable = 0
+                    numtable += 1
+                ElseIf
+
+
+                End If
+
                 Def_count(dathex, "CH4")
             End If
 
@@ -2691,6 +2706,7 @@ Public Class Form1
             If dathex.StartsWith("8") Then
                 If flag_cnt <> "8" Then                                       '値が8であった場合の処理、この場合はCH3時に投入ありになる。
                     cntslot += 1                                              'このあとの処理は上と同じ
+                    cnttable += 1
                 End If
                 flag_cnt = "8"
             End If
@@ -2703,6 +2719,7 @@ Public Class Form1
             If dathex.StartsWith("A") Then
                 If flag_cnt <> "A" Then                                       '値がAであった場合の処理、この場合はCH2時に投入ありになる。
                     cntslot += 1
+                    cnttable += 1
                 End If
                 flag_cnt = "A"
             End If
@@ -2717,6 +2734,7 @@ Public Class Form1
             If dathex.StartsWith("C") Then
                 If flag_cnt <> "C" Then                                       '値がCであった場合の処理、この場合はCH1時に投入ありになる。
                     cntslot += 1
+                    cnttable += 1
                 End If
                 flag_cnt = "C"
             End If
@@ -2902,13 +2920,7 @@ Public Class Form1
 
     '～～～～～～～～～～～～～～～～～年月日と時刻の表示処理～～～～～～～～～～～～～～～～～～～～～
 
-    Private Sub Form1_Load3(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
-        'ここから
-        'Timer1の設定
-        Timer2.Interval = 1000 '1秒のインターバルで情報を更新
-        Timer2.Enabled = True 'タイマーを有効にする
 
-    End Sub
 
     Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick         '上のタイマーが更新されるたびにイベント発生
 
