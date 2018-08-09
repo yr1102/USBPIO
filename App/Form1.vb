@@ -150,12 +150,12 @@ Public Class Form1
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents TextBox24 As TextBox
     Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents DefImg6 As PictureBox
+    Friend WithEvents DefImg5 As PictureBox
+    Friend WithEvents DefImg4 As PictureBox
+    Friend WithEvents DefImg3 As PictureBox
+    Friend WithEvents DefImg2 As PictureBox
+    Friend WithEvents DefImg1 As PictureBox
     Friend WithEvents Label35 As Label
     Friend WithEvents Label34 As Label
     Friend WithEvents Label33 As Label
@@ -192,6 +192,7 @@ Public Class Form1
     Friend WithEvents DefRate4 As Label
     Friend WithEvents DefRate5 As Label
     Friend WithEvents DefRate6 As Label
+    Friend WithEvents Timer3 As Timer
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -321,12 +322,12 @@ Public Class Form1
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.DefImg6 = New System.Windows.Forms.PictureBox()
+        Me.DefImg5 = New System.Windows.Forms.PictureBox()
+        Me.DefImg4 = New System.Windows.Forms.PictureBox()
+        Me.DefImg3 = New System.Windows.Forms.PictureBox()
+        Me.DefImg2 = New System.Windows.Forms.PictureBox()
+        Me.DefImg1 = New System.Windows.Forms.PictureBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -363,6 +364,7 @@ Public Class Form1
         Me.DefRate4 = New System.Windows.Forms.Label()
         Me.DefRate5 = New System.Windows.Forms.Label()
         Me.DefRate6 = New System.Windows.Forms.Label()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -374,12 +376,12 @@ Public Class Form1
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DefImg6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DefImg5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DefImg4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DefImg3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DefImg2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DefImg1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -1713,65 +1715,65 @@ Public Class Form1
         Me.TextBox25.Size = New System.Drawing.Size(89, 27)
         Me.TextBox25.TabIndex = 252
         '
-        'PictureBox9
+        'DefImg6
         '
-        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox9.Location = New System.Drawing.Point(715, 148)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(89, 48)
-        Me.PictureBox9.TabIndex = 251
-        Me.PictureBox9.TabStop = False
+        Me.DefImg6.BackColor = System.Drawing.Color.Transparent
+        Me.DefImg6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefImg6.Location = New System.Drawing.Point(715, 148)
+        Me.DefImg6.Name = "DefImg6"
+        Me.DefImg6.Size = New System.Drawing.Size(89, 48)
+        Me.DefImg6.TabIndex = 251
+        Me.DefImg6.TabStop = False
         '
-        'PictureBox8
+        'DefImg5
         '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox8.Location = New System.Drawing.Point(608, 148)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(89, 48)
-        Me.PictureBox8.TabIndex = 250
-        Me.PictureBox8.TabStop = False
+        Me.DefImg5.BackColor = System.Drawing.Color.Transparent
+        Me.DefImg5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefImg5.Location = New System.Drawing.Point(608, 148)
+        Me.DefImg5.Name = "DefImg5"
+        Me.DefImg5.Size = New System.Drawing.Size(89, 48)
+        Me.DefImg5.TabIndex = 250
+        Me.DefImg5.TabStop = False
         '
-        'PictureBox7
+        'DefImg4
         '
-        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox7.Location = New System.Drawing.Point(501, 148)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(89, 48)
-        Me.PictureBox7.TabIndex = 249
-        Me.PictureBox7.TabStop = False
+        Me.DefImg4.BackColor = System.Drawing.Color.Transparent
+        Me.DefImg4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefImg4.Location = New System.Drawing.Point(501, 148)
+        Me.DefImg4.Name = "DefImg4"
+        Me.DefImg4.Size = New System.Drawing.Size(89, 48)
+        Me.DefImg4.TabIndex = 249
+        Me.DefImg4.TabStop = False
         '
-        'PictureBox6
+        'DefImg3
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox6.Location = New System.Drawing.Point(394, 148)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(89, 48)
-        Me.PictureBox6.TabIndex = 248
-        Me.PictureBox6.TabStop = False
+        Me.DefImg3.BackColor = System.Drawing.Color.Transparent
+        Me.DefImg3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefImg3.Location = New System.Drawing.Point(394, 148)
+        Me.DefImg3.Name = "DefImg3"
+        Me.DefImg3.Size = New System.Drawing.Size(89, 48)
+        Me.DefImg3.TabIndex = 248
+        Me.DefImg3.TabStop = False
         '
-        'PictureBox5
+        'DefImg2
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox5.Location = New System.Drawing.Point(287, 148)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(89, 48)
-        Me.PictureBox5.TabIndex = 247
-        Me.PictureBox5.TabStop = False
+        Me.DefImg2.BackColor = System.Drawing.Color.Transparent
+        Me.DefImg2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefImg2.Location = New System.Drawing.Point(287, 148)
+        Me.DefImg2.Name = "DefImg2"
+        Me.DefImg2.Size = New System.Drawing.Size(89, 48)
+        Me.DefImg2.TabIndex = 247
+        Me.DefImg2.TabStop = False
         '
-        'PictureBox4
+        'DefImg1
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox4.Location = New System.Drawing.Point(181, 148)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(89, 48)
-        Me.PictureBox4.TabIndex = 246
-        Me.PictureBox4.TabStop = False
+        Me.DefImg1.BackColor = System.Drawing.Color.Transparent
+        Me.DefImg1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefImg1.Location = New System.Drawing.Point(181, 148)
+        Me.DefImg1.Name = "DefImg1"
+        Me.DefImg1.Size = New System.Drawing.Size(89, 48)
+        Me.DefImg1.TabIndex = 246
+        Me.DefImg1.TabStop = False
         '
         'Label35
         '
@@ -1807,7 +1809,7 @@ Public Class Form1
         '
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label32.Location = New System.Drawing.Point(513, 120)
+        Me.Label32.Location = New System.Drawing.Point(513, 119)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(63, 14)
         Me.Label32.TabIndex = 242
@@ -1902,61 +1904,61 @@ Public Class Form1
         'Slot2
         '
         Me.Slot2.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot2.Location = New System.Drawing.Point(194, 221)
+        Me.Slot2.Location = New System.Drawing.Point(191, 221)
         Me.Slot2.Name = "Slot2"
-        Me.Slot2.Size = New System.Drawing.Size(63, 24)
+        Me.Slot2.Size = New System.Drawing.Size(66, 24)
         Me.Slot2.TabIndex = 318
-        Me.Slot2.Text = "100"
+        Me.Slot2.Text = "0"
         Me.Slot2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Slot3
         '
         Me.Slot3.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot3.Location = New System.Drawing.Point(305, 222)
+        Me.Slot3.Location = New System.Drawing.Point(299, 222)
         Me.Slot3.Name = "Slot3"
-        Me.Slot3.Size = New System.Drawing.Size(53, 20)
+        Me.Slot3.Size = New System.Drawing.Size(59, 20)
         Me.Slot3.TabIndex = 319
-        Me.Slot3.Text = "100"
+        Me.Slot3.Text = "0"
         Me.Slot3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Slot5
         '
         Me.Slot5.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot5.Location = New System.Drawing.Point(519, 222)
+        Me.Slot5.Location = New System.Drawing.Point(513, 222)
         Me.Slot5.Name = "Slot5"
-        Me.Slot5.Size = New System.Drawing.Size(53, 20)
+        Me.Slot5.Size = New System.Drawing.Size(59, 20)
         Me.Slot5.TabIndex = 321
-        Me.Slot5.Text = "100"
+        Me.Slot5.Text = "0"
         Me.Slot5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Slot4
         '
         Me.Slot4.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot4.Location = New System.Drawing.Point(411, 222)
+        Me.Slot4.Location = New System.Drawing.Point(405, 222)
         Me.Slot4.Name = "Slot4"
-        Me.Slot4.Size = New System.Drawing.Size(53, 20)
+        Me.Slot4.Size = New System.Drawing.Size(59, 20)
         Me.Slot4.TabIndex = 320
-        Me.Slot4.Text = "100"
+        Me.Slot4.Text = "0"
         Me.Slot4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Slot7
         '
         Me.Slot7.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot7.Location = New System.Drawing.Point(734, 222)
+        Me.Slot7.Location = New System.Drawing.Point(728, 222)
         Me.Slot7.Name = "Slot7"
-        Me.Slot7.Size = New System.Drawing.Size(53, 20)
+        Me.Slot7.Size = New System.Drawing.Size(59, 20)
         Me.Slot7.TabIndex = 323
-        Me.Slot7.Text = "100"
+        Me.Slot7.Text = "0"
         Me.Slot7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Slot6
         '
         Me.Slot6.Font = New System.Drawing.Font("MS UI Gothic", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot6.Location = New System.Drawing.Point(626, 222)
+        Me.Slot6.Location = New System.Drawing.Point(618, 222)
         Me.Slot6.Name = "Slot6"
-        Me.Slot6.Size = New System.Drawing.Size(53, 20)
+        Me.Slot6.Size = New System.Drawing.Size(61, 20)
         Me.Slot6.TabIndex = 322
-        Me.Slot6.Text = "100"
+        Me.Slot6.Text = "0"
         Me.Slot6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Good1
@@ -1966,7 +1968,7 @@ Public Class Form1
         Me.Good1.Name = "Good1"
         Me.Good1.Size = New System.Drawing.Size(63, 24)
         Me.Good1.TabIndex = 324
-        Me.Good1.Text = "100"
+        Me.Good1.Text = "0"
         Me.Good1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefLbl1
@@ -1976,7 +1978,7 @@ Public Class Form1
         Me.DefLbl1.Name = "DefLbl1"
         Me.DefLbl1.Size = New System.Drawing.Size(63, 20)
         Me.DefLbl1.TabIndex = 325
-        Me.DefLbl1.Text = "100"
+        Me.DefLbl1.Text = "0"
         Me.DefLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefLbl2
@@ -1986,7 +1988,7 @@ Public Class Form1
         Me.DefLbl2.Name = "DefLbl2"
         Me.DefLbl2.Size = New System.Drawing.Size(63, 20)
         Me.DefLbl2.TabIndex = 326
-        Me.DefLbl2.Text = "100"
+        Me.DefLbl2.Text = "0"
         Me.DefLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefLbl3
@@ -1996,7 +1998,7 @@ Public Class Form1
         Me.DefLbl3.Name = "DefLbl3"
         Me.DefLbl3.Size = New System.Drawing.Size(63, 20)
         Me.DefLbl3.TabIndex = 327
-        Me.DefLbl3.Text = "100"
+        Me.DefLbl3.Text = "0"
         Me.DefLbl3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefLbl4
@@ -2006,7 +2008,7 @@ Public Class Form1
         Me.DefLbl4.Name = "DefLbl4"
         Me.DefLbl4.Size = New System.Drawing.Size(63, 20)
         Me.DefLbl4.TabIndex = 328
-        Me.DefLbl4.Text = "100"
+        Me.DefLbl4.Text = "0"
         Me.DefLbl4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefLbl5
@@ -2016,7 +2018,7 @@ Public Class Form1
         Me.DefLbl5.Name = "DefLbl5"
         Me.DefLbl5.Size = New System.Drawing.Size(63, 20)
         Me.DefLbl5.TabIndex = 329
-        Me.DefLbl5.Text = "100"
+        Me.DefLbl5.Text = "0"
         Me.DefLbl5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefLbl6
@@ -2026,7 +2028,7 @@ Public Class Form1
         Me.DefLbl6.Name = "DefLbl6"
         Me.DefLbl6.Size = New System.Drawing.Size(63, 20)
         Me.DefLbl6.TabIndex = 330
-        Me.DefLbl6.Text = "100"
+        Me.DefLbl6.Text = "0"
         Me.DefLbl6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Good2
@@ -2036,7 +2038,7 @@ Public Class Form1
         Me.Good2.Name = "Good2"
         Me.Good2.Size = New System.Drawing.Size(63, 20)
         Me.Good2.TabIndex = 331
-        Me.Good2.Text = "100"
+        Me.Good2.Text = "0"
         Me.Good2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Good3
@@ -2046,7 +2048,7 @@ Public Class Form1
         Me.Good3.Name = "Good3"
         Me.Good3.Size = New System.Drawing.Size(63, 20)
         Me.Good3.TabIndex = 332
-        Me.Good3.Text = "100"
+        Me.Good3.Text = "0"
         Me.Good3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Good4
@@ -2056,7 +2058,7 @@ Public Class Form1
         Me.Good4.Name = "Good4"
         Me.Good4.Size = New System.Drawing.Size(63, 20)
         Me.Good4.TabIndex = 333
-        Me.Good4.Text = "100"
+        Me.Good4.Text = "0"
         Me.Good4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Good5
@@ -2066,7 +2068,7 @@ Public Class Form1
         Me.Good5.Name = "Good5"
         Me.Good5.Size = New System.Drawing.Size(63, 20)
         Me.Good5.TabIndex = 334
-        Me.Good5.Text = "100"
+        Me.Good5.Text = "0"
         Me.Good5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Good6
@@ -2076,7 +2078,7 @@ Public Class Form1
         Me.Good6.Name = "Good6"
         Me.Good6.Size = New System.Drawing.Size(63, 20)
         Me.Good6.TabIndex = 335
-        Me.Good6.Text = "100"
+        Me.Good6.Text = "0"
         Me.Good6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DefRate1
@@ -2138,6 +2140,9 @@ Public Class Form1
         Me.DefRate6.TabIndex = 341
         Me.DefRate6.Text = "0%"
         Me.DefRate6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Timer3
+        '
         '
         'Form1
         '
@@ -2235,12 +2240,12 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox23)
         Me.Controls.Add(Me.TextBox24)
         Me.Controls.Add(Me.TextBox25)
-        Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.DefImg6)
+        Me.Controls.Add(Me.DefImg5)
+        Me.Controls.Add(Me.DefImg4)
+        Me.Controls.Add(Me.DefImg3)
+        Me.Controls.Add(Me.DefImg2)
+        Me.Controls.Add(Me.DefImg1)
         Me.Controls.Add(Me.Label35)
         Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label33)
@@ -2322,12 +2327,12 @@ Public Class Form1
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DefImg6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DefImg5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DefImg4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DefImg3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DefImg2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DefImg1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2531,6 +2536,8 @@ Public Class Form1
         Timer1.Interval = 100 '.1ïbÇÃÉCÉìÉ^Å[ÉoÉãÇ≈èÓïÒÇçXêV
         Timer1.Enabled = True 'É^ÉCÉ}Å[ÇóLå¯Ç…Ç∑ÇÈ
 
+        Timer3.Interval = 5000 '5ïbÇÃÉCÉìÉ^Å[ÉoÉãÇ≈èÓïÒÇçXêV
+        Timer3.Enabled = True 'É^ÉCÉ}Å[ÇóLå¯Ç…Ç∑ÇÈ
 
 
     End Sub
@@ -2937,5 +2944,41 @@ Public Class Form1
 
 
     'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Ç±Ç±Ç‹Ç≈Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
+
+    Private Sub Change_DefLbl1(sender As Object, e As EventArgs) Handles DefLbl1.TextChanged
+        DefImg1.BackColor = Color.Red
+    End Sub
+
+    Private Sub Change_DefLbl2(sender As Object, e As EventArgs) Handles DefLbl2.TextChanged
+        DefImg2.BackColor = Color.Red
+    End Sub
+
+    Private Sub Change_DefLbl3(sender As Object, e As EventArgs) Handles DefLbl3.TextChanged
+        DefImg3.BackColor = Color.Red
+    End Sub
+
+    Private Sub Change_DefLbl4(sender As Object, e As EventArgs) Handles DefLbl4.TextChanged
+        DefImg4.BackColor = Color.Red
+    End Sub
+
+    Private Sub Change_DefLbl5(sender As Object, e As EventArgs) Handles DefLbl5.TextChanged
+        DefImg5.BackColor = Color.Red
+    End Sub
+
+    Private Sub Change_DefLbl6(sender As Object, e As EventArgs) Handles DefLbl6.TextChanged
+        DefImg6.BackColor = Color.Red
+    End Sub
+
+
+    Private Sub Reset_DefImg(sender As Object, e As EventArgs) Handles Timer3.Tick
+        DefImg1.BackColor = Color.LightGreen
+        DefImg2.BackColor = Color.LightGreen
+        DefImg3.BackColor = Color.LightGreen
+        DefImg4.BackColor = Color.LightGreen
+        DefImg5.BackColor = Color.LightGreen
+        DefImg6.BackColor = Color.LightGreen
+    End Sub
+
+
 
 End Class
