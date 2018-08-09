@@ -2512,9 +2512,9 @@ Public Class Form1
 
     Private Const pio_id As Integer = 0   'USBPIO のID　4号機は0番を使用
     Private cntslot As Integer      '投入をslotと表現　投入のカウント
-    Private numtable As Integer    '1テーブルあたりの投入数
-    Private cnttable As Integer     'テーブルにいくつあるかを記憶する変数
-    Private Table(37) As Short      '各テーブル用の配列　検査項目は38番目(回路抵抗の前)までわかればいいので全テーブル分(54個)確保しない
+    Private numtable As Integer = 0  '1テーブルあたりの投入数
+    Private cnttable As Integer = 0   'テーブルにいくつあるかを記憶する変数
+    Public Table(38) As Short      '各テーブル用の配列　検査項目は38番目(回路抵抗の前)までわかればいいので全テーブル分(54個)確保しない
 
     Private cntred As Integer       '赤点灯の回数をカウントしておく
     Private cntyellow As Integer    '黄点灯の回数をカウントしておく
@@ -2683,14 +2683,17 @@ Public Class Form1
 
             If flag_def <> "CH4" Then
 
-                If numtable <> 37 Then
+                If numtable <> 38 Then
                     Table(numtable) = cnttable
                     cnttable = 0
                     numtable += 1
-                ElseIf
-
+                Else
+                    Table(numtable) = cnttable
+                    cnttable = 0
+                    numtable = 0
 
                 End If
+
 
                 Def_count(dathex, "CH4")
             End If
@@ -2826,21 +2829,50 @@ Public Class Form1
     End Sub
 
 
-    Private Sub Slot_LabelChanged(sender As Object, e As EventArgs) Handles Slot1.TextChanged '変更が加わった場合
 
-        Slot2.Text = Slot1.Text  '-Table(0~3)              '検査数の反映(動作低)       
-        Slot3.Text = Slot1.Text - cntdef1      '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
-        Slot4.Text = Slot3.Text - cntdef2      '検査数の反映(復帰高)
-        Slot5.Text = Slot4.Text - cntdef3      '検査数の反映(復帰低)
-        Slot6.Text = Slot5.Text - cntdef4      '検査数の反映(耐圧絶縁)
-        Slot7.Text = Slot6.Text - cntdef5      '検査数の反映(回路抵抗)
+    Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '変更が加わった場合
+        Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
+        Dim g As Integer = 0, h As Integer = 0, i As Integer = 0, j As Integer = 0, k As Integer = 0, l As Integer = 0
 
-        Good1.Text = Slot2.Text - cntdef1     '良品数の反映(動作低)
-        Good2.Text = Slot3.Text - cntdef2     '良品数の反映(動作高)
-        Good3.Text = Slot4.Text - cntdef3   　'良品数の反映(復帰高)
-        Good4.Text = Slot5.Text - cntdef4     '良品数の反映(復帰低)
-        Good5.Text = Slot6.Text - cntdef5     '良品数の反映(耐圧絶縁)
-        Good6.Text = Slot7.Text - cntdef6     '良品数の反映(回路抵抗)
+        a = Slot_Calc(5)
+        b = Slot_Calc(8)
+        c = Slot_Calc(14)
+        d = Slot_Calc(19)
+        e = Slot_Calc(32)
+        f = Slot_Calc(38)
+
+
+        Slot2.Text = Slot1.Text - a      '検査数の反映(動作低)       
+        Slot3.Text = Slot1.Text - b - cntdef1      '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
+        Slot4.Text = Slot1.Text - c - cntdef1 - cntdef2    '検査数の反映(復帰高)
+        Slot5.Text = Slot1.Text - d - cntdef1 - cntdef2 - cntdef3    '検査数の反映(復帰低)
+        Slot6.Text = Slot1.Text - e - cntdef1 - cntdef2 - cntdef3 - cntdef4  '検査数の反映(耐圧絶縁)
+        Slot7.Text = Slot1.Text - f - cntdef1 - cntdef2 - cntdef3 - cntdef4 - cntdef5   '検査数の反映(回路抵抗)
+
+
+
+        g = a - cntdef1     '良品数の反映(動作低)
+        h = g - cntdef2     '良品数の反映(動作高)
+        i = h - cntdef3   　'良品数の反映(復帰高)
+        j = i - cntdef4     '良品数の反映(復帰低)
+        k = j - cntdef5     '良品数の反映(耐圧絶縁)
+        l = k - cntdef6     '良品数の反映(回路抵抗)
+
+        Good1.Text = g     '良品数の反映(動作低)
+        Good2.Text = h     '良品数の反映(動作高)
+        Good3.Text = i   　'良品数の反映(復帰高)
+        Good4.Text = j    '良品数の反映(復帰低)
+        Good5.Text = k     '良品数の反映(耐圧絶縁)
+        Good6.Text = l      '良品数の反映(回路抵抗)
+
+
+        'Good1.Text = a - cntdef1     '良品数の反映(動作低)
+        'Good2.Text = b - cntdef2     '良品数の反映(動作高)
+        'Good3.Text = c - cntdef3   　'良品数の反映(復帰高)
+        'Good4.Text = d - cntdef4     '良品数の反映(復帰低)
+        'Good5.Text = e - cntdef5     '良品数の反映(耐圧絶縁)
+        'Good6.Text = f - cntdef6     '良品数の反映(回路抵抗)
+
 
         DefLbl1.Text = cntdef1
         DefLbl2.Text = cntdef2
@@ -2871,6 +2903,17 @@ Public Class Form1
 
 
     End Sub
+
+    Private Function Slot_Calc(num As Integer) As Integer
+        Dim slotsum As Integer, i As Integer
+
+        For i = 0 To num Step 1
+            slotsum = slotsum + Table(i)
+        Next i
+        Return slotsum
+
+    End Function
+
 
 
     '～～～～～チェックボックスの処理　DataSaveとOnlineがチェックボックス対応～～～～～～～～～～～～～～
