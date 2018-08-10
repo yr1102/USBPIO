@@ -76,7 +76,6 @@ Public Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox6 As TextBox
@@ -86,7 +85,6 @@ Public Class Form1
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TimeStamp6 As Label
     Friend WithEvents TimeStamp4 As Label
-    Friend WithEvents TimeStamp3 As Label
     Friend WithEvents TimeStamp2 As Label
     Friend WithEvents TimeStamp1 As Label
     Friend WithEvents TimeStamp5 As Label
@@ -103,35 +101,35 @@ Public Class Form1
     Friend WithEvents TextBox74 As TextBox
     Friend WithEvents TextBox73 As TextBox
     Friend WithEvents TextBox66 As TextBox
-    Friend WithEvents TextBox67 As TextBox
+    Friend WithEvents DefSet6 As TextBox
     Friend WithEvents TextBox68 As TextBox
     Friend WithEvents TextBox69 As TextBox
     Friend WithEvents TextBox70 As TextBox
     Friend WithEvents TextBox71 As TextBox
     Friend WithEvents TextBox72 As TextBox
     Friend WithEvents TextBox59 As TextBox
-    Friend WithEvents TextBox60 As TextBox
+    Friend WithEvents DefSet5 As TextBox
     Friend WithEvents TextBox61 As TextBox
     Friend WithEvents TextBox62 As TextBox
     Friend WithEvents TextBox63 As TextBox
     Friend WithEvents TextBox64 As TextBox
     Friend WithEvents TextBox65 As TextBox
     Friend WithEvents TextBox52 As TextBox
-    Friend WithEvents TextBox53 As TextBox
+    Friend WithEvents DefSet4 As TextBox
     Friend WithEvents TextBox54 As TextBox
     Friend WithEvents TextBox55 As TextBox
     Friend WithEvents TextBox56 As TextBox
     Friend WithEvents TextBox57 As TextBox
     Friend WithEvents TextBox58 As TextBox
     Friend WithEvents TextBox45 As TextBox
-    Friend WithEvents TextBox46 As TextBox
+    Friend WithEvents DefSet3 As TextBox
     Friend WithEvents TextBox47 As TextBox
     Friend WithEvents TextBox48 As TextBox
     Friend WithEvents TextBox49 As TextBox
     Friend WithEvents TextBox50 As TextBox
     Friend WithEvents TextBox51 As TextBox
     Friend WithEvents TextBox38 As TextBox
-    Friend WithEvents TextBox39 As TextBox
+    Friend WithEvents DefSet2 As TextBox
     Friend WithEvents TextBox40 As TextBox
     Friend WithEvents TextBox41 As TextBox
     Friend WithEvents TextBox42 As TextBox
@@ -144,7 +142,7 @@ Public Class Form1
     Friend WithEvents TextBox33 As TextBox
     Friend WithEvents TextBox32 As TextBox
     Friend WithEvents TextBox27 As TextBox
-    Friend WithEvents TextBox28 As TextBox
+    Friend WithEvents DefSet1 As TextBox
     Friend WithEvents TextBox29 As TextBox
     Friend WithEvents TextBox26 As TextBox
     Friend WithEvents TextBox23 As TextBox
@@ -193,6 +191,7 @@ Public Class Form1
     Friend WithEvents DefRate5 As Label
     Friend WithEvents DefRate6 As Label
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -258,7 +257,6 @@ Public Class Form1
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TimeStamp6 = New System.Windows.Forms.Label()
         Me.TimeStamp4 = New System.Windows.Forms.Label()
-        Me.TimeStamp3 = New System.Windows.Forms.Label()
         Me.TimeStamp2 = New System.Windows.Forms.Label()
         Me.TimeStamp1 = New System.Windows.Forms.Label()
         Me.TimeStamp5 = New System.Windows.Forms.Label()
@@ -275,35 +273,35 @@ Public Class Form1
         Me.TextBox74 = New System.Windows.Forms.TextBox()
         Me.TextBox73 = New System.Windows.Forms.TextBox()
         Me.TextBox66 = New System.Windows.Forms.TextBox()
-        Me.TextBox67 = New System.Windows.Forms.TextBox()
+        Me.DefSet6 = New System.Windows.Forms.TextBox()
         Me.TextBox68 = New System.Windows.Forms.TextBox()
         Me.TextBox69 = New System.Windows.Forms.TextBox()
         Me.TextBox70 = New System.Windows.Forms.TextBox()
         Me.TextBox71 = New System.Windows.Forms.TextBox()
         Me.TextBox72 = New System.Windows.Forms.TextBox()
         Me.TextBox59 = New System.Windows.Forms.TextBox()
-        Me.TextBox60 = New System.Windows.Forms.TextBox()
+        Me.DefSet5 = New System.Windows.Forms.TextBox()
         Me.TextBox61 = New System.Windows.Forms.TextBox()
         Me.TextBox62 = New System.Windows.Forms.TextBox()
         Me.TextBox63 = New System.Windows.Forms.TextBox()
         Me.TextBox64 = New System.Windows.Forms.TextBox()
         Me.TextBox65 = New System.Windows.Forms.TextBox()
         Me.TextBox52 = New System.Windows.Forms.TextBox()
-        Me.TextBox53 = New System.Windows.Forms.TextBox()
+        Me.DefSet4 = New System.Windows.Forms.TextBox()
         Me.TextBox54 = New System.Windows.Forms.TextBox()
         Me.TextBox55 = New System.Windows.Forms.TextBox()
         Me.TextBox56 = New System.Windows.Forms.TextBox()
         Me.TextBox57 = New System.Windows.Forms.TextBox()
         Me.TextBox58 = New System.Windows.Forms.TextBox()
         Me.TextBox45 = New System.Windows.Forms.TextBox()
-        Me.TextBox46 = New System.Windows.Forms.TextBox()
+        Me.DefSet3 = New System.Windows.Forms.TextBox()
         Me.TextBox47 = New System.Windows.Forms.TextBox()
         Me.TextBox48 = New System.Windows.Forms.TextBox()
         Me.TextBox49 = New System.Windows.Forms.TextBox()
         Me.TextBox50 = New System.Windows.Forms.TextBox()
         Me.TextBox51 = New System.Windows.Forms.TextBox()
         Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.TextBox39 = New System.Windows.Forms.TextBox()
+        Me.DefSet2 = New System.Windows.Forms.TextBox()
         Me.TextBox40 = New System.Windows.Forms.TextBox()
         Me.TextBox41 = New System.Windows.Forms.TextBox()
         Me.TextBox42 = New System.Windows.Forms.TextBox()
@@ -316,7 +314,7 @@ Public Class Form1
         Me.TextBox33 = New System.Windows.Forms.TextBox()
         Me.TextBox32 = New System.Windows.Forms.TextBox()
         Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.DefSet1 = New System.Windows.Forms.TextBox()
         Me.TextBox29 = New System.Windows.Forms.TextBox()
         Me.TextBox26 = New System.Windows.Forms.TextBox()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
@@ -417,7 +415,7 @@ Public Class Form1
         Me.SaveCheck.Location = New System.Drawing.Point(212, 614)
         Me.SaveCheck.Name = "SaveCheck"
         Me.SaveCheck.Size = New System.Drawing.Size(77, 16)
-        Me.SaveCheck.TabIndex = 5
+        Me.SaveCheck.TabIndex = 29
         Me.SaveCheck.Text = "Data Save"
         Me.SaveCheck.UseVisualStyleBackColor = True
         '
@@ -427,7 +425,7 @@ Public Class Form1
         Me.OnlineCheck.Location = New System.Drawing.Point(212, 590)
         Me.OnlineCheck.Name = "OnlineCheck"
         Me.OnlineCheck.Size = New System.Drawing.Size(54, 16)
-        Me.OnlineCheck.TabIndex = 4
+        Me.OnlineCheck.TabIndex = 28
         Me.OnlineCheck.Text = "online"
         Me.OnlineCheck.UseVisualStyleBackColor = True
         '
@@ -879,10 +877,10 @@ Public Class Form1
         '
         'Slot1
         '
-        Me.Slot1.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Slot1.Location = New System.Drawing.Point(467, 72)
+        Me.Slot1.Font = New System.Drawing.Font("MS UI Gothic", 27.0!)
+        Me.Slot1.Location = New System.Drawing.Point(456, 69)
         Me.Slot1.Name = "Slot1"
-        Me.Slot1.Size = New System.Drawing.Size(63, 24)
+        Me.Slot1.Size = New System.Drawing.Size(88, 35)
         Me.Slot1.TabIndex = 226
         Me.Slot1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -919,15 +917,12 @@ Public Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("MS UI Gothic", 27.25!)
         Me.TextBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.TextBox1.Location = New System.Drawing.Point(335, 63)
-        Me.TextBox1.Multiline = True
+        Me.TextBox1.Location = New System.Drawing.Point(334, 63)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(96, 44)
         Me.TextBox1.TabIndex = 0
@@ -1010,62 +1005,55 @@ Public Class Form1
         'TimeStamp6
         '
         Me.TimeStamp6.AutoSize = True
-        Me.TimeStamp6.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TimeStamp6.Location = New System.Drawing.Point(731, 433)
+        Me.TimeStamp6.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
+        Me.TimeStamp6.Location = New System.Drawing.Point(719, 435)
         Me.TimeStamp6.Name = "TimeStamp6"
-        Me.TimeStamp6.Size = New System.Drawing.Size(59, 14)
+        Me.TimeStamp6.Size = New System.Drawing.Size(59, 12)
         Me.TimeStamp6.TabIndex = 317
-        Me.TimeStamp6.Text = "hh:mm:ss"
+        Me.TimeStamp6.Text = "  hh:mm:ss"
         '
         'TimeStamp4
         '
         Me.TimeStamp4.AutoSize = True
-        Me.TimeStamp4.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TimeStamp4.Location = New System.Drawing.Point(517, 433)
+        Me.TimeStamp4.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
+        Me.TimeStamp4.Location = New System.Drawing.Point(504, 435)
         Me.TimeStamp4.Name = "TimeStamp4"
-        Me.TimeStamp4.Size = New System.Drawing.Size(59, 14)
+        Me.TimeStamp4.Size = New System.Drawing.Size(59, 12)
         Me.TimeStamp4.TabIndex = 316
-        Me.TimeStamp4.Text = "hh:mm:ss"
-        '
-        'TimeStamp3
-        '
-        Me.TimeStamp3.AutoSize = True
-        Me.TimeStamp3.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TimeStamp3.Location = New System.Drawing.Point(411, 434)
-        Me.TimeStamp3.Name = "TimeStamp3"
-        Me.TimeStamp3.Size = New System.Drawing.Size(59, 14)
-        Me.TimeStamp3.TabIndex = 315
-        Me.TimeStamp3.Text = "hh:mm:ss"
+        Me.TimeStamp4.Text = "  hh:mm:ss"
         '
         'TimeStamp2
         '
         Me.TimeStamp2.AutoSize = True
-        Me.TimeStamp2.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TimeStamp2.Location = New System.Drawing.Point(302, 434)
+        Me.TimeStamp2.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
+        Me.TimeStamp2.Location = New System.Drawing.Point(291, 435)
         Me.TimeStamp2.Name = "TimeStamp2"
-        Me.TimeStamp2.Size = New System.Drawing.Size(59, 14)
+        Me.TimeStamp2.Size = New System.Drawing.Size(59, 12)
         Me.TimeStamp2.TabIndex = 314
-        Me.TimeStamp2.Text = "hh:mm:ss"
+        Me.TimeStamp2.Text = "  hh:mm:ss"
         '
         'TimeStamp1
         '
+        Me.TimeStamp1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.TimeStamp1.AutoSize = True
-        Me.TimeStamp1.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TimeStamp1.Location = New System.Drawing.Point(197, 433)
+        Me.TimeStamp1.Font = New System.Drawing.Font("MS UI Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.TimeStamp1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TimeStamp1.Location = New System.Drawing.Point(185, 433)
         Me.TimeStamp1.Name = "TimeStamp1"
-        Me.TimeStamp1.Size = New System.Drawing.Size(59, 14)
+        Me.TimeStamp1.Size = New System.Drawing.Size(59, 12)
         Me.TimeStamp1.TabIndex = 313
-        Me.TimeStamp1.Text = "hh:mm:ss"
+        Me.TimeStamp1.Text = "  hh:mm:ss"
+        Me.TimeStamp1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TimeStamp5
         '
         Me.TimeStamp5.AutoSize = True
-        Me.TimeStamp5.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TimeStamp5.Location = New System.Drawing.Point(624, 433)
+        Me.TimeStamp5.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
+        Me.TimeStamp5.Location = New System.Drawing.Point(612, 435)
         Me.TimeStamp5.Name = "TimeStamp5"
-        Me.TimeStamp5.Size = New System.Drawing.Size(59, 14)
+        Me.TimeStamp5.Size = New System.Drawing.Size(59, 12)
         Me.TimeStamp5.TabIndex = 312
-        Me.TimeStamp5.Text = "hh:mm:ss"
+        Me.TimeStamp5.Text = "  hh:mm:ss"
         '
         'PictureBox15
         '
@@ -1165,11 +1153,15 @@ Public Class Form1
         Me.TextBox75.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox75.Enabled = False
+        Me.TextBox75.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TextBox75.ForeColor = System.Drawing.Color.Black
         Me.TextBox75.Location = New System.Drawing.Point(394, 431)
         Me.TextBox75.Multiline = True
         Me.TextBox75.Name = "TextBox75"
         Me.TextBox75.Size = New System.Drawing.Size(89, 26)
         Me.TextBox75.TabIndex = 302
+        Me.TextBox75.Text = "hh:mm:ss"
+        Me.TextBox75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox74
         '
@@ -1197,34 +1189,31 @@ Public Class Form1
         '
         Me.TextBox66.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox66.Enabled = False
         Me.TextBox66.Location = New System.Drawing.Point(715, 386)
         Me.TextBox66.Multiline = True
         Me.TextBox66.Name = "TextBox66"
         Me.TextBox66.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox66.TabIndex = 299
+        Me.TextBox66.TabIndex = 21
         '
-        'TextBox67
+        'DefSet6
         '
-        Me.TextBox67.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox67.Enabled = False
-        Me.TextBox67.Location = New System.Drawing.Point(715, 337)
-        Me.TextBox67.Multiline = True
-        Me.TextBox67.Name = "TextBox67"
-        Me.TextBox67.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox67.TabIndex = 298
+        Me.DefSet6.BackColor = System.Drawing.SystemColors.Menu
+        Me.DefSet6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet6.Location = New System.Drawing.Point(715, 337)
+        Me.DefSet6.Multiline = True
+        Me.DefSet6.Name = "DefSet6"
+        Me.DefSet6.Size = New System.Drawing.Size(89, 26)
+        Me.DefSet6.TabIndex = 19
         '
         'TextBox68
         '
         Me.TextBox68.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox68.Enabled = False
         Me.TextBox68.Location = New System.Drawing.Point(715, 360)
         Me.TextBox68.Multiline = True
         Me.TextBox68.Name = "TextBox68"
         Me.TextBox68.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox68.TabIndex = 297
+        Me.TextBox68.TabIndex = 20
         '
         'TextBox69
         '
@@ -1274,34 +1263,31 @@ Public Class Form1
         '
         Me.TextBox59.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox59.Enabled = False
         Me.TextBox59.Location = New System.Drawing.Point(608, 386)
         Me.TextBox59.Multiline = True
         Me.TextBox59.Name = "TextBox59"
         Me.TextBox59.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox59.TabIndex = 292
+        Me.TextBox59.TabIndex = 18
         '
-        'TextBox60
+        'DefSet5
         '
-        Me.TextBox60.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox60.Enabled = False
-        Me.TextBox60.Location = New System.Drawing.Point(608, 337)
-        Me.TextBox60.Multiline = True
-        Me.TextBox60.Name = "TextBox60"
-        Me.TextBox60.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox60.TabIndex = 291
+        Me.DefSet5.BackColor = System.Drawing.SystemColors.Menu
+        Me.DefSet5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet5.Location = New System.Drawing.Point(608, 337)
+        Me.DefSet5.Multiline = True
+        Me.DefSet5.Name = "DefSet5"
+        Me.DefSet5.Size = New System.Drawing.Size(89, 26)
+        Me.DefSet5.TabIndex = 16
         '
         'TextBox61
         '
         Me.TextBox61.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox61.Enabled = False
         Me.TextBox61.Location = New System.Drawing.Point(608, 360)
         Me.TextBox61.Multiline = True
         Me.TextBox61.Name = "TextBox61"
         Me.TextBox61.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox61.TabIndex = 290
+        Me.TextBox61.TabIndex = 17
         '
         'TextBox62
         '
@@ -1351,34 +1337,31 @@ Public Class Form1
         '
         Me.TextBox52.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox52.Enabled = False
         Me.TextBox52.Location = New System.Drawing.Point(501, 386)
         Me.TextBox52.Multiline = True
         Me.TextBox52.Name = "TextBox52"
         Me.TextBox52.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox52.TabIndex = 285
+        Me.TextBox52.TabIndex = 15
         '
-        'TextBox53
+        'DefSet4
         '
-        Me.TextBox53.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox53.Enabled = False
-        Me.TextBox53.Location = New System.Drawing.Point(501, 337)
-        Me.TextBox53.Multiline = True
-        Me.TextBox53.Name = "TextBox53"
-        Me.TextBox53.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox53.TabIndex = 284
+        Me.DefSet4.BackColor = System.Drawing.SystemColors.Menu
+        Me.DefSet4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet4.Location = New System.Drawing.Point(501, 337)
+        Me.DefSet4.Multiline = True
+        Me.DefSet4.Name = "DefSet4"
+        Me.DefSet4.Size = New System.Drawing.Size(89, 26)
+        Me.DefSet4.TabIndex = 13
         '
         'TextBox54
         '
         Me.TextBox54.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox54.Enabled = False
         Me.TextBox54.Location = New System.Drawing.Point(501, 360)
         Me.TextBox54.Multiline = True
         Me.TextBox54.Name = "TextBox54"
         Me.TextBox54.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox54.TabIndex = 283
+        Me.TextBox54.TabIndex = 14
         '
         'TextBox55
         '
@@ -1428,34 +1411,33 @@ Public Class Form1
         '
         Me.TextBox45.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox45.Enabled = False
         Me.TextBox45.Location = New System.Drawing.Point(394, 386)
         Me.TextBox45.Multiline = True
         Me.TextBox45.Name = "TextBox45"
         Me.TextBox45.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox45.TabIndex = 278
+        Me.TextBox45.TabIndex = 12
         '
-        'TextBox46
+        'DefSet3
         '
-        Me.TextBox46.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox46.Enabled = False
-        Me.TextBox46.Location = New System.Drawing.Point(394, 337)
-        Me.TextBox46.Multiline = True
-        Me.TextBox46.Name = "TextBox46"
-        Me.TextBox46.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox46.TabIndex = 277
+        Me.DefSet3.BackColor = System.Drawing.SystemColors.Menu
+        Me.DefSet3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet3.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DefSet3.Location = New System.Drawing.Point(394, 337)
+        Me.DefSet3.Multiline = True
+        Me.DefSet3.Name = "DefSet3"
+        Me.DefSet3.Size = New System.Drawing.Size(89, 26)
+        Me.DefSet3.TabIndex = 10
+        Me.DefSet3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox47
         '
         Me.TextBox47.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox47.Enabled = False
         Me.TextBox47.Location = New System.Drawing.Point(394, 360)
         Me.TextBox47.Multiline = True
         Me.TextBox47.Name = "TextBox47"
         Me.TextBox47.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox47.TabIndex = 276
+        Me.TextBox47.TabIndex = 11
         '
         'TextBox48
         '
@@ -1505,34 +1487,33 @@ Public Class Form1
         '
         Me.TextBox38.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox38.Enabled = False
         Me.TextBox38.Location = New System.Drawing.Point(287, 386)
         Me.TextBox38.Multiline = True
         Me.TextBox38.Name = "TextBox38"
         Me.TextBox38.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox38.TabIndex = 271
+        Me.TextBox38.TabIndex = 9
         '
-        'TextBox39
+        'DefSet2
         '
-        Me.TextBox39.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox39.Enabled = False
-        Me.TextBox39.Location = New System.Drawing.Point(287, 337)
-        Me.TextBox39.Multiline = True
-        Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox39.TabIndex = 270
+        Me.DefSet2.BackColor = System.Drawing.SystemColors.Menu
+        Me.DefSet2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DefSet2.Location = New System.Drawing.Point(287, 337)
+        Me.DefSet2.Multiline = True
+        Me.DefSet2.Name = "DefSet2"
+        Me.DefSet2.Size = New System.Drawing.Size(89, 26)
+        Me.DefSet2.TabIndex = 7
+        Me.DefSet2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox40
         '
         Me.TextBox40.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox40.Enabled = False
         Me.TextBox40.Location = New System.Drawing.Point(287, 360)
         Me.TextBox40.Multiline = True
         Me.TextBox40.Name = "TextBox40"
         Me.TextBox40.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox40.TabIndex = 269
+        Me.TextBox40.TabIndex = 8
         '
         'TextBox41
         '
@@ -1586,7 +1567,7 @@ Public Class Form1
         Me.TextBox37.Multiline = True
         Me.TextBox37.Name = "TextBox37"
         Me.TextBox37.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox37.TabIndex = 11
+        Me.TextBox37.TabIndex = 27
         '
         'TextBox36
         '
@@ -1596,7 +1577,7 @@ Public Class Form1
         Me.TextBox36.Multiline = True
         Me.TextBox36.Name = "TextBox36"
         Me.TextBox36.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox36.TabIndex = 10
+        Me.TextBox36.TabIndex = 26
         '
         'TextBox35
         '
@@ -1606,7 +1587,7 @@ Public Class Form1
         Me.TextBox35.Multiline = True
         Me.TextBox35.Name = "TextBox35"
         Me.TextBox35.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox35.TabIndex = 9
+        Me.TextBox35.TabIndex = 25
         '
         'TextBox34
         '
@@ -1616,7 +1597,7 @@ Public Class Form1
         Me.TextBox34.Multiline = True
         Me.TextBox34.Name = "TextBox34"
         Me.TextBox34.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox34.TabIndex = 8
+        Me.TextBox34.TabIndex = 24
         '
         'TextBox33
         '
@@ -1626,7 +1607,7 @@ Public Class Form1
         Me.TextBox33.Multiline = True
         Me.TextBox33.Name = "TextBox33"
         Me.TextBox33.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox33.TabIndex = 7
+        Me.TextBox33.TabIndex = 23
         '
         'TextBox32
         '
@@ -1636,40 +1617,39 @@ Public Class Form1
         Me.TextBox32.Multiline = True
         Me.TextBox32.Name = "TextBox32"
         Me.TextBox32.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox32.TabIndex = 6
+        Me.TextBox32.TabIndex = 22
         '
         'TextBox27
         '
         Me.TextBox27.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox27.Enabled = False
         Me.TextBox27.Location = New System.Drawing.Point(181, 386)
         Me.TextBox27.Multiline = True
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox27.TabIndex = 258
+        Me.TextBox27.TabIndex = 6
         '
-        'TextBox28
+        'DefSet1
         '
-        Me.TextBox28.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox28.Enabled = False
-        Me.TextBox28.Location = New System.Drawing.Point(181, 337)
-        Me.TextBox28.Multiline = True
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox28.TabIndex = 257
+        Me.DefSet1.BackColor = System.Drawing.SystemColors.Menu
+        Me.DefSet1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DefSet1.Location = New System.Drawing.Point(181, 337)
+        Me.DefSet1.Multiline = True
+        Me.DefSet1.Name = "DefSet1"
+        Me.DefSet1.Size = New System.Drawing.Size(89, 26)
+        Me.DefSet1.TabIndex = 4
+        Me.DefSet1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox29
         '
         Me.TextBox29.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox29.Enabled = False
         Me.TextBox29.Location = New System.Drawing.Point(181, 360)
         Me.TextBox29.Multiline = True
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox29.TabIndex = 256
+        Me.TextBox29.TabIndex = 5
         '
         'TextBox26
         '
@@ -2176,7 +2156,6 @@ Public Class Form1
         Me.Controls.Add(Me.Slot2)
         Me.Controls.Add(Me.TimeStamp6)
         Me.Controls.Add(Me.TimeStamp4)
-        Me.Controls.Add(Me.TimeStamp3)
         Me.Controls.Add(Me.TimeStamp2)
         Me.Controls.Add(Me.TimeStamp1)
         Me.Controls.Add(Me.TimeStamp5)
@@ -2193,35 +2172,35 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox74)
         Me.Controls.Add(Me.TextBox73)
         Me.Controls.Add(Me.TextBox66)
-        Me.Controls.Add(Me.TextBox67)
+        Me.Controls.Add(Me.DefSet6)
         Me.Controls.Add(Me.TextBox68)
         Me.Controls.Add(Me.TextBox69)
         Me.Controls.Add(Me.TextBox70)
         Me.Controls.Add(Me.TextBox71)
         Me.Controls.Add(Me.TextBox72)
         Me.Controls.Add(Me.TextBox59)
-        Me.Controls.Add(Me.TextBox60)
+        Me.Controls.Add(Me.DefSet5)
         Me.Controls.Add(Me.TextBox61)
         Me.Controls.Add(Me.TextBox62)
         Me.Controls.Add(Me.TextBox63)
         Me.Controls.Add(Me.TextBox64)
         Me.Controls.Add(Me.TextBox65)
         Me.Controls.Add(Me.TextBox52)
-        Me.Controls.Add(Me.TextBox53)
+        Me.Controls.Add(Me.DefSet4)
         Me.Controls.Add(Me.TextBox54)
         Me.Controls.Add(Me.TextBox55)
         Me.Controls.Add(Me.TextBox56)
         Me.Controls.Add(Me.TextBox57)
         Me.Controls.Add(Me.TextBox58)
         Me.Controls.Add(Me.TextBox45)
-        Me.Controls.Add(Me.TextBox46)
+        Me.Controls.Add(Me.DefSet3)
         Me.Controls.Add(Me.TextBox47)
         Me.Controls.Add(Me.TextBox48)
         Me.Controls.Add(Me.TextBox49)
         Me.Controls.Add(Me.TextBox50)
         Me.Controls.Add(Me.TextBox51)
         Me.Controls.Add(Me.TextBox38)
-        Me.Controls.Add(Me.TextBox39)
+        Me.Controls.Add(Me.DefSet2)
         Me.Controls.Add(Me.TextBox40)
         Me.Controls.Add(Me.TextBox41)
         Me.Controls.Add(Me.TextBox42)
@@ -2234,7 +2213,7 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox33)
         Me.Controls.Add(Me.TextBox32)
         Me.Controls.Add(Me.TextBox27)
-        Me.Controls.Add(Me.TextBox28)
+        Me.Controls.Add(Me.DefSet1)
         Me.Controls.Add(Me.TextBox29)
         Me.Controls.Add(Me.TextBox26)
         Me.Controls.Add(Me.TextBox23)
@@ -2833,12 +2812,12 @@ Public Class Form1
         e = Slot_Calc(32)
         f = Slot_Calc(38)
 
-        Debug.WriteLine(a & "“®ì")
-        Debug.WriteLine(b & "“®ì")
-        Debug.WriteLine(c & "•œ‹A")
-        Debug.WriteLine(d & "•œ‹A")
-        Debug.WriteLine(e & "â‰")
-        Debug.WriteLine(f & "‰ñ˜H")
+        'Debug.WriteLine(a & "“®ì")
+        'Debug.WriteLine(b & "“®ì")
+        'Debug.WriteLine(c & "•œ‹A")
+        'Debug.WriteLine(d & "•œ‹A")
+        'Debug.WriteLine(e & "â‰")
+        'Debug.WriteLine(f & "‰ñ˜H")
 
 
         Slot2.Text = Slot1.Text - a      'ŒŸ¸”‚Ì”½‰f(“®ì’á)       
@@ -2900,6 +2879,57 @@ Public Class Form1
             DefRate6.Text = Math.Round(cntdef6 / Slot7.Text * 100, 2, MidpointRounding.AwayFromZero) & "%"
         End If
 
+
+    End Sub
+
+    Private Sub Slot_LabelChanged2(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
+        If DefSet1.Text = "" Then
+        Else
+            If DefLbl1.Text >= DefSet1.Text Then
+                PictureBox10.BackColor = Color.Red
+            End If
+        End If
+
+        If DefSet2.Text = "" Then
+        Else
+            If DefLbl2.Text >= DefSet2.Text Then
+                PictureBox11.BackColor = Color.Red
+            End If
+        End If
+
+        If DefSet3.Text = "" Then
+
+        Else
+            If DefLbl3.Text >= DefSet3.Text Then
+                PictureBox12.BackColor = Color.Red
+            End If
+
+        End If
+
+        If DefSet4.Text = "" Then
+
+        Else
+            If DefLbl4.Text >= DefSet4.Text Then
+                PictureBox13.BackColor = Color.Red
+            End If
+        End If
+
+        If DefSet5.Text = "" Then
+
+        Else
+            If DefLbl5.Text >= DefSet5.Text Then
+                PictureBox14.BackColor = Color.Red
+            End If
+        End If
+
+        If DefSet5.Text = "" Then
+
+        Else
+            If DefLbl6.Text >= DefSet6.Text Then
+                PictureBox15.BackColor = Color.Red
+            End If
+
+        End If
 
     End Sub
 
@@ -3035,4 +3065,22 @@ Public Class Form1
 
 
 
+    Private Sub Timesave1(sender As Object, e As EventArgs) Handles PictureBox10.BackColorChanged
+        TimeStamp1.Text = Label28.Text
+    End Sub
+    Private Sub Timesave2(sender As Object, e As EventArgs) Handles PictureBox11.BackColorChanged
+        TimeStamp2.Text = Label28.Text
+    End Sub
+    Private Sub Timesave3(sender As Object, e As EventArgs) Handles PictureBox12.BackColorChanged
+        TextBox75.Text = Label28.Text
+    End Sub
+    Private Sub Timesave4(sender As Object, e As EventArgs) Handles PictureBox13.BackColorChanged
+        TimeStamp4.Text = Label28.Text
+    End Sub
+    Private Sub Timesave5(sender As Object, e As EventArgs) Handles PictureBox14.BackColorChanged
+        TimeStamp5.Text = Label28.Text
+    End Sub
+    Private Sub Timesave6(sender As Object, e As EventArgs) Handles PictureBox15.BackColorChanged
+        TimeStamp6.Text = Label28.Text
+    End Sub
 End Class
