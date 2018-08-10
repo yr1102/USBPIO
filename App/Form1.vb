@@ -2515,6 +2515,7 @@ Public Class Form1
     Private numtable As Integer = 0  '1テーブルあたりの投入数
     Private cnttable As Integer = 0   'テーブルにいくつあるかを記憶する変数
     Public Table(38) As Short      '各テーブル用の配列　検査項目は38番目(回路抵抗の前)までわかればいいので全テーブル分(54個)確保しない
+    Private i As Short              'テーブル配列用for文のカウントアップ
 
     Private cntred As Integer       '赤点灯の回数をカウントしておく
     Private cntyellow As Integer    '黄点灯の回数をカウントしておく
@@ -2683,18 +2684,10 @@ Public Class Form1
 
             If flag_def <> "CH4" Then
 
-                If numtable <> 38 Then
-                    Table(numtable) = cnttable
-                    cnttable = 0
-                    numtable += 1
-                Else
-                    Table(numtable) = cnttable
-                    cnttable = 0
-                    numtable = 0
-
-                End If
-
-
+                'For i = 0 To 37 Step 1
+                '    Table(38 - i) = Table(37 - i)
+                'Next
+                'Table(0) = cnttable
                 Def_count(dathex, "CH4")
             End If
 
@@ -2779,7 +2772,6 @@ Public Class Form1
                 cntdef1 += 1
                 cntdef2 += 1
             ElseIf datdef Like "??B?" Then
-                cntdef1 += 1
                 cntdef3 += 1
             ElseIf datdef Like "??A?" Then
                 cntdef1 += 1
@@ -2841,6 +2833,13 @@ Public Class Form1
         e = Slot_Calc(32)
         f = Slot_Calc(38)
 
+        Debug.WriteLine(a & "動作")
+        Debug.WriteLine(b & "動作")
+        Debug.WriteLine(c & "復帰")
+        Debug.WriteLine(d & "復帰")
+        Debug.WriteLine(e & "絶縁")
+        Debug.WriteLine(f & "回路")
+
 
         Slot2.Text = Slot1.Text - a      '検査数の反映(動作低)       
         Slot3.Text = Slot1.Text - b - cntdef1      '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
@@ -2851,12 +2850,12 @@ Public Class Form1
 
 
 
-        g = a - cntdef1     '良品数の反映(動作低)
-        h = g - cntdef2     '良品数の反映(動作高)
-        i = h - cntdef3   　'良品数の反映(復帰高)
-        j = i - cntdef4     '良品数の反映(復帰低)
-        k = j - cntdef5     '良品数の反映(耐圧絶縁)
-        l = k - cntdef6     '良品数の反映(回路抵抗)
+        g = Slot2.Text - cntdef1     '良品数の反映(動作低)
+        h = Slot3.Text - cntdef2     '良品数の反映(動作高)
+        i = Slot4.Text - cntdef3   　'良品数の反映(復帰高)
+        j = Slot5.Text - cntdef4     '良品数の反映(復帰低)
+        k = Slot6.Text - cntdef5     '良品数の反映(耐圧絶縁)
+        l = Slot7.Text - cntdef6     '良品数の反映(回路抵抗)
 
         Good1.Text = g     '良品数の反映(動作低)
         Good2.Text = h     '良品数の反映(動作高)
