@@ -83,23 +83,18 @@ Public Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TimeStamp6 As Label
-    Friend WithEvents TimeStamp4 As Label
-    Friend WithEvents TimeStamp2 As Label
-    Friend WithEvents TimeStamp1 As Label
-    Friend WithEvents TimeStamp5 As Label
-    Friend WithEvents PictureBox15 As PictureBox
-    Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents PictureBox13 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents TextBox78 As TextBox
-    Friend WithEvents TextBox77 As TextBox
-    Friend WithEvents TextBox76 As TextBox
-    Friend WithEvents TextBox75 As TextBox
-    Friend WithEvents TextBox74 As TextBox
-    Friend WithEvents TextBox73 As TextBox
+    Friend WithEvents AlertImg6 As PictureBox
+    Friend WithEvents AlertImg5 As PictureBox
+    Friend WithEvents AlertImg4 As PictureBox
+    Friend WithEvents AlertImg3 As PictureBox
+    Friend WithEvents AlertImg2 As PictureBox
+    Friend WithEvents AlertImg1 As PictureBox
+    Friend WithEvents TimeStamp6 As TextBox
+    Friend WithEvents TimeStamp5 As TextBox
+    Friend WithEvents TimeStamp4 As TextBox
+    Friend WithEvents TimeStamp3 As TextBox
+    Friend WithEvents TimeStamp2 As TextBox
+    Friend WithEvents TimeStamp1 As TextBox
     Friend WithEvents TextBox66 As TextBox
     Friend WithEvents DefSet6 As TextBox
     Friend WithEvents TextBox68 As TextBox
@@ -255,23 +250,18 @@ Public Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TimeStamp6 = New System.Windows.Forms.Label()
-        Me.TimeStamp4 = New System.Windows.Forms.Label()
-        Me.TimeStamp2 = New System.Windows.Forms.Label()
-        Me.TimeStamp1 = New System.Windows.Forms.Label()
-        Me.TimeStamp5 = New System.Windows.Forms.Label()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.TextBox78 = New System.Windows.Forms.TextBox()
-        Me.TextBox77 = New System.Windows.Forms.TextBox()
-        Me.TextBox76 = New System.Windows.Forms.TextBox()
-        Me.TextBox75 = New System.Windows.Forms.TextBox()
-        Me.TextBox74 = New System.Windows.Forms.TextBox()
-        Me.TextBox73 = New System.Windows.Forms.TextBox()
+        Me.AlertImg6 = New System.Windows.Forms.PictureBox()
+        Me.AlertImg5 = New System.Windows.Forms.PictureBox()
+        Me.AlertImg4 = New System.Windows.Forms.PictureBox()
+        Me.AlertImg3 = New System.Windows.Forms.PictureBox()
+        Me.AlertImg2 = New System.Windows.Forms.PictureBox()
+        Me.AlertImg1 = New System.Windows.Forms.PictureBox()
+        Me.TimeStamp6 = New System.Windows.Forms.TextBox()
+        Me.TimeStamp5 = New System.Windows.Forms.TextBox()
+        Me.TimeStamp4 = New System.Windows.Forms.TextBox()
+        Me.TimeStamp3 = New System.Windows.Forms.TextBox()
+        Me.TimeStamp2 = New System.Windows.Forms.TextBox()
+        Me.TimeStamp1 = New System.Windows.Forms.TextBox()
         Me.TextBox66 = New System.Windows.Forms.TextBox()
         Me.DefSet6 = New System.Windows.Forms.TextBox()
         Me.TextBox68 = New System.Windows.Forms.TextBox()
@@ -368,12 +358,12 @@ Public Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SavePic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlertImg6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlertImg5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlertImg4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlertImg3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlertImg2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AlertImg1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -932,31 +922,37 @@ Public Class Form1
         '
         Me.TextBox5.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox5.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
         Me.TextBox5.Location = New System.Drawing.Point(689, 80)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(120, 27)
         Me.TextBox5.TabIndex = 3
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox4
         '
         Me.TextBox4.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
         Me.TextBox4.Location = New System.Drawing.Point(689, 57)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(120, 26)
         Me.TextBox4.TabIndex = 2
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox6
         '
         Me.TextBox6.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox6.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
         Me.TextBox6.Location = New System.Drawing.Point(689, 31)
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(120, 27)
         Me.TextBox6.TabIndex = 1
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label3
         '
@@ -1002,218 +998,187 @@ Public Class Form1
         Me.TextBox3.Size = New System.Drawing.Size(172, 76)
         Me.TextBox3.TabIndex = 227
         '
+        'AlertImg6
+        '
+        Me.AlertImg6.BackColor = System.Drawing.Color.Transparent
+        Me.AlertImg6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AlertImg6.Location = New System.Drawing.Point(715, 452)
+        Me.AlertImg6.Name = "AlertImg6"
+        Me.AlertImg6.Size = New System.Drawing.Size(89, 41)
+        Me.AlertImg6.TabIndex = 311
+        Me.AlertImg6.TabStop = False
+        '
+        'AlertImg5
+        '
+        Me.AlertImg5.BackColor = System.Drawing.Color.Transparent
+        Me.AlertImg5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AlertImg5.Location = New System.Drawing.Point(608, 452)
+        Me.AlertImg5.Name = "AlertImg5"
+        Me.AlertImg5.Size = New System.Drawing.Size(89, 41)
+        Me.AlertImg5.TabIndex = 310
+        Me.AlertImg5.TabStop = False
+        '
+        'AlertImg4
+        '
+        Me.AlertImg4.BackColor = System.Drawing.Color.Transparent
+        Me.AlertImg4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AlertImg4.Location = New System.Drawing.Point(501, 452)
+        Me.AlertImg4.Name = "AlertImg4"
+        Me.AlertImg4.Size = New System.Drawing.Size(89, 41)
+        Me.AlertImg4.TabIndex = 309
+        Me.AlertImg4.TabStop = False
+        '
+        'AlertImg3
+        '
+        Me.AlertImg3.BackColor = System.Drawing.Color.Transparent
+        Me.AlertImg3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AlertImg3.Location = New System.Drawing.Point(394, 452)
+        Me.AlertImg3.Name = "AlertImg3"
+        Me.AlertImg3.Size = New System.Drawing.Size(89, 41)
+        Me.AlertImg3.TabIndex = 308
+        Me.AlertImg3.TabStop = False
+        '
+        'AlertImg2
+        '
+        Me.AlertImg2.BackColor = System.Drawing.Color.Transparent
+        Me.AlertImg2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AlertImg2.Location = New System.Drawing.Point(287, 452)
+        Me.AlertImg2.Name = "AlertImg2"
+        Me.AlertImg2.Size = New System.Drawing.Size(89, 41)
+        Me.AlertImg2.TabIndex = 307
+        Me.AlertImg2.TabStop = False
+        '
+        'AlertImg1
+        '
+        Me.AlertImg1.BackColor = System.Drawing.Color.Transparent
+        Me.AlertImg1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.AlertImg1.Location = New System.Drawing.Point(181, 452)
+        Me.AlertImg1.Name = "AlertImg1"
+        Me.AlertImg1.Size = New System.Drawing.Size(89, 41)
+        Me.AlertImg1.TabIndex = 306
+        Me.AlertImg1.TabStop = False
+        '
         'TimeStamp6
         '
-        Me.TimeStamp6.AutoSize = True
-        Me.TimeStamp6.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
-        Me.TimeStamp6.Location = New System.Drawing.Point(719, 435)
+        Me.TimeStamp6.BackColor = System.Drawing.SystemColors.Menu
+        Me.TimeStamp6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TimeStamp6.Enabled = False
+        Me.TimeStamp6.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TimeStamp6.Location = New System.Drawing.Point(715, 431)
+        Me.TimeStamp6.Multiline = True
         Me.TimeStamp6.Name = "TimeStamp6"
-        Me.TimeStamp6.Size = New System.Drawing.Size(59, 12)
-        Me.TimeStamp6.TabIndex = 317
-        Me.TimeStamp6.Text = "  hh:mm:ss"
-        '
-        'TimeStamp4
-        '
-        Me.TimeStamp4.AutoSize = True
-        Me.TimeStamp4.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
-        Me.TimeStamp4.Location = New System.Drawing.Point(504, 435)
-        Me.TimeStamp4.Name = "TimeStamp4"
-        Me.TimeStamp4.Size = New System.Drawing.Size(59, 12)
-        Me.TimeStamp4.TabIndex = 316
-        Me.TimeStamp4.Text = "  hh:mm:ss"
-        '
-        'TimeStamp2
-        '
-        Me.TimeStamp2.AutoSize = True
-        Me.TimeStamp2.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
-        Me.TimeStamp2.Location = New System.Drawing.Point(291, 435)
-        Me.TimeStamp2.Name = "TimeStamp2"
-        Me.TimeStamp2.Size = New System.Drawing.Size(59, 12)
-        Me.TimeStamp2.TabIndex = 314
-        Me.TimeStamp2.Text = "  hh:mm:ss"
-        '
-        'TimeStamp1
-        '
-        Me.TimeStamp1.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.TimeStamp1.AutoSize = True
-        Me.TimeStamp1.Font = New System.Drawing.Font("MS UI Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.TimeStamp1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.TimeStamp1.Location = New System.Drawing.Point(185, 433)
-        Me.TimeStamp1.Name = "TimeStamp1"
-        Me.TimeStamp1.Size = New System.Drawing.Size(59, 12)
-        Me.TimeStamp1.TabIndex = 313
-        Me.TimeStamp1.Text = "  hh:mm:ss"
-        Me.TimeStamp1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TimeStamp6.Size = New System.Drawing.Size(89, 26)
+        Me.TimeStamp6.TabIndex = 305
+        Me.TimeStamp6.Text = "hh:mm:ss"
+        Me.TimeStamp6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TimeStamp5
         '
-        Me.TimeStamp5.AutoSize = True
-        Me.TimeStamp5.Font = New System.Drawing.Font("MS UI Gothic", 9.0!)
-        Me.TimeStamp5.Location = New System.Drawing.Point(612, 435)
+        Me.TimeStamp5.BackColor = System.Drawing.SystemColors.Menu
+        Me.TimeStamp5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TimeStamp5.Enabled = False
+        Me.TimeStamp5.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TimeStamp5.Location = New System.Drawing.Point(608, 431)
+        Me.TimeStamp5.Multiline = True
         Me.TimeStamp5.Name = "TimeStamp5"
-        Me.TimeStamp5.Size = New System.Drawing.Size(59, 12)
-        Me.TimeStamp5.TabIndex = 312
-        Me.TimeStamp5.Text = "  hh:mm:ss"
+        Me.TimeStamp5.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TimeStamp5.Size = New System.Drawing.Size(89, 26)
+        Me.TimeStamp5.TabIndex = 304
+        Me.TimeStamp5.Text = "hh:mm:ss"
+        Me.TimeStamp5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox15
+        'TimeStamp4
         '
-        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox15.Location = New System.Drawing.Point(715, 452)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(89, 41)
-        Me.PictureBox15.TabIndex = 311
-        Me.PictureBox15.TabStop = False
+        Me.TimeStamp4.BackColor = System.Drawing.SystemColors.Menu
+        Me.TimeStamp4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TimeStamp4.Enabled = False
+        Me.TimeStamp4.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TimeStamp4.Location = New System.Drawing.Point(501, 431)
+        Me.TimeStamp4.Multiline = True
+        Me.TimeStamp4.Name = "TimeStamp4"
+        Me.TimeStamp4.Size = New System.Drawing.Size(89, 26)
+        Me.TimeStamp4.TabIndex = 303
+        Me.TimeStamp4.Text = "hh:mm:ss"
+        Me.TimeStamp4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox14
+        'TimeStamp3
         '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox14.Location = New System.Drawing.Point(608, 452)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(89, 41)
-        Me.PictureBox14.TabIndex = 310
-        Me.PictureBox14.TabStop = False
+        Me.TimeStamp3.BackColor = System.Drawing.SystemColors.Menu
+        Me.TimeStamp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TimeStamp3.Enabled = False
+        Me.TimeStamp3.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TimeStamp3.ForeColor = System.Drawing.Color.Black
+        Me.TimeStamp3.Location = New System.Drawing.Point(394, 431)
+        Me.TimeStamp3.Multiline = True
+        Me.TimeStamp3.Name = "TimeStamp3"
+        Me.TimeStamp3.Size = New System.Drawing.Size(89, 26)
+        Me.TimeStamp3.TabIndex = 302
+        Me.TimeStamp3.Text = "hh:mm:ss"
+        Me.TimeStamp3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox13
+        'TimeStamp2
         '
-        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox13.Location = New System.Drawing.Point(501, 452)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(89, 41)
-        Me.PictureBox13.TabIndex = 309
-        Me.PictureBox13.TabStop = False
+        Me.TimeStamp2.BackColor = System.Drawing.SystemColors.Menu
+        Me.TimeStamp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TimeStamp2.Enabled = False
+        Me.TimeStamp2.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TimeStamp2.Location = New System.Drawing.Point(287, 431)
+        Me.TimeStamp2.Multiline = True
+        Me.TimeStamp2.Name = "TimeStamp2"
+        Me.TimeStamp2.Size = New System.Drawing.Size(89, 26)
+        Me.TimeStamp2.TabIndex = 301
+        Me.TimeStamp2.Text = "hh:mm:ss"
+        Me.TimeStamp2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox12
+        'TimeStamp1
         '
-        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox12.Location = New System.Drawing.Point(394, 452)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(89, 41)
-        Me.PictureBox12.TabIndex = 308
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox11.Location = New System.Drawing.Point(287, 452)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(89, 41)
-        Me.PictureBox11.TabIndex = 307
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox10.Location = New System.Drawing.Point(181, 452)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(89, 41)
-        Me.PictureBox10.TabIndex = 306
-        Me.PictureBox10.TabStop = False
-        '
-        'TextBox78
-        '
-        Me.TextBox78.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox78.Enabled = False
-        Me.TextBox78.Location = New System.Drawing.Point(715, 431)
-        Me.TextBox78.Multiline = True
-        Me.TextBox78.Name = "TextBox78"
-        Me.TextBox78.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox78.TabIndex = 305
-        '
-        'TextBox77
-        '
-        Me.TextBox77.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox77.Enabled = False
-        Me.TextBox77.Location = New System.Drawing.Point(608, 431)
-        Me.TextBox77.Multiline = True
-        Me.TextBox77.Name = "TextBox77"
-        Me.TextBox77.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox77.TabIndex = 304
-        '
-        'TextBox76
-        '
-        Me.TextBox76.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox76.Enabled = False
-        Me.TextBox76.Location = New System.Drawing.Point(501, 431)
-        Me.TextBox76.Multiline = True
-        Me.TextBox76.Name = "TextBox76"
-        Me.TextBox76.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox76.TabIndex = 303
-        '
-        'TextBox75
-        '
-        Me.TextBox75.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox75.Enabled = False
-        Me.TextBox75.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.TextBox75.ForeColor = System.Drawing.Color.Black
-        Me.TextBox75.Location = New System.Drawing.Point(394, 431)
-        Me.TextBox75.Multiline = True
-        Me.TextBox75.Name = "TextBox75"
-        Me.TextBox75.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox75.TabIndex = 302
-        Me.TextBox75.Text = "hh:mm:ss"
-        Me.TextBox75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox74
-        '
-        Me.TextBox74.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox74.Enabled = False
-        Me.TextBox74.Location = New System.Drawing.Point(287, 431)
-        Me.TextBox74.Multiline = True
-        Me.TextBox74.Name = "TextBox74"
-        Me.TextBox74.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox74.TabIndex = 301
-        '
-        'TextBox73
-        '
-        Me.TextBox73.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox73.Enabled = False
-        Me.TextBox73.Location = New System.Drawing.Point(181, 431)
-        Me.TextBox73.Multiline = True
-        Me.TextBox73.Name = "TextBox73"
-        Me.TextBox73.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox73.TabIndex = 300
+        Me.TimeStamp1.BackColor = System.Drawing.SystemColors.Menu
+        Me.TimeStamp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TimeStamp1.Enabled = False
+        Me.TimeStamp1.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.TimeStamp1.Location = New System.Drawing.Point(181, 431)
+        Me.TimeStamp1.Multiline = True
+        Me.TimeStamp1.Name = "TimeStamp1"
+        Me.TimeStamp1.Size = New System.Drawing.Size(89, 26)
+        Me.TimeStamp1.TabIndex = 300
+        Me.TimeStamp1.Text = "hh:mm:ss"
+        Me.TimeStamp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox66
         '
         Me.TextBox66.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox66.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox66.Location = New System.Drawing.Point(715, 386)
         Me.TextBox66.Multiline = True
         Me.TextBox66.Name = "TextBox66"
         Me.TextBox66.Size = New System.Drawing.Size(89, 26)
         Me.TextBox66.TabIndex = 21
+        Me.TextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet6
         '
         Me.DefSet6.BackColor = System.Drawing.SystemColors.Menu
         Me.DefSet6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet6.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.DefSet6.Location = New System.Drawing.Point(715, 337)
         Me.DefSet6.Multiline = True
         Me.DefSet6.Name = "DefSet6"
         Me.DefSet6.Size = New System.Drawing.Size(89, 26)
         Me.DefSet6.TabIndex = 19
+        Me.DefSet6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox68
         '
         Me.TextBox68.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox68.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox68.Location = New System.Drawing.Point(715, 360)
         Me.TextBox68.Multiline = True
         Me.TextBox68.Name = "TextBox68"
         Me.TextBox68.Size = New System.Drawing.Size(89, 27)
         Me.TextBox68.TabIndex = 20
+        Me.TextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox69
         '
@@ -1263,31 +1228,37 @@ Public Class Form1
         '
         Me.TextBox59.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox59.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox59.Location = New System.Drawing.Point(608, 386)
         Me.TextBox59.Multiline = True
         Me.TextBox59.Name = "TextBox59"
         Me.TextBox59.Size = New System.Drawing.Size(89, 26)
         Me.TextBox59.TabIndex = 18
+        Me.TextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet5
         '
         Me.DefSet5.BackColor = System.Drawing.SystemColors.Menu
         Me.DefSet5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet5.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.DefSet5.Location = New System.Drawing.Point(608, 337)
         Me.DefSet5.Multiline = True
         Me.DefSet5.Name = "DefSet5"
         Me.DefSet5.Size = New System.Drawing.Size(89, 26)
         Me.DefSet5.TabIndex = 16
+        Me.DefSet5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox61
         '
         Me.TextBox61.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox61.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox61.Location = New System.Drawing.Point(608, 360)
         Me.TextBox61.Multiline = True
         Me.TextBox61.Name = "TextBox61"
         Me.TextBox61.Size = New System.Drawing.Size(89, 27)
         Me.TextBox61.TabIndex = 17
+        Me.TextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox62
         '
@@ -1337,31 +1308,37 @@ Public Class Form1
         '
         Me.TextBox52.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox52.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox52.Location = New System.Drawing.Point(501, 386)
         Me.TextBox52.Multiline = True
         Me.TextBox52.Name = "TextBox52"
         Me.TextBox52.Size = New System.Drawing.Size(89, 26)
         Me.TextBox52.TabIndex = 15
+        Me.TextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet4
         '
         Me.DefSet4.BackColor = System.Drawing.SystemColors.Menu
         Me.DefSet4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DefSet4.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.DefSet4.Location = New System.Drawing.Point(501, 337)
         Me.DefSet4.Multiline = True
         Me.DefSet4.Name = "DefSet4"
         Me.DefSet4.Size = New System.Drawing.Size(89, 26)
         Me.DefSet4.TabIndex = 13
+        Me.DefSet4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox54
         '
         Me.TextBox54.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox54.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox54.Location = New System.Drawing.Point(501, 360)
         Me.TextBox54.Multiline = True
         Me.TextBox54.Name = "TextBox54"
         Me.TextBox54.Size = New System.Drawing.Size(89, 27)
         Me.TextBox54.TabIndex = 14
+        Me.TextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox55
         '
@@ -1411,11 +1388,13 @@ Public Class Form1
         '
         Me.TextBox45.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox45.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox45.Location = New System.Drawing.Point(394, 386)
         Me.TextBox45.Multiline = True
         Me.TextBox45.Name = "TextBox45"
         Me.TextBox45.Size = New System.Drawing.Size(89, 26)
         Me.TextBox45.TabIndex = 12
+        Me.TextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet3
         '
@@ -1433,11 +1412,13 @@ Public Class Form1
         '
         Me.TextBox47.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox47.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox47.Location = New System.Drawing.Point(394, 360)
         Me.TextBox47.Multiline = True
         Me.TextBox47.Name = "TextBox47"
         Me.TextBox47.Size = New System.Drawing.Size(89, 27)
         Me.TextBox47.TabIndex = 11
+        Me.TextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox48
         '
@@ -1487,11 +1468,13 @@ Public Class Form1
         '
         Me.TextBox38.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox38.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox38.Location = New System.Drawing.Point(287, 386)
         Me.TextBox38.Multiline = True
         Me.TextBox38.Name = "TextBox38"
         Me.TextBox38.Size = New System.Drawing.Size(89, 26)
         Me.TextBox38.TabIndex = 9
+        Me.TextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet2
         '
@@ -1509,11 +1492,13 @@ Public Class Form1
         '
         Me.TextBox40.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox40.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox40.Location = New System.Drawing.Point(287, 360)
         Me.TextBox40.Multiline = True
         Me.TextBox40.Name = "TextBox40"
         Me.TextBox40.Size = New System.Drawing.Size(89, 27)
         Me.TextBox40.TabIndex = 8
+        Me.TextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox41
         '
@@ -1623,11 +1608,13 @@ Public Class Form1
         '
         Me.TextBox27.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox27.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox27.Location = New System.Drawing.Point(181, 386)
         Me.TextBox27.Multiline = True
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.Size = New System.Drawing.Size(89, 26)
         Me.TextBox27.TabIndex = 6
+        Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet1
         '
@@ -1645,11 +1632,13 @@ Public Class Form1
         '
         Me.TextBox29.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox29.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
         Me.TextBox29.Location = New System.Drawing.Point(181, 360)
         Me.TextBox29.Multiline = True
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.Size = New System.Drawing.Size(89, 27)
         Me.TextBox29.TabIndex = 5
+        Me.TextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox26
         '
@@ -2154,23 +2143,18 @@ Public Class Form1
         Me.Controls.Add(Me.Slot4)
         Me.Controls.Add(Me.Slot3)
         Me.Controls.Add(Me.Slot2)
+        Me.Controls.Add(Me.AlertImg6)
+        Me.Controls.Add(Me.AlertImg5)
+        Me.Controls.Add(Me.AlertImg4)
+        Me.Controls.Add(Me.AlertImg3)
+        Me.Controls.Add(Me.AlertImg2)
+        Me.Controls.Add(Me.AlertImg1)
         Me.Controls.Add(Me.TimeStamp6)
+        Me.Controls.Add(Me.TimeStamp5)
         Me.Controls.Add(Me.TimeStamp4)
+        Me.Controls.Add(Me.TimeStamp3)
         Me.Controls.Add(Me.TimeStamp2)
         Me.Controls.Add(Me.TimeStamp1)
-        Me.Controls.Add(Me.TimeStamp5)
-        Me.Controls.Add(Me.PictureBox15)
-        Me.Controls.Add(Me.PictureBox14)
-        Me.Controls.Add(Me.PictureBox13)
-        Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.PictureBox11)
-        Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.TextBox78)
-        Me.Controls.Add(Me.TextBox77)
-        Me.Controls.Add(Me.TextBox76)
-        Me.Controls.Add(Me.TextBox75)
-        Me.Controls.Add(Me.TextBox74)
-        Me.Controls.Add(Me.TextBox73)
         Me.Controls.Add(Me.TextBox66)
         Me.Controls.Add(Me.DefSet6)
         Me.Controls.Add(Me.TextBox68)
@@ -2300,12 +2284,12 @@ Public Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SavePic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlertImg6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlertImg5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlertImg4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlertImg3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlertImg2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AlertImg1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2501,7 +2485,7 @@ Public Class Form1
     Private flag_light As String    '˜A‘±“_“”‚©‚Ç‚¤‚©‚ÌŠÄŽ‹ƒtƒ‰ƒO
     Private flag_cnt As String      '“Š“üŽž‚ÌƒJƒEƒ“ƒgˆ——p
     Private flag_ch As String       '“¯ˆêCH‚©‚Ç‚¤‚©‚ÌŠÄŽ‹
-    Private flag_def As String      '“¯ˆê•s—Ç‚©‚Ç‚¤‚©‚ÌŠÄŽ‹
+    'Private flag_def As String      '“¯ˆê•s—Ç‚©‚Ç‚¤‚©‚ÌŠÄŽ‹
 
     Private cntdef1 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì’á
     Private cntdef2 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì‚
@@ -2526,7 +2510,7 @@ Public Class Form1
 
     End Sub
     'Timer
-    Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As System.Object, ev As System.EventArgs) Handles Timer1.Tick
         Dim dat As Integer
         Dim dathex As String   'HEX‰»‚µ‚½dat‚ð•¶Žš—ñ‚Æ‚µ‚ÄŠi”[‚µ‚Ä‚¨‚­‚½‚ß‚Ì•Ï”@String’è‹`‚É•ÏŠ·‚µ‚È‚¢‚Æwith‚ðŽg—p‚Å‚«‚È‚¢
 
@@ -2669,6 +2653,34 @@ Public Class Form1
                 Table(0) = cnttable
                 cnttable = 0
                 Def_count(dathex, "CH4")
+
+
+                Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
+
+                a = Slot_Calc(5)
+                b = Slot_Calc(8)
+                c = Slot_Calc(14)
+                d = Slot_Calc(19)
+                e = Slot_Calc(32)
+                f = Slot_Calc(38)
+
+                'Debug.WriteLine(a & "“®ì")
+                'Debug.WriteLine(b & "“®ì")
+                'Debug.WriteLine(c & "•œ‹A")
+                'Debug.WriteLine(d & "•œ‹A")
+                'Debug.WriteLine(e & "â‰")
+                'Debug.WriteLine(f & "‰ñ˜H")
+
+
+                Slot2.Text = Slot1.Text - a      'ŒŸ¸”‚Ì”½‰f(“®ì’á)       
+                Slot3.Text = Slot1.Text - b - cntdef1      'ŒŸ¸”‚Ì”½‰f(“®ì‚)@ŒŸ¸”‚Í‘OŒŸ¸H’ö‚Å‚Ì•s—Ç‚Ì”Œ¸‚é‚Ì‚Å“¯‚¶‚Æ‚ÍŒÀ‚ç‚È‚¢
+                Slot4.Text = Slot1.Text - c - cntdef1 - cntdef2    'ŒŸ¸”‚Ì”½‰f(•œ‹A‚)
+                Slot5.Text = Slot1.Text - d - cntdef1 - cntdef2 - cntdef3    'ŒŸ¸”‚Ì”½‰f(•œ‹A’á)
+                Slot6.Text = Slot1.Text - e - cntdef1 - cntdef2 - cntdef3 - cntdef4  'ŒŸ¸”‚Ì”½‰f(‘Ïˆ³â‰)
+                Slot7.Text = Slot1.Text - f - cntdef1 - cntdef2 - cntdef3 - cntdef4 - cntdef5   'ŒŸ¸”‚Ì”½‰f(‰ñ˜H’ïR)
+
+
+
             End If
 
         ElseIf dathex.StartsWith("8") Or dathex.StartsWith("9") Then      'CH3ƒ`ƒFƒbƒN
@@ -2804,7 +2816,6 @@ Public Class Form1
 
     Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
         Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
-        Dim g As Integer = 0, h As Integer = 0, i As Integer = 0, j As Integer = 0, k As Integer = 0, l As Integer = 0
 
         a = Slot_Calc(5)
         b = Slot_Calc(8)
@@ -2830,19 +2841,12 @@ Public Class Form1
 
 
 
-        g = Slot2.Text - cntdef1     '—Ç•i”‚Ì”½‰f(“®ì’á)
-        h = Slot3.Text - cntdef2     '—Ç•i”‚Ì”½‰f(“®ì‚)
-        i = Slot4.Text - cntdef3   @'—Ç•i”‚Ì”½‰f(•œ‹A‚)
-        j = Slot5.Text - cntdef4     '—Ç•i”‚Ì”½‰f(•œ‹A’á)
-        k = Slot6.Text - cntdef5     '—Ç•i”‚Ì”½‰f(‘Ïˆ³â‰)
-        l = Slot7.Text - cntdef6     '—Ç•i”‚Ì”½‰f(‰ñ˜H’ïR)
-
-        Good1.Text = g     '—Ç•i”‚Ì”½‰f(“®ì’á)
-        Good2.Text = h     '—Ç•i”‚Ì”½‰f(“®ì‚)
-        Good3.Text = i   @'—Ç•i”‚Ì”½‰f(•œ‹A‚)
-        Good4.Text = j    '—Ç•i”‚Ì”½‰f(•œ‹A’á)
-        Good5.Text = k     '—Ç•i”‚Ì”½‰f(‘Ïˆ³â‰)
-        Good6.Text = l      '—Ç•i”‚Ì”½‰f(‰ñ˜H’ïR)
+        Good1.Text = Slot2.Text - cntdef1    '—Ç•i”‚Ì”½‰f(“®ì’á)
+        Good2.Text = Slot3.Text - cntdef2    '—Ç•i”‚Ì”½‰f(“®ì‚)
+        Good3.Text = Slot4.Text - cntdef3  @'—Ç•i”‚Ì”½‰f(•œ‹A‚)
+        Good4.Text = Slot5.Text - cntdef4    '—Ç•i”‚Ì”½‰f(•œ‹A’á)
+        Good5.Text = Slot6.Text - cntdef5    '—Ç•i”‚Ì”½‰f(‘Ïˆ³â‰)
+        Good6.Text = Slot7.Text - cntdef6    '—Ç•i”‚Ì”½‰f(‰ñ˜H’ïR)
 
 
         'Good1.Text = a - cntdef1     '—Ç•i”‚Ì”½‰f(“®ì’á)
@@ -2887,14 +2891,14 @@ Public Class Form1
         If DefSet1.Text = "" Then
         Else
             If DefLbl1.Text >= DefSet1.Text Then
-                PictureBox10.BackColor = Color.Red
+                AlertImg1.BackColor = Color.Red
             End If
         End If
 
         If DefSet2.Text = "" Then
         Else
             If DefLbl2.Text >= DefSet2.Text Then
-                PictureBox11.BackColor = Color.Red
+                AlertImg2.BackColor = Color.Red
             End If
         End If
 
@@ -2902,7 +2906,7 @@ Public Class Form1
 
         Else
             If DefLbl3.Text >= DefSet3.Text Then
-                PictureBox12.BackColor = Color.Red
+                AlertImg3.BackColor = Color.Red
             End If
 
         End If
@@ -2911,7 +2915,7 @@ Public Class Form1
 
         Else
             If DefLbl4.Text >= DefSet4.Text Then
-                PictureBox13.BackColor = Color.Red
+                AlertImg4.BackColor = Color.Red
             End If
         End If
 
@@ -2919,7 +2923,7 @@ Public Class Form1
 
         Else
             If DefLbl5.Text >= DefSet5.Text Then
-                PictureBox14.BackColor = Color.Red
+                AlertImg5.BackColor = Color.Red
             End If
         End If
 
@@ -2927,7 +2931,7 @@ Public Class Form1
 
         Else
             If DefLbl6.Text >= DefSet6.Text Then
-                PictureBox15.BackColor = Color.Red
+                AlertImg6.BackColor = Color.Red
             End If
 
         End If
@@ -2979,6 +2983,15 @@ Public Class Form1
         Debug.WriteLine("1.2.3.4.5.6.7.8.9.0.1.2.3")
         Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
         Debug.WriteLine("-------------------------")
+
+        AlertImg1.BackColor = Color.Red
+        AlertImg2.BackColor = Color.Red
+        AlertImg3.BackColor = Color.Red
+        AlertImg4.BackColor = Color.Red
+        AlertImg5.BackColor = Color.Red
+        AlertImg6.BackColor = Color.Red
+
+
     End Sub
 
 
@@ -3069,22 +3082,22 @@ Public Class Form1
 
 
 
-    Private Sub Timesave1(sender As Object, e As EventArgs) Handles PictureBox10.BackColorChanged
+    Private Sub Timesave1(sender As Object, e As EventArgs) Handles AlertImg1.BackColorChanged
         TimeStamp1.Text = Label28.Text
     End Sub
-    Private Sub Timesave2(sender As Object, e As EventArgs) Handles PictureBox11.BackColorChanged
+    Private Sub Timesave2(sender As Object, e As EventArgs) Handles AlertImg2.BackColorChanged
         TimeStamp2.Text = Label28.Text
     End Sub
-    Private Sub Timesave3(sender As Object, e As EventArgs) Handles PictureBox12.BackColorChanged
-        TextBox75.Text = Label28.Text
+    Private Sub Timesave3(sender As Object, e As EventArgs) Handles AlertImg3.BackColorChanged
+        TimeStamp3.Text = Label28.Text
     End Sub
-    Private Sub Timesave4(sender As Object, e As EventArgs) Handles PictureBox13.BackColorChanged
+    Private Sub Timesave4(sender As Object, e As EventArgs) Handles AlertImg4.BackColorChanged
         TimeStamp4.Text = Label28.Text
     End Sub
-    Private Sub Timesave5(sender As Object, e As EventArgs) Handles PictureBox14.BackColorChanged
+    Private Sub Timesave5(sender As Object, e As EventArgs) Handles AlertImg5.BackColorChanged
         TimeStamp5.Text = Label28.Text
     End Sub
-    Private Sub Timesave6(sender As Object, e As EventArgs) Handles PictureBox15.BackColorChanged
+    Private Sub Timesave6(sender As Object, e As EventArgs) Handles AlertImg6.BackColorChanged
         TimeStamp6.Text = Label28.Text
     End Sub
 End Class
