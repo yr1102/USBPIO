@@ -2503,7 +2503,6 @@ Public Class Form1
     Private flag_ch As String       '同一CHかどうかの監視
     Private flag_def As String      '同一不良かどうかの監視
 
-
     Private cntdef1 As Integer     '不良カウント動作低
     Private cntdef2 As Integer     '不良カウント動作高
     Private cntdef3 As Integer     '不良カウント復帰低
@@ -2661,18 +2660,20 @@ Public Class Form1
 
             End If
 
-            If flag_def <> "CH4" Then
+            If flag_ch <> "CH4" Then
 
-                'For i = 0 To 37 Step 1
-                '    Table(38 - i) = Table(37 - i)
-                'Next
-                'Table(0) = cnttable
+                For i = 0 To 37 Step 1
+                    Debug.WriteLine(Table(38 - i) & "=" & Table(37 - i))
+                    Table(38 - i) = Table(37 - i)
+                Next
+                Table(0) = cnttable
+                cnttable = 0
                 Def_count(dathex, "CH4")
             End If
 
         ElseIf dathex.StartsWith("8") Or dathex.StartsWith("9") Then      'CH3チェック
 
-            If flag_def <> "CH3" Then
+            If flag_ch <> "CH3" Then
                 Def_count(dathex, "CH3")
             End If
 
@@ -2687,7 +2688,7 @@ Public Class Form1
             End If
         ElseIf dathex.StartsWith("A") Or dathex.StartsWith("B") Then      'CH2チェック
 
-            If flag_def <> "CH2" Then
+            If flag_ch <> "CH2" Then
                 Def_count(dathex, "CH2")
             End If
 
@@ -2702,7 +2703,7 @@ Public Class Form1
 
         ElseIf dathex.StartsWith("C") Or dathex.StartsWith("D") Then      'CH1チェック
 
-            If flag_def <> "CH1" Then
+            If flag_ch <> "CH1" Then
                 Def_count(dathex, "CH1")
             End If
 
@@ -2972,9 +2973,12 @@ Public Class Form1
             SavePic.BackColor = Color.DarkGreen                                'Save状態を暗い緑のままに
         End If
 
+
         'DataSaveのチェックボックス処理を記述
 
-
+        Debug.WriteLine("1.2.3.4.5.6.7.8.9.0.1.2.3")
+        Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
+        Debug.WriteLine("-------------------------")
     End Sub
 
 
