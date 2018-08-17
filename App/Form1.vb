@@ -2646,8 +2646,7 @@ Public Class Form1
 
             If flag_ch <> "CH4" Then
 
-                For i = 0 To 37 Step 1
-                    Debug.WriteLine(Table(38 - i) & "=" & Table(37 - i))
+                For i = 0 To 37 Step 1                                        'ŒŸ¸”‚Ì”½‰fˆ—
                     Table(38 - i) = Table(37 - i)
                 Next
                 Table(0) = cnttable
@@ -2817,9 +2816,9 @@ Public Class Form1
     Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
         Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
 
-        a = Slot_Calc(5)
-        b = Slot_Calc(8)
-        c = Slot_Calc(14)
+        a = Slot_Calc(5)    'Slot_Calc‚É”š‚ğ“n‚µŒvZŒ‹‰Ê‚ğó‚¯æ‚é
+        b = Slot_Calc(8)    '0~”š‚Ì”‚Ü‚Å‚Ìƒe[ƒuƒ‹‚É“Š“ü‚³‚ê‚Ä‚¢‚é”‚Ì‡Œv‚ª‹A‚Á‚Ä‚­‚é
+        c = Slot_Calc(14)@ '‚»‚ê‚ğŠeƒAƒ‹ƒtƒ@ƒxƒbƒg‚ÉŠi”[
         d = Slot_Calc(19)
         e = Slot_Calc(32)
         f = Slot_Calc(38)
@@ -2832,11 +2831,11 @@ Public Class Form1
         'Debug.WriteLine(f & "‰ñ˜H")
 
 
-        Slot2.Text = Slot1.Text - a      'ŒŸ¸”‚Ì”½‰f(“®ì’á)       
-        Slot3.Text = Slot1.Text - b - cntdef1      'ŒŸ¸”‚Ì”½‰f(“®ì‚)@ŒŸ¸”‚Í‘OŒŸ¸H’ö‚Å‚Ì•s—Ç‚Ì”Œ¸‚é‚Ì‚Å“¯‚¶‚Æ‚ÍŒÀ‚ç‚È‚¢
-        Slot4.Text = Slot1.Text - c - cntdef1 - cntdef2    'ŒŸ¸”‚Ì”½‰f(•œ‹A‚)
-        Slot5.Text = Slot1.Text - d - cntdef1 - cntdef2 - cntdef3    'ŒŸ¸”‚Ì”½‰f(•œ‹A’á)
-        Slot6.Text = Slot1.Text - e - cntdef1 - cntdef2 - cntdef3 - cntdef4  'ŒŸ¸”‚Ì”½‰f(‘Ïˆ³â‰)
+        Slot2.Text = Slot1.Text - a                                                     'ŒŸ¸”‚Ì”½‰f(“®ì’á)       
+        Slot3.Text = Slot1.Text - b - cntdef1                                           'ŒŸ¸”‚Ì”½‰f(“®ì‚)@ŒŸ¸”‚Í‘OŒŸ¸H’ö‚Å‚Ì•s—Ç‚Ì”Œ¸‚é‚Ì‚Å“¯‚¶‚Æ‚ÍŒÀ‚ç‚È‚¢
+        Slot4.Text = Slot1.Text - c - cntdef1 - cntdef2                                 'ŒŸ¸”‚Ì”½‰f(•œ‹A‚)
+        Slot5.Text = Slot1.Text - d - cntdef1 - cntdef2 - cntdef3                       'ŒŸ¸”‚Ì”½‰f(•œ‹A’á)
+        Slot6.Text = Slot1.Text - e - cntdef1 - cntdef2 - cntdef3 - cntdef4             'ŒŸ¸”‚Ì”½‰f(‘Ïˆ³â‰)
         Slot7.Text = Slot1.Text - f - cntdef1 - cntdef2 - cntdef3 - cntdef4 - cntdef5   'ŒŸ¸”‚Ì”½‰f(‰ñ˜H’ïR)
 
 
@@ -2887,15 +2886,17 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Slot_LabelChanged2(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
+    '```````````````````•s—Ç”‚ÌŒxˆ—``````````````````````````
+
+    Private Sub Slot_LabelChanged2(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '“Š“ü”‚É•ÏX‚ª‰Á‚í‚Á‚½ê‡
         If DefSet1.Text = "" Then
         Else
-            If DefLbl1.Text >= DefSet1.Text Then
-                AlertImg1.BackColor = Color.Red
+            If DefLbl1.Text >= DefSet1.Text Then                       '•s—Ç”‚ªƒZƒbƒg‚µ‚½•s—Ç’lˆÈã‚É‚È‚Á‚½‚Æ‚«
+                AlertImg1.BackColor = Color.Red                        'Œxƒ{ƒbƒNƒX‚ğÔF‚É•ÏX
             End If
         End If
 
-        If DefSet2.Text = "" Then
+        If DefSet2.Text = "" Then                                      'ŠeŒxƒ{ƒbƒNƒX‚²‚Æ‚É‚±‚Ìˆ—‚ğs‚¤
         Else
             If DefLbl2.Text >= DefSet2.Text Then
                 AlertImg2.BackColor = Color.Red
@@ -2937,14 +2938,16 @@ Public Class Form1
         End If
 
     End Sub
+    '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
-    Private Function Slot_Calc(num As Integer) As Integer
+
+    Private Function Slot_Calc(num As Integer) As Integer       'ŒvZ‚ğ’S“–‚·‚éˆ—@Slot_Calc(”š)‚ÅŒÄ‚Ño‚³‚ê‚Ä”š‚É‘Î‰‚µ‚½ŒvZ‚ğs‚¤
         Dim slotsum As Integer, i As Integer
 
-        For i = 0 To num Step 1
-            slotsum = slotsum + Table(i)
+        For i = 0 To num Step 1                                 'ó‚¯æ‚Á‚½”š‚Ì”‚¾‚¯For‚ğŒJ‚è•Ô‚·
+            slotsum = slotsum + Table(i)                        'slotsum‚ÉTable(0~”š)‚Ì‡Œv‚ğ“ü‚ê‚é
         Next i
-        Return slotsum
+        Return slotsum                                          'slotsum‚ğŒvZŒ‹‰Ê‚Æ‚µ‚Ä•Ô‚·
 
     End Function
 
@@ -2980,6 +2983,8 @@ Public Class Form1
 
         'DataSave‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒXˆ—‚ğ‹Lq
 
+
+        '«¡‚ÌŒŸ¸”‚ª‚Ç‚¤‚È‚Á‚Ä‚¢‚é‚©Šm‚©‚ß‚é‚±‚Æ‚ª‚Å‚«‚éƒeƒXƒg‹@”\
         Debug.WriteLine("1.2.3.4.5.6.7.8.9.0.1.2.3")
         Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
         Debug.WriteLine("-------------------------")
@@ -3046,6 +3051,8 @@ Public Class Form1
 
     '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
+    '```````````````````•s—ÇƒJƒEƒ“ƒg‚ÉŒŸ¸ƒ‚ƒjƒ^‚ğÔ‚É‚·‚éˆ—``````````
+
     Private Sub Change_DefLbl1(sender As Object, e As EventArgs) Handles DefLbl1.TextChanged
         DefImg1.BackColor = Color.Red
     End Sub
@@ -3101,3 +3108,6 @@ Public Class Form1
         TimeStamp6.Text = Label28.Text
     End Sub
 End Class
+
+
+'``````````````````````‚±‚±‚Ü‚Å`````````````````````
