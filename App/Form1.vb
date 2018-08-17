@@ -2734,14 +2734,14 @@ Public Class Form1
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
     End Sub
 
+    '```````````````````•s—Ç‚ğ”»’è‚·‚é€–Ú``````````````````````````
 
+    Private Sub Def_count(datdef As String, ch As String)       'Def_count(ƒf[ƒ^,CH–¼)‚Åó‚¯‚Á‚½ƒf[ƒ^‚ğ‚à‚Æ‚Éˆ—‚ğs‚¤
 
-    Private Sub Def_count(datdef As String, ch As String)
+        If flag_ch <> ch Then                                   '‘—‚ç‚ê‚Ä‚­‚é16i”‚Ì2•¶š–Ú‚É‚Í‰ñ˜H’ïR‚Æâ‰‘Ïˆ³‚Ì•s—Ç‚ÌM†‚ª“ü‚Á‚Ä‚¢‚é
 
-        If flag_ch <> ch Then
-
-            If datdef Like "?E??" Then
-
+            If datdef Like "?E??" Then                          '‚±‚Ì16i”‚ªD‚Ìê‡‚Í‰ñ˜H‚ªƒGƒ‰[AE‚Ìê‡‚Íâ‰...‚Æ‚¢‚Á‚½‚æ‚¤‚É
+                '”»’è‚ğs‚¢•s—Ç‚Ìê‡‚Í•s—ÇƒJƒEƒ“ƒg‚ğ{‚P‚µ‚Ä‚¢‚é
                 cntdef5 += 1
 
             ElseIf datdef Like "?D??" Then
@@ -2810,7 +2810,7 @@ Public Class Form1
 
 
     End Sub
-
+    '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
 
     Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '•ÏX‚ª‰Á‚í‚Á‚½ê‡
@@ -3054,31 +3054,43 @@ Public Class Form1
     '```````````````````•s—ÇƒJƒEƒ“ƒg‚ÉŒŸ¸ƒ‚ƒjƒ^‚ğÔ‚É‚·‚éˆ—``````````
 
     Private Sub Change_DefLbl1(sender As Object, e As EventArgs) Handles DefLbl1.TextChanged
-        DefImg1.BackColor = Color.Red
+        If DefLbl1.Text <> "0" Then
+            DefImg1.BackColor = Color.Red
+        End If
     End Sub
 
     Private Sub Change_DefLbl2(sender As Object, e As EventArgs) Handles DefLbl2.TextChanged
-        DefImg2.BackColor = Color.Red
+        If DefLbl2.Text <> "0" Then
+            DefImg2.BackColor = Color.Red
+        End If
     End Sub
 
     Private Sub Change_DefLbl3(sender As Object, e As EventArgs) Handles DefLbl3.TextChanged
-        DefImg3.BackColor = Color.Red
+        If DefLbl3.Text <> "0" Then
+            DefImg3.BackColor = Color.Red
+        End If
     End Sub
 
     Private Sub Change_DefLbl4(sender As Object, e As EventArgs) Handles DefLbl4.TextChanged
-        DefImg4.BackColor = Color.Red
+        If DefLbl4.Text <> "0" Then
+            DefImg4.BackColor = Color.Red
+        End If
     End Sub
 
     Private Sub Change_DefLbl5(sender As Object, e As EventArgs) Handles DefLbl5.TextChanged
-        DefImg5.BackColor = Color.Red
+        If DefLbl5.Text <> "0" Then
+            DefImg5.BackColor = Color.Red
+        End If
     End Sub
 
     Private Sub Change_DefLbl6(sender As Object, e As EventArgs) Handles DefLbl6.TextChanged
-        DefImg6.BackColor = Color.Red
+        If DefLbl6.Text <> "0" Then
+            DefImg6.BackColor = Color.Red
+        End If
     End Sub
 
 
-    Private Sub Reset_DefImg(sender As Object, e As EventArgs) Handles Timer3.Tick
+    Private Sub Reset_DefImg(sender As Object, e As EventArgs) Handles Timer3.Tick      '4•b‚¨‚«‚Éƒ‚ƒjƒ^‚Ìó‘Ô‚ğXV‚·‚é
         DefImg1.BackColor = Color.LightGreen
         DefImg2.BackColor = Color.LightGreen
         DefImg3.BackColor = Color.LightGreen
@@ -3089,7 +3101,7 @@ Public Class Form1
 
 
 
-    Private Sub Timesave1(sender As Object, e As EventArgs) Handles AlertImg1.BackColorChanged
+    Private Sub Timesave1(sender As Object, e As EventArgs) Handles AlertImg1.BackColorChanged@@@@'Œx•\¦‚ªÔ‚É•Ï‚í‚Á‚½‚Æ‚«ƒ^ƒCƒ€ƒXƒ^ƒ“ƒv‚ğs‚¤ˆ—
         TimeStamp1.Text = Label28.Text
     End Sub
     Private Sub Timesave2(sender As Object, e As EventArgs) Handles AlertImg2.BackColorChanged
