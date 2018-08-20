@@ -187,6 +187,8 @@ Public Class Form1
     Friend WithEvents DefRate6 As Label
     Friend WithEvents Timer3 As Timer
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -353,6 +355,8 @@ Public Class Form1
         Me.DefRate5 = New System.Windows.Forms.Label()
         Me.DefRate6 = New System.Windows.Forms.Label()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -370,6 +374,7 @@ Public Class Form1
         CType(Me.DefImg3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -859,7 +864,7 @@ Public Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(418, 614)
+        Me.Label2.Location = New System.Drawing.Point(467, 614)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 19)
         Me.Label2.TabIndex = 13
@@ -2116,10 +2121,36 @@ Public Class Form1
         'Timer3
         '
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox4.Location = New System.Drawing.Point(385, 585)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(53, 51)
+        Me.PictureBox4.TabIndex = 342
+        Me.PictureBox4.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label1.Enabled = False
+        Me.Label1.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.Location = New System.Drawing.Point(392, 597)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 28)
+        Me.Label1.TabIndex = 343
+        Me.Label1.Text = "通信" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "エラー"
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(841, 660)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.DefRate6)
         Me.Controls.Add(Me.DefRate5)
         Me.Controls.Add(Me.DefRate4)
@@ -2299,6 +2330,7 @@ Public Class Form1
         CType(Me.DefImg3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2526,7 +2558,7 @@ Public Class Form1
         Dim dathex As String   'HEX化したdatを文字列として格納しておくための変数　String定義に変換しないとwithを使用できない
 
 
-        sacomUsbIoRead(pio_id, dat)
+        sacomUsbIoRead(pio_id, dat)             'PIOを呼び出して現在の情報を入手
         Label2.Text = Hex(dat)                  'ラベル2に現在の入力情報を16進数で表示
         dathex = Hex(dat)
 
@@ -3017,9 +3049,9 @@ Public Class Form1
 
 
         '↓今の検査数がどうなっているか確かめることができるテスト機能
-        Debug.WriteLine("1.2.3.4.5.6.7.8.9.0.1.2.3")
-        Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
-        Debug.WriteLine("-------------------------")
+        'Debug.WriteLine("1.2.3.4.5.6.7.8.9.0.1.2.3")
+        'Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
+        'Debug.WriteLine("-------------------------")
 
         AlertImg1.BackColor = Color.Red
         AlertImg2.BackColor = Color.Red
