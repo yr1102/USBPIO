@@ -377,6 +377,7 @@ Public Class Form1
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DarkGreen
         Me.PictureBox1.Location = New System.Drawing.Point(166, 63)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(82, 44)
@@ -385,6 +386,7 @@ Public Class Form1
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.DarkGoldenrod
         Me.PictureBox2.Location = New System.Drawing.Point(94, 63)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(79, 44)
@@ -393,6 +395,7 @@ Public Class Form1
         '
         'PictureBox3
         '
+        Me.PictureBox3.BackColor = System.Drawing.Color.DarkRed
         Me.PictureBox3.Location = New System.Drawing.Point(23, 63)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(75, 44)
@@ -2492,7 +2495,15 @@ Public Class Form1
     Private cntdef3 As Integer     '不良カウント復帰低
     Private cntdef4 As Integer　　 '不良カウント復帰高
     Private cntdef5 As Integer     '不良カウント耐圧絶縁
-    Private cntdef6 As Integer　   '不良カウント回路抵抗
+    Private cntdef6 As Integer    '不良カウント回路抵抗
+
+    Private cntgood1 As Integer     '良品カウント動作低
+    Private cntgood2 As Integer     '良品カウント動作高
+    Private cntgood3 As Integer     '良品カウント復帰低
+    Private cntgood4 As Integer　　 '良品カウント復帰高
+    Private cntgood5 As Integer     '良品カウント耐圧絶縁
+    Private cntgood6 As Integer　   '良品カウント回路抵抗
+
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
         'ここから
@@ -2526,107 +2537,112 @@ Public Class Form1
 
 
 
-        PictureBox1.BackColor = Color.DarkGreen                             'ピクチャーボックスに疑似パトライトを描画dark色を使って非点灯時を表現
-        PictureBox2.BackColor = Color.DarkGoldenrod                         'なぜかdarkyellowが無い、代わりにgoldを使ってみたが思ったよりもしっくり
-        PictureBox3.BackColor = Color.DarkRed                               'darkred基本的にこの状態のままであってほしい
-
-
-
 
 
         '～～～～～以下エラー時の点灯処理　今回の回路はデフォルトがFのため点灯すればするほど数が小さくなる～～
 
-        If dathex.EndsWith("8") Then                                    'dathexに入っている情報をチェック　endwithは16bit情報の最後の4bitのみを参照する機能である
-            PictureBox1.BackColor = Color.LightGreen                    '最後の4bitにはパトライトの状態が書き込まれているのでその数値を判断しそれに対応したパトライト色を点灯させれば良い
-            PictureBox2.BackColor = Color.Yellow
-            PictureBox3.BackColor = Color.Red                           '送られてくる数値が8ならば全点灯のはずなので仮想パトライトPictureBox1,2,3をdark色→明るい色に変えている
-
-            flag_light = "8"                                            '点灯状態(flag_light)に8を書き込んでおく、あとで重要になる
+        If dathex.StartsWith("5") Then                                      'dathexに入っている情報をチェック　startswithは16bit情報の最初の4bitのみを参照する機能である
+            '値が5だった場合CHはパトライト情報を載せたCH5になる。
 
 
-        ElseIf dathex.EndsWith("9") Then                                '値が9であった場合の処理、この場合は黄色と赤色の点灯になる。
-            PictureBox2.BackColor = Color.Yellow                        'PictureBox2,3を明るくする
-            PictureBox3.BackColor = Color.Red
 
-            If flag_light <> "9" Then                                   '点灯点滅チェック処理をいれる　点灯状態(flag_light)の情報をもとに
-                If flag_light = "B" Then                                '黄色点灯回数｛c(ou)ntyellow｝　赤色点灯回数｛c(ou)ntred｝に点灯回数を1増やすということを行っている
-                    cntyellow += 1
+            If dathex.EndsWith("8") Then                                    'dathexに入っている情報をチェック　endwithは16bit情報の最後の4bitのみを参照する機能である
+                PictureBox1.BackColor = Color.LightGreen                    '最後の4bitにはパトライトの状態が書き込まれているのでその数値を判断しそれに対応したパトライト色を点灯させれば良い
+                PictureBox2.BackColor = Color.Yellow
+                PictureBox3.BackColor = Color.Red                           '送られてくる数値が8ならば全点灯のはずなので仮想パトライトPictureBox1,2,3をdark色→明るい色に変えている
+
+                flag_light = "8"                                            '点灯状態(flag_light)に8を書き込んでおく、あとで重要になる
+
+
+            ElseIf dathex.EndsWith("9") Then                                '値が9であった場合の処理、この場合は黄色と赤色の点灯になる。
+                PictureBox1.BackColor = Color.DarkGreen
+                PictureBox2.BackColor = Color.Yellow                        'PictureBox2,3を明るくする
+                PictureBox3.BackColor = Color.Red
+
+                If flag_light <> "9" Then                                   '点灯点滅チェック処理をいれる　点灯状態(flag_light)の情報をもとに
+                    If flag_light = "B" Then                                '黄色点灯回数｛c(ou)ntyellow｝　赤色点灯回数｛c(ou)ntred｝に点灯回数を1増やすということを行っている
+                        cntyellow += 1
+                        flag_light = "9"
+                    ElseIf flag_light = "A" Then                            'たとえば黄色が点灯したときに黄色点灯が＋1される処理にしてしまうと、黄＋赤点灯→黄のみ点灯と変化したときにも
+                        cntyellow += 1                                      '黄色を2回点灯とカウントしてしまう(見ている側からすると光りっぱなし)
+                        flag_light = "9"                                    'それを回避するために、点灯状態(flag_light)に情報を蓄え直前に何色が光っていたかの情報を
+                    ElseIf flag_light <> "9" Then                           '引き継ぐようにしている
+                        cntred += 1
+                    End If
+
                     flag_light = "9"
-                ElseIf flag_light = "A" Then                            'たとえば黄色が点灯したときに黄色点灯が＋1される処理にしてしまうと、黄＋赤点灯→黄のみ点灯と変化したときにも
-                    cntyellow += 1                                      '黄色を2回点灯とカウントしてしまう(見ている側からすると光りっぱなし)
-                    flag_light = "9"                                    'それを回避するために、点灯状態(flag_light)に情報を蓄え直前に何色が光っていたかの情報を
-                ElseIf flag_light <> "9" Then                           '引き継ぐようにしている
-                    cntred += 1
                 End If
 
                 flag_light = "9"
-            End If
 
-            flag_light = "9"
-
-        ElseIf dathex.EndsWith("A") Then                                '値がAであった場合の処理、この場合は緑色と赤色の点灯になる。    
-            PictureBox1.BackColor = Color.LightGreen
-            PictureBox3.BackColor = Color.Red
+            ElseIf dathex.EndsWith("A") Then                                '値がAであった場合の処理、この場合は緑色と赤色の点灯になる。    
+                PictureBox1.BackColor = Color.LightGreen
+                PictureBox2.BackColor = Color.DarkGoldenrod
+                PictureBox3.BackColor = Color.Red
 
 
-            If flag_light <> "A" Then
-                If flag_light = "B" Then
+                If flag_light <> "A" Then
+                    If flag_light = "B" Then
+                        flag_light = "A"
+                    ElseIf flag_light = "9" Then
+                        flag_light = "A"
+                    ElseIf flag_light = "8" Then
+                        flag_light = "A"
+                    ElseIf flag_light <> "A" Then
+                        cntred += 1
+                    End If
                     flag_light = "A"
-                ElseIf flag_light = "9" Then
-                    flag_light = "A"
-                ElseIf flag_light = "8" Then
-                    flag_light = "A"
-                ElseIf flag_light <> "A" Then
-                    cntred += 1
+
                 End If
-                flag_light = "A"
 
-            End If
+            ElseIf dathex.EndsWith("B") Then                                 '値がBであった場合の処理、この場合は赤色の点灯になる。  
+                PictureBox1.BackColor = Color.DarkGreen
+                PictureBox2.BackColor = Color.DarkGoldenrod
+                PictureBox3.BackColor = Color.Red
 
-        ElseIf dathex.EndsWith("B") Then                                 '値がBであった場合の処理、この場合は赤色の点灯になる。    
-            PictureBox3.BackColor = Color.Red
+                If flag_light <> "B" Then
+                    If flag_light = "A" Then
+                        flag_light = "B"
+                    ElseIf flag_light = "9" Then
+                        flag_light = "B"
+                    ElseIf flag_light = "8" Then
+                        flag_light = "B"
+                    ElseIf flag_light <> "B" Then
+                        cntred += 1
+                    End If
+                    flag_light = "B"
 
-            If flag_light <> "B" Then
-                If flag_light = "A" Then
-                    flag_light = "B"
-                ElseIf flag_light = "9" Then
-                    flag_light = "B"
-                ElseIf flag_light = "8" Then
-                    flag_light = "B"
-                ElseIf flag_light <> "B" Then
-                    cntred += 1
                 End If
-                flag_light = "B"
+
+            ElseIf dathex.EndsWith("C") Then                                 '値がCであった場合の処理、この場合は緑色と黄色の点灯になる。  
+                PictureBox1.BackColor = Color.LightGreen
+                PictureBox2.BackColor = Color.Yellow
+                PictureBox3.BackColor = Color.DarkRed
+
+                If flag_light <> "C" Then
+                    cntyellow += 1
+                End If
+                flag_light = "C"
+
+            ElseIf dathex.EndsWith("D") Then                                '値がDであった場合の処理、この場合は赤色と黄色の点灯になる。    
+                PictureBox1.BackColor = Color.DarkGreen
+                PictureBox2.BackColor = Color.Yellow
+                PictureBox3.BackColor = Color.Red
+
+                If flag_light <> "D" Then
+                    cntyellow += 1
+                End If
+                flag_light = "D"
+
+            ElseIf dathex.EndsWith("E") Then                                 '値がEであった場合の処理、この場合は緑色の点灯になる。
+                PictureBox1.BackColor = Color.LightGreen
+                PictureBox2.BackColor = Color.DarkGoldenrod
+                PictureBox3.BackColor = Color.DarkRed
+                flag_light = "E"
+
 
             End If
-
-        ElseIf dathex.EndsWith("C") Then                                 '値がCであった場合の処理、この場合は緑色と黄色の点灯になる。  
-            PictureBox1.BackColor = Color.LightGreen
-            PictureBox2.BackColor = Color.Yellow
-
-
-            If flag_light <> "C" Then
-                cntyellow += 1
-            End If
-            flag_light = "C"
-
-        ElseIf dathex.EndsWith("D") Then                              　 '値がDであった場合の処理、この場合は赤色と黄色の点灯になる。    
-            PictureBox3.BackColor = Color.Red
-            PictureBox2.BackColor = Color.Yellow
-
-            If flag_light <> "D" Then
-                cntyellow += 1
-            End If
-            flag_light = "D"
-
-        ElseIf dathex.EndsWith("E") Then                                 '値がEであった場合の処理、この場合は緑色の点灯になる。
-            PictureBox1.BackColor = Color.LightGreen
-
-            flag_light = "E"
-
-
         End If
-
         '～～～～～～～～～～～～～～～～～～～ここまで～～～～～～～～～～～～～～～～～～～～～～～～～～
 
         '～～～～～～～～～～～～～～～～～～～カウント処理～～～～～～～～～～～～～～～～～～～～～～～～
@@ -2646,37 +2662,37 @@ Public Class Form1
 
             If flag_ch <> "CH4" Then
 
-                For i = 0 To 37 Step 1                                        '検査数の反映処理
-                    Table(38 - i) = Table(37 - i)
-                Next
-                Table(0) = cnttable
-                cnttable = 0
-                Def_count(dathex, "CH4")
+                'For i = 0 To 37 Step 1                                        '検査数の反映処理
+                '    Table(38 - i) = Table(37 - i)
+                'Next
+                'Table(0) = cnttable
+                'cnttable = 0
+                'Def_count(dathex, "CH4")
 
 
-                Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
+                'Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
 
-                a = Slot_Calc(5)
-                b = Slot_Calc(8)
-                c = Slot_Calc(14)
-                d = Slot_Calc(19)
-                e = Slot_Calc(32)
-                f = Slot_Calc(38)
+                'a = Slot_Calc(5)
+                'b = Slot_Calc(8)
+                'c = Slot_Calc(14)
+                'd = Slot_Calc(19)
+                'e = Slot_Calc(32)
+                'f = Slot_Calc(38)
 
-                'Debug.WriteLine(a & "動作")
-                'Debug.WriteLine(b & "動作")
-                'Debug.WriteLine(c & "復帰")
-                'Debug.WriteLine(d & "復帰")
-                'Debug.WriteLine(e & "絶縁")
-                'Debug.WriteLine(f & "回路")
+                ''Debug.WriteLine(a & "動作")
+                ''Debug.WriteLine(b & "動作")
+                ''Debug.WriteLine(c & "復帰")
+                ''Debug.WriteLine(d & "復帰")
+                ''Debug.WriteLine(e & "絶縁")
+                ''Debug.WriteLine(f & "回路")
 
 
-                Slot2.Text = Slot1.Text - a      '検査数の反映(動作低)       
-                Slot3.Text = Slot1.Text - b - cntdef1      '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
-                Slot4.Text = Slot1.Text - c - cntdef1 - cntdef2    '検査数の反映(復帰高)
-                Slot5.Text = Slot1.Text - d - cntdef1 - cntdef2 - cntdef3    '検査数の反映(復帰低)
-                Slot6.Text = Slot1.Text - e - cntdef1 - cntdef2 - cntdef3 - cntdef4  '検査数の反映(耐圧絶縁)
-                Slot7.Text = Slot1.Text - f - cntdef1 - cntdef2 - cntdef3 - cntdef4 - cntdef5   '検査数の反映(回路抵抗)
+                Slot2.Text = cntgood1 + cntdef1    '検査数の反映(動作低)       
+                Slot3.Text = cntgood2 + cntdef2    '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
+                Slot4.Text = cntgood3 + cntdef3    '検査数の反映(復帰高)
+                Slot5.Text = cntgood4 + cntdef4    '検査数の反映(復帰低)
+                Slot6.Text = cntgood5 + cntdef5    '検査数の反映(耐圧絶縁)
+                Slot7.Text = cntgood6 + cntdef6    '検査数の反映(回路抵抗)
 
 
 
@@ -2740,69 +2756,85 @@ Public Class Form1
 
         If flag_ch <> ch Then                                   '送られてくる16進数の2文字目には回路抵抗と絶縁耐圧の不良の信号が入っている
 
-            If datdef Like "?E??" Then                          'この16進数がDの場合は回路がエラー、Eの場合は絶縁...といったように
-                '判定を行い不良の場合は不良カウントを＋１している
-                cntdef5 += 1
+            'この16進数がDの場合は回路がエラー、Eの場合は絶縁...といったように
+            '判定を行い不良の場合は不良カウントを＋１している
 
+
+            If datdef Like "?E??" Then
+                cntdef5 += 1
             ElseIf datdef Like "?D??" Then
-
+                cntgood5 += 1
+            ElseIf datdef Like "?B??" Then
                 cntdef6 += 1
-
-            ElseIf datdef Like "?C??" Then
-
+            ElseIf datdef Like "?A??" Then
                 cntdef5 += 1
                 cntdef6 += 1
+            ElseIf datdef Like "?9??" Then
+                cntgood5 += 1
+                cntdef6 += 1
+            ElseIf datdef Like "?7??" Then
+                cntgood6 += 1
+            ElseIf datdef Like "?6??" Then
+                cntdef5 += 1
+                cntgood6 += 1
+            ElseIf datdef Like "?5??" Then
+                cntgood5 += 1
+                cntgood6 += 1
 
             End If
 
-            If datdef Like "??E?" Then
-                cntdef1 += 1
-            ElseIf datdef Like "??D?" Then
-                cntdef2 += 1
-            ElseIf datdef Like "??C?" Then
-                cntdef1 += 1
-                cntdef2 += 1
-            ElseIf datdef Like "??B?" Then
+
+
+            If datdef Like "?E??" Then
                 cntdef3 += 1
-            ElseIf datdef Like "??A?" Then
-                cntdef1 += 1
-                cntdef3 += 1
-            ElseIf datdef Like "??9?" Then
-                cntdef2 += 1
-                cntdef3 += 1
-            ElseIf datdef Like "??8?" Then
-                cntdef1 += 1
-                cntdef2 += 1
-                cntdef3 += 1
-            ElseIf datdef Like "??7?" Then
+            ElseIf datdef Like "?D??" Then
+                cntgood3 += 1
+            ElseIf datdef Like "?B??" Then
                 cntdef4 += 1
-            ElseIf datdef Like "??6?" Then
-                cntdef1 += 1
-                cntdef4 += 1
-            ElseIf datdef Like "??5?" Then
-                cntdef2 += 1
-                cntdef4 += 1
-            ElseIf datdef Like "??4?" Then
-                cntdef1 += 1
-                cntdef2 += 1
-                cntdef4 += 1
-            ElseIf datdef Like "??3?" Then
+            ElseIf datdef Like "?A??" Then
                 cntdef3 += 1
                 cntdef4 += 1
-            ElseIf datdef Like "??2?" Then
-                cntdef1 += 1
-                cntdef3 += 1
+            ElseIf datdef Like "?9??" Then
+                cntgood3 += 1
                 cntdef4 += 1
-            ElseIf datdef Like "??1?" Then
-                cntdef2 += 1
+            ElseIf datdef Like "?7??" Then
+                cntgood4 += 1
+            ElseIf datdef Like "?6??" Then
                 cntdef3 += 1
-                cntdef4 += 1
-            ElseIf datdef Like "??0?" Then
-                cntdef1 += 1
-                cntdef2 += 1
-                cntdef3 += 1
-                cntdef4 += 1
+                cntgood4 += 1
+            ElseIf datdef Like "?5??" Then
+                cntgood3 += 1
+                cntgood4 += 1
+
             End If
+
+
+
+
+            If datdef Like "?E??" Then
+                cntdef1 += 1
+            ElseIf datdef Like "?D??" Then
+                cntgood1 += 1
+            ElseIf datdef Like "?B??" Then
+                cntdef2 += 1
+            ElseIf datdef Like "?A??" Then
+                cntdef1 += 1
+                cntdef2 += 1
+            ElseIf datdef Like "?9??" Then
+                cntgood1 += 1
+                cntdef2 += 1
+            ElseIf datdef Like "?7??" Then
+                cntgood2 += 1
+            ElseIf datdef Like "?6??" Then
+                cntdef1 += 1
+                cntgood2 += 1
+            ElseIf datdef Like "?5??" Then
+                cntgood1 += 1
+                cntgood2 += 1
+
+            End If
+
+
 
             flag_ch = ch
 
@@ -2840,12 +2872,12 @@ Public Class Form1
 
 
 
-        Good1.Text = Slot2.Text - cntdef1    '良品数の反映(動作低)
-        Good2.Text = Slot3.Text - cntdef2    '良品数の反映(動作高)
-        Good3.Text = Slot4.Text - cntdef3  　'良品数の反映(復帰高)
-        Good4.Text = Slot5.Text - cntdef4    '良品数の反映(復帰低)
-        Good5.Text = Slot6.Text - cntdef5    '良品数の反映(耐圧絶縁)
-        Good6.Text = Slot7.Text - cntdef6    '良品数の反映(回路抵抗)
+        Good1.Text = cntgood1    '良品数の反映(動作低)
+        Good2.Text = cntgood2    '良品数の反映(動作高)
+        Good3.Text = cntgood3  　'良品数の反映(復帰高)
+        Good4.Text = cntgood4    '良品数の反映(復帰低)
+        Good5.Text = cntgood5    '良品数の反映(耐圧絶縁)
+        Good6.Text = cntgood6    '良品数の反映(回路抵抗)
 
 
         'Good1.Text = a - cntdef1     '良品数の反映(動作低)
