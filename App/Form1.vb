@@ -3024,36 +3024,139 @@ Public Class Form1
     'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Ç±Ç±Ç‹Ç≈Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
 
 
-    Private Sub division_textchamge1(sender As Object, e As EventArgs) Handles division1.TextChanged
-        logslot1 = Slot2.Text
-        logdef1 = DefLbl1.Text
+    'Private Sub division_textchamge1(sender As Object, e As EventArgs) Handles division1.TextChanged
+    '    logslot1 = Slot2.Text
+    'End Sub
+
+    'Private Sub divdef_textchamge1(sender As Object, e As EventArgs) Handles DivDef1.TextChanged
+    '    logdef1 = DefLbl1.Text
+    'End Sub
+
+    'Private Sub division_textchamge2(sender As Object, e As EventArgs) Handles division2.TextChanged
+    '    logslot2 = Slot3.Text
+    'End Sub
+
+    'Private Sub divdef_textchamge2(sender As Object, e As EventArgs) Handles DivDef2.TextChanged
+    '    logdef2 = DefLbl2.Text
+    'End Sub
+
+
+    'Private Sub division_textchamge3(sender As Object, e As EventArgs) Handles division3.TextChanged
+    '    logslot3 = Slot4.Text
+    'End Sub
+
+    'Private Sub divdef_textchamge3(sender As Object, e As EventArgs) Handles DivDef3.TextChanged
+    '    logdef3 = DefLbl3.Text
+    'End Sub
+
+    'Private Sub division_textchamge4(sender As Object, e As EventArgs) Handles division4.TextChanged
+    '    logslot4 = Slot5.Text
+    'End Sub
+
+    'Private Sub divdef_textchamge4(sender As Object, e As EventArgs) Handles DivDef4.TextChanged
+    '    logdef4 = DefLbl4.Text
+    'End Sub
+
+    'Private Sub division_textchamge5(sender As Object, e As EventArgs) Handles division5.TextChanged
+    '    logslot5 = Slot6.Text
+    'End Sub
+
+    'Private Sub divdef_textchamge5(sender As Object, e As EventArgs) Handles DivDef5.TextChanged
+    '    logdef5 = DefLbl5.Text
+    'End Sub
+
+    'Private Sub division_textchamge6(sender As Object, e As EventArgs) Handles division6.TextChanged
+    '    logslot6 = Slot7.Text
+    'End Sub
+
+    'Private Sub divdef_textchamge6(sender As Object, e As EventArgs) Handles DivDef6.TextChanged
+    '    logdef6 = DefLbl6.Text
+    'End Sub
+
+    'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`ãÊï™ì‡ïsó«ÇÃîªíËèàóùÅ`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
+
+    Private Sub Division_Check1(sender As Object, e As EventArgs) Handles Slot2.TextChanged
+
+        If division1.Text <> "" And DivDef1.Text <> "" Then
+
+            If Slot2.Text - logslot1 <= division1.Text Then
+                If DefLbl1.Text - logdef1 >= DivDef1.Text Then
+                    AlertImg1.BackColor = Color.Red
+                End If
+            Else
+                logslot1 = Slot2.Text
+                logdef1 = DefLbl1.Text
+            End If
+        End If
     End Sub
 
-    Private Sub division_textchamge2(sender As Object, e As EventArgs) Handles division2.TextChanged
-        logslot2 = Slot3.Text
-        logdef2 = DefLbl2.Text
+    Private Sub Division_Check2(sender As Object, e As EventArgs) Handles Slot3.TextChanged
+
+        If division2.Text <> "" And DivDef2.Text <> "" Then
+            If Slot3.Text - logslot2 <= division2.Text Then
+                If DefLbl2.Text - logdef2 >= DivDef2.Text Then
+                    AlertImg2.BackColor = Color.Red
+                End If
+            Else
+                logslot2 = Slot3.Text
+                logdef2 = DefLbl2.Text
+            End If
+        End If
+    End Sub
+    Private Sub Division_Check3(sender As Object, e As EventArgs) Handles Slot4.TextChanged
+
+        If division3.Text <> "" And DivDef3.Text <> "" Then
+            If Slot4.Text - logslot3 <= division3.Text Then
+                If DefLbl3.Text - logdef3 >= DivDef3.Text Then
+                    AlertImg3.BackColor = Color.Red
+                End If
+            Else
+                logslot3 = Slot4.Text
+                logdef3 = DefLbl3.Text
+            End If
+        End If
     End Sub
 
-    Private Sub division_textchamge3(sender As Object, e As EventArgs) Handles division3.TextChanged
-        logslot3 = Slot4.Text
-        logdef3 = DefLbl3.Text
+    Private Sub Division_Check4(sender As Object, e As EventArgs) Handles Slot5.TextChanged
+        If division4.Text <> "" And DivDef4.Text <> "" Then
+            If Slot5.Text - logslot4 <= division4.Text Then
+                If DefLbl4.Text - logdef4 >= DivDef4.Text Then
+                    AlertImg4.BackColor = Color.Red
+                End If
+            Else
+                logslot4 = Slot5.Text
+                logdef4 = DefLbl4.Text
+            End If
+        End If
     End Sub
 
-    Private Sub division_textchamge4(sender As Object, e As EventArgs) Handles division4.TextChanged
-        logslot4 = Slot5.Text
-        logdef4 = DefLbl4.Text
+
+    Private Sub Division_Check5(sender As Object, e As EventArgs) Handles Slot6.TextChanged
+        If division5.Text <> "" And DivDef5.Text <> "" Then
+            If Slot6.Text - logslot5 <= division5.Text Then
+                If DefLbl5.Text - logdef5 >= DivDef5.Text Then
+                    AlertImg5.BackColor = Color.Red
+                End If
+            Else
+                logslot5 = Slot6.Text
+                logdef5 = DefLbl5.Text
+            End If
+        End If
     End Sub
 
-    Private Sub division_textchamge5(sender As Object, e As EventArgs) Handles division5.TextChanged
-        logslot5 = Slot6.Text
-        logdef5 = DefLbl5.Text
+    Private Sub Division_Check6(sender As Object, e As EventArgs) Handles Slot7.TextChanged
+        If division6.Text <> "" And DivDef6.Text <> "" Then
+            If Slot6.Text - logslot5 <= division5.Text Then
+                If DefLbl6.Text - logdef6 >= DivDef6.Text Then
+                    AlertImg6.BackColor = Color.Red
+                End If
+            Else
+                logslot6 = Slot7.Text
+                logdef6 = DefLbl6.Text
+            End If
+        End If
     End Sub
-
-    Private Sub division_textchamge6(sender As Object, e As EventArgs) Handles division6.TextChanged
-        logslot6 = Slot7.Text
-        logdef6 = DefLbl6.Text
-    End Sub
-
+    'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Ç±Ç±Ç‹Ç≈Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
 
     'Private Function Slot_Calc(num As Integer) As Integer       'åvéZÇíSìñÇ∑ÇÈèàóùÅ@Slot_Calc(êîéö)Ç≈åƒÇ—èoÇ≥ÇÍÇƒêîéöÇ…ëŒâûÇµÇΩåvéZÇçsÇ§
     '    Dim slotsum As Integer, i As Integer
@@ -3240,34 +3343,7 @@ Public Class Form1
         TimeStamp6.Text = Label28.Text
     End Sub
 
-    Private Sub Division_Check1(sender As Object, e As EventArgs) Handles Slot2.TextChanged
 
-        If division1.Text <> "" And DivDef1.Text <> "" Then
-
-            If Slot2.Text - logslot1 <= division1.Text Then
-                If DefLbl1.Text - logdef1 >= DivDef1.Text Then
-                    AlertImg1.BackColor = Color.Red
-                End If
-            Else
-                logslot1 = Slot2.Text
-            End If
-        End If
-    End Sub
-    Private Sub Division_Check2(sender As Object, e As EventArgs) Handles Slot3.TextChanged
-
-    End Sub
-    Private Sub Division_Check3(sender As Object, e As EventArgs) Handles Slot4.TextChanged
-
-    End Sub
-    Private Sub Division_Check4(sender As Object, e As EventArgs) Handles Slot5.TextChanged
-
-    End Sub
-    Private Sub Division_Check5(sender As Object, e As EventArgs) Handles Slot6.TextChanged
-
-    End Sub
-    Private Sub Division_Check6(sender As Object, e As EventArgs) Handles Slot7.TextChanged
-
-    End Sub
 
 End Class
 
