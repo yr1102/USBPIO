@@ -920,7 +920,7 @@ Public Class Form1
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("MS UI Gothic", 27.25!)
         Me.TextBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.TextBox1.Location = New System.Drawing.Point(334, 63)
+        Me.TextBox1.Location = New System.Drawing.Point(337, 63)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(96, 44)
         Me.TextBox1.TabIndex = 0
@@ -2150,7 +2150,7 @@ Public Class Form1
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(841, 660)
+        Me.ClientSize = New System.Drawing.Size(846, 660)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.DefRate6)
@@ -3240,6 +3240,34 @@ Public Class Form1
         TimeStamp6.Text = Label28.Text
     End Sub
 
+    Private Sub Division_Check1(sender As Object, e As EventArgs) Handles Slot2.TextChanged
+
+        If division1.Text <> "" And DivDef1.Text <> "" Then
+
+            If Slot2.Text - logslot1 <= division1.Text Then
+                If DefLbl1.Text - logdef1 >= DivDef1.Text Then
+                    AlertImg1.BackColor = Color.Red
+                End If
+            Else
+                logslot1 = Slot2.Text
+            End If
+        End If
+    End Sub
+    Private Sub Division_Check2(sender As Object, e As EventArgs) Handles Slot3.TextChanged
+
+    End Sub
+    Private Sub Division_Check3(sender As Object, e As EventArgs) Handles Slot4.TextChanged
+
+    End Sub
+    Private Sub Division_Check4(sender As Object, e As EventArgs) Handles Slot5.TextChanged
+
+    End Sub
+    Private Sub Division_Check5(sender As Object, e As EventArgs) Handles Slot6.TextChanged
+
+    End Sub
+    Private Sub Division_Check6(sender As Object, e As EventArgs) Handles Slot7.TextChanged
+
+    End Sub
 
 End Class
 
