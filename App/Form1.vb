@@ -95,37 +95,37 @@ Public Class Form1
     Friend WithEvents TimeStamp3 As TextBox
     Friend WithEvents TimeStamp2 As TextBox
     Friend WithEvents TimeStamp1 As TextBox
-    Friend WithEvents TextBox66 As TextBox
+    Friend WithEvents DivDef6 As TextBox
     Friend WithEvents DefSet6 As TextBox
-    Friend WithEvents TextBox68 As TextBox
+    Friend WithEvents division6 As TextBox
     Friend WithEvents TextBox69 As TextBox
     Friend WithEvents TextBox70 As TextBox
     Friend WithEvents TextBox71 As TextBox
     Friend WithEvents TextBox72 As TextBox
-    Friend WithEvents TextBox59 As TextBox
+    Friend WithEvents DivDef5 As TextBox
     Friend WithEvents DefSet5 As TextBox
-    Friend WithEvents TextBox61 As TextBox
+    Friend WithEvents division5 As TextBox
     Friend WithEvents TextBox62 As TextBox
     Friend WithEvents TextBox63 As TextBox
     Friend WithEvents TextBox64 As TextBox
     Friend WithEvents TextBox65 As TextBox
-    Friend WithEvents TextBox52 As TextBox
+    Friend WithEvents DivDef4 As TextBox
     Friend WithEvents DefSet4 As TextBox
-    Friend WithEvents TextBox54 As TextBox
+    Friend WithEvents division4 As TextBox
     Friend WithEvents TextBox55 As TextBox
     Friend WithEvents TextBox56 As TextBox
     Friend WithEvents TextBox57 As TextBox
     Friend WithEvents TextBox58 As TextBox
-    Friend WithEvents TextBox45 As TextBox
+    Friend WithEvents DivDef3 As TextBox
     Friend WithEvents DefSet3 As TextBox
-    Friend WithEvents TextBox47 As TextBox
+    Friend WithEvents division3 As TextBox
     Friend WithEvents TextBox48 As TextBox
     Friend WithEvents TextBox49 As TextBox
     Friend WithEvents TextBox50 As TextBox
     Friend WithEvents TextBox51 As TextBox
-    Friend WithEvents TextBox38 As TextBox
+    Friend WithEvents DivDef2 As TextBox
     Friend WithEvents DefSet2 As TextBox
-    Friend WithEvents TextBox40 As TextBox
+    Friend WithEvents division2 As TextBox
     Friend WithEvents TextBox41 As TextBox
     Friend WithEvents TextBox42 As TextBox
     Friend WithEvents TextBox43 As TextBox
@@ -136,9 +136,9 @@ Public Class Form1
     Friend WithEvents TextBox34 As TextBox
     Friend WithEvents TextBox33 As TextBox
     Friend WithEvents TextBox32 As TextBox
-    Friend WithEvents TextBox27 As TextBox
+    Friend WithEvents DivDef1 As TextBox
     Friend WithEvents DefSet1 As TextBox
-    Friend WithEvents TextBox29 As TextBox
+    Friend WithEvents division1 As TextBox
     Friend WithEvents TextBox26 As TextBox
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents TextBox24 As TextBox
@@ -264,37 +264,37 @@ Public Class Form1
         Me.TimeStamp3 = New System.Windows.Forms.TextBox()
         Me.TimeStamp2 = New System.Windows.Forms.TextBox()
         Me.TimeStamp1 = New System.Windows.Forms.TextBox()
-        Me.TextBox66 = New System.Windows.Forms.TextBox()
+        Me.DivDef6 = New System.Windows.Forms.TextBox()
         Me.DefSet6 = New System.Windows.Forms.TextBox()
-        Me.TextBox68 = New System.Windows.Forms.TextBox()
+        Me.division6 = New System.Windows.Forms.TextBox()
         Me.TextBox69 = New System.Windows.Forms.TextBox()
         Me.TextBox70 = New System.Windows.Forms.TextBox()
         Me.TextBox71 = New System.Windows.Forms.TextBox()
         Me.TextBox72 = New System.Windows.Forms.TextBox()
-        Me.TextBox59 = New System.Windows.Forms.TextBox()
+        Me.DivDef5 = New System.Windows.Forms.TextBox()
         Me.DefSet5 = New System.Windows.Forms.TextBox()
-        Me.TextBox61 = New System.Windows.Forms.TextBox()
+        Me.division5 = New System.Windows.Forms.TextBox()
         Me.TextBox62 = New System.Windows.Forms.TextBox()
         Me.TextBox63 = New System.Windows.Forms.TextBox()
         Me.TextBox64 = New System.Windows.Forms.TextBox()
         Me.TextBox65 = New System.Windows.Forms.TextBox()
-        Me.TextBox52 = New System.Windows.Forms.TextBox()
+        Me.DivDef4 = New System.Windows.Forms.TextBox()
         Me.DefSet4 = New System.Windows.Forms.TextBox()
-        Me.TextBox54 = New System.Windows.Forms.TextBox()
+        Me.division4 = New System.Windows.Forms.TextBox()
         Me.TextBox55 = New System.Windows.Forms.TextBox()
         Me.TextBox56 = New System.Windows.Forms.TextBox()
         Me.TextBox57 = New System.Windows.Forms.TextBox()
         Me.TextBox58 = New System.Windows.Forms.TextBox()
-        Me.TextBox45 = New System.Windows.Forms.TextBox()
+        Me.DivDef3 = New System.Windows.Forms.TextBox()
         Me.DefSet3 = New System.Windows.Forms.TextBox()
-        Me.TextBox47 = New System.Windows.Forms.TextBox()
+        Me.division3 = New System.Windows.Forms.TextBox()
         Me.TextBox48 = New System.Windows.Forms.TextBox()
         Me.TextBox49 = New System.Windows.Forms.TextBox()
         Me.TextBox50 = New System.Windows.Forms.TextBox()
         Me.TextBox51 = New System.Windows.Forms.TextBox()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.DivDef2 = New System.Windows.Forms.TextBox()
         Me.DefSet2 = New System.Windows.Forms.TextBox()
-        Me.TextBox40 = New System.Windows.Forms.TextBox()
+        Me.division2 = New System.Windows.Forms.TextBox()
         Me.TextBox41 = New System.Windows.Forms.TextBox()
         Me.TextBox42 = New System.Windows.Forms.TextBox()
         Me.TextBox43 = New System.Windows.Forms.TextBox()
@@ -305,9 +305,9 @@ Public Class Form1
         Me.TextBox34 = New System.Windows.Forms.TextBox()
         Me.TextBox33 = New System.Windows.Forms.TextBox()
         Me.TextBox32 = New System.Windows.Forms.TextBox()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
+        Me.DivDef1 = New System.Windows.Forms.TextBox()
         Me.DefSet1 = New System.Windows.Forms.TextBox()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.division1 = New System.Windows.Forms.TextBox()
         Me.TextBox26 = New System.Windows.Forms.TextBox()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
@@ -864,7 +864,7 @@ Public Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(467, 614)
+        Me.Label2.Location = New System.Drawing.Point(713, 632)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 19)
         Me.Label2.TabIndex = 13
@@ -876,7 +876,7 @@ Public Class Form1
         'Slot1
         '
         Me.Slot1.Font = New System.Drawing.Font("MS UI Gothic", 27.0!)
-        Me.Slot1.Location = New System.Drawing.Point(456, 69)
+        Me.Slot1.Location = New System.Drawing.Point(456, 68)
         Me.Slot1.Name = "Slot1"
         Me.Slot1.Size = New System.Drawing.Size(88, 35)
         Me.Slot1.TabIndex = 226
@@ -989,7 +989,7 @@ Public Class Form1
         Me.Label30.AutoSize = True
         Me.Label30.Enabled = False
         Me.Label30.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label30.Location = New System.Drawing.Point(615, 38)
+        Me.Label30.Location = New System.Drawing.Point(614, 38)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(77, 14)
         Me.Label30.TabIndex = 228
@@ -1152,17 +1152,17 @@ Public Class Form1
         Me.TimeStamp1.Text = "hh:mm:ss"
         Me.TimeStamp1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox66
+        'DivDef6
         '
-        Me.TextBox66.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox66.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox66.Location = New System.Drawing.Point(715, 386)
-        Me.TextBox66.Multiline = True
-        Me.TextBox66.Name = "TextBox66"
-        Me.TextBox66.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox66.TabIndex = 21
-        Me.TextBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.DivDef6.BackColor = System.Drawing.SystemColors.Menu
+        Me.DivDef6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DivDef6.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DivDef6.Location = New System.Drawing.Point(715, 386)
+        Me.DivDef6.Multiline = True
+        Me.DivDef6.Name = "DivDef6"
+        Me.DivDef6.Size = New System.Drawing.Size(89, 26)
+        Me.DivDef6.TabIndex = 21
+        Me.DivDef6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet6
         '
@@ -1176,17 +1176,17 @@ Public Class Form1
         Me.DefSet6.TabIndex = 19
         Me.DefSet6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox68
+        'division6
         '
-        Me.TextBox68.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox68.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox68.Location = New System.Drawing.Point(715, 360)
-        Me.TextBox68.Multiline = True
-        Me.TextBox68.Name = "TextBox68"
-        Me.TextBox68.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox68.TabIndex = 20
-        Me.TextBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.division6.BackColor = System.Drawing.SystemColors.Menu
+        Me.division6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.division6.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.division6.Location = New System.Drawing.Point(715, 360)
+        Me.division6.Multiline = True
+        Me.division6.Name = "division6"
+        Me.division6.Size = New System.Drawing.Size(89, 27)
+        Me.division6.TabIndex = 20
+        Me.division6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox69
         '
@@ -1232,17 +1232,17 @@ Public Class Form1
         Me.TextBox72.Size = New System.Drawing.Size(89, 27)
         Me.TextBox72.TabIndex = 293
         '
-        'TextBox59
+        'DivDef5
         '
-        Me.TextBox59.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox59.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox59.Location = New System.Drawing.Point(608, 386)
-        Me.TextBox59.Multiline = True
-        Me.TextBox59.Name = "TextBox59"
-        Me.TextBox59.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox59.TabIndex = 18
-        Me.TextBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.DivDef5.BackColor = System.Drawing.SystemColors.Menu
+        Me.DivDef5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DivDef5.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DivDef5.Location = New System.Drawing.Point(608, 386)
+        Me.DivDef5.Multiline = True
+        Me.DivDef5.Name = "DivDef5"
+        Me.DivDef5.Size = New System.Drawing.Size(89, 26)
+        Me.DivDef5.TabIndex = 18
+        Me.DivDef5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet5
         '
@@ -1256,17 +1256,17 @@ Public Class Form1
         Me.DefSet5.TabIndex = 16
         Me.DefSet5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox61
+        'division5
         '
-        Me.TextBox61.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox61.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox61.Location = New System.Drawing.Point(608, 360)
-        Me.TextBox61.Multiline = True
-        Me.TextBox61.Name = "TextBox61"
-        Me.TextBox61.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox61.TabIndex = 17
-        Me.TextBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.division5.BackColor = System.Drawing.SystemColors.Menu
+        Me.division5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.division5.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.division5.Location = New System.Drawing.Point(608, 360)
+        Me.division5.Multiline = True
+        Me.division5.Name = "division5"
+        Me.division5.Size = New System.Drawing.Size(89, 27)
+        Me.division5.TabIndex = 17
+        Me.division5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox62
         '
@@ -1312,17 +1312,17 @@ Public Class Form1
         Me.TextBox65.Size = New System.Drawing.Size(89, 27)
         Me.TextBox65.TabIndex = 286
         '
-        'TextBox52
+        'DivDef4
         '
-        Me.TextBox52.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox52.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox52.Location = New System.Drawing.Point(501, 386)
-        Me.TextBox52.Multiline = True
-        Me.TextBox52.Name = "TextBox52"
-        Me.TextBox52.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox52.TabIndex = 15
-        Me.TextBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.DivDef4.BackColor = System.Drawing.SystemColors.Menu
+        Me.DivDef4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DivDef4.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DivDef4.Location = New System.Drawing.Point(501, 386)
+        Me.DivDef4.Multiline = True
+        Me.DivDef4.Name = "DivDef4"
+        Me.DivDef4.Size = New System.Drawing.Size(89, 26)
+        Me.DivDef4.TabIndex = 15
+        Me.DivDef4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet4
         '
@@ -1336,17 +1336,17 @@ Public Class Form1
         Me.DefSet4.TabIndex = 13
         Me.DefSet4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox54
+        'division4
         '
-        Me.TextBox54.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox54.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox54.Location = New System.Drawing.Point(501, 360)
-        Me.TextBox54.Multiline = True
-        Me.TextBox54.Name = "TextBox54"
-        Me.TextBox54.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox54.TabIndex = 14
-        Me.TextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.division4.BackColor = System.Drawing.SystemColors.Menu
+        Me.division4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.division4.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.division4.Location = New System.Drawing.Point(501, 360)
+        Me.division4.Multiline = True
+        Me.division4.Name = "division4"
+        Me.division4.Size = New System.Drawing.Size(89, 27)
+        Me.division4.TabIndex = 14
+        Me.division4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox55
         '
@@ -1392,17 +1392,17 @@ Public Class Form1
         Me.TextBox58.Size = New System.Drawing.Size(89, 27)
         Me.TextBox58.TabIndex = 279
         '
-        'TextBox45
+        'DivDef3
         '
-        Me.TextBox45.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox45.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox45.Location = New System.Drawing.Point(394, 386)
-        Me.TextBox45.Multiline = True
-        Me.TextBox45.Name = "TextBox45"
-        Me.TextBox45.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox45.TabIndex = 12
-        Me.TextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.DivDef3.BackColor = System.Drawing.SystemColors.Menu
+        Me.DivDef3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DivDef3.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DivDef3.Location = New System.Drawing.Point(394, 386)
+        Me.DivDef3.Multiline = True
+        Me.DivDef3.Name = "DivDef3"
+        Me.DivDef3.Size = New System.Drawing.Size(89, 26)
+        Me.DivDef3.TabIndex = 12
+        Me.DivDef3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet3
         '
@@ -1416,17 +1416,17 @@ Public Class Form1
         Me.DefSet3.TabIndex = 10
         Me.DefSet3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox47
+        'division3
         '
-        Me.TextBox47.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox47.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox47.Location = New System.Drawing.Point(394, 360)
-        Me.TextBox47.Multiline = True
-        Me.TextBox47.Name = "TextBox47"
-        Me.TextBox47.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox47.TabIndex = 11
-        Me.TextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.division3.BackColor = System.Drawing.SystemColors.Menu
+        Me.division3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.division3.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.division3.Location = New System.Drawing.Point(394, 360)
+        Me.division3.Multiline = True
+        Me.division3.Name = "division3"
+        Me.division3.Size = New System.Drawing.Size(89, 27)
+        Me.division3.TabIndex = 11
+        Me.division3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox48
         '
@@ -1472,17 +1472,17 @@ Public Class Form1
         Me.TextBox51.Size = New System.Drawing.Size(89, 27)
         Me.TextBox51.TabIndex = 272
         '
-        'TextBox38
+        'DivDef2
         '
-        Me.TextBox38.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox38.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox38.Location = New System.Drawing.Point(287, 386)
-        Me.TextBox38.Multiline = True
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox38.TabIndex = 9
-        Me.TextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.DivDef2.BackColor = System.Drawing.SystemColors.Menu
+        Me.DivDef2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DivDef2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DivDef2.Location = New System.Drawing.Point(287, 386)
+        Me.DivDef2.Multiline = True
+        Me.DivDef2.Name = "DivDef2"
+        Me.DivDef2.Size = New System.Drawing.Size(89, 26)
+        Me.DivDef2.TabIndex = 9
+        Me.DivDef2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet2
         '
@@ -1496,17 +1496,17 @@ Public Class Form1
         Me.DefSet2.TabIndex = 7
         Me.DefSet2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox40
+        'division2
         '
-        Me.TextBox40.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox40.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox40.Location = New System.Drawing.Point(287, 360)
-        Me.TextBox40.Multiline = True
-        Me.TextBox40.Name = "TextBox40"
-        Me.TextBox40.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox40.TabIndex = 8
-        Me.TextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.division2.BackColor = System.Drawing.SystemColors.Menu
+        Me.division2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.division2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.division2.Location = New System.Drawing.Point(287, 360)
+        Me.division2.Multiline = True
+        Me.division2.Name = "division2"
+        Me.division2.Size = New System.Drawing.Size(89, 27)
+        Me.division2.TabIndex = 8
+        Me.division2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox41
         '
@@ -1612,17 +1612,17 @@ Public Class Form1
         Me.TextBox32.Size = New System.Drawing.Size(108, 76)
         Me.TextBox32.TabIndex = 22
         '
-        'TextBox27
+        'DivDef1
         '
-        Me.TextBox27.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox27.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox27.Location = New System.Drawing.Point(181, 386)
-        Me.TextBox27.Multiline = True
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(89, 26)
-        Me.TextBox27.TabIndex = 6
-        Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.DivDef1.BackColor = System.Drawing.SystemColors.Menu
+        Me.DivDef1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DivDef1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.DivDef1.Location = New System.Drawing.Point(181, 386)
+        Me.DivDef1.Multiline = True
+        Me.DivDef1.Name = "DivDef1"
+        Me.DivDef1.Size = New System.Drawing.Size(89, 26)
+        Me.DivDef1.TabIndex = 6
+        Me.DivDef1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'DefSet1
         '
@@ -1636,17 +1636,17 @@ Public Class Form1
         Me.DefSet1.TabIndex = 4
         Me.DefSet1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox29
+        'division1
         '
-        Me.TextBox29.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox29.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.TextBox29.Location = New System.Drawing.Point(181, 360)
-        Me.TextBox29.Multiline = True
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(89, 27)
-        Me.TextBox29.TabIndex = 5
-        Me.TextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.division1.BackColor = System.Drawing.SystemColors.Menu
+        Me.division1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.division1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.division1.Location = New System.Drawing.Point(181, 360)
+        Me.division1.Multiline = True
+        Me.division1.Name = "division1"
+        Me.division1.Size = New System.Drawing.Size(89, 27)
+        Me.division1.TabIndex = 5
+        Me.division1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox26
         '
@@ -2123,7 +2123,7 @@ Public Class Form1
         '
         'PictureBox4
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.PictureBox4.BackColor = System.Drawing.Color.Gainsboro
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Location = New System.Drawing.Point(385, 585)
         Me.PictureBox4.Name = "PictureBox4"
@@ -2134,19 +2134,21 @@ Public Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label1.Enabled = False
-        Me.Label1.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(392, 597)
+        Me.Label1.Font = New System.Drawing.Font("HGPｺﾞｼｯｸM", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(390, 598)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 28)
+        Me.Label1.Size = New System.Drawing.Size(42, 26)
         Me.Label1.TabIndex = 343
         Me.Label1.Text = "通信" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "エラー"
         '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(841, 660)
         Me.Controls.Add(Me.Label1)
@@ -2189,37 +2191,37 @@ Public Class Form1
         Me.Controls.Add(Me.TimeStamp3)
         Me.Controls.Add(Me.TimeStamp2)
         Me.Controls.Add(Me.TimeStamp1)
-        Me.Controls.Add(Me.TextBox66)
+        Me.Controls.Add(Me.DivDef6)
         Me.Controls.Add(Me.DefSet6)
-        Me.Controls.Add(Me.TextBox68)
+        Me.Controls.Add(Me.division6)
         Me.Controls.Add(Me.TextBox69)
         Me.Controls.Add(Me.TextBox70)
         Me.Controls.Add(Me.TextBox71)
         Me.Controls.Add(Me.TextBox72)
-        Me.Controls.Add(Me.TextBox59)
+        Me.Controls.Add(Me.DivDef5)
         Me.Controls.Add(Me.DefSet5)
-        Me.Controls.Add(Me.TextBox61)
+        Me.Controls.Add(Me.division5)
         Me.Controls.Add(Me.TextBox62)
         Me.Controls.Add(Me.TextBox63)
         Me.Controls.Add(Me.TextBox64)
         Me.Controls.Add(Me.TextBox65)
-        Me.Controls.Add(Me.TextBox52)
+        Me.Controls.Add(Me.DivDef4)
         Me.Controls.Add(Me.DefSet4)
-        Me.Controls.Add(Me.TextBox54)
+        Me.Controls.Add(Me.division4)
         Me.Controls.Add(Me.TextBox55)
         Me.Controls.Add(Me.TextBox56)
         Me.Controls.Add(Me.TextBox57)
         Me.Controls.Add(Me.TextBox58)
-        Me.Controls.Add(Me.TextBox45)
+        Me.Controls.Add(Me.DivDef3)
         Me.Controls.Add(Me.DefSet3)
-        Me.Controls.Add(Me.TextBox47)
+        Me.Controls.Add(Me.division3)
         Me.Controls.Add(Me.TextBox48)
         Me.Controls.Add(Me.TextBox49)
         Me.Controls.Add(Me.TextBox50)
         Me.Controls.Add(Me.TextBox51)
-        Me.Controls.Add(Me.TextBox38)
+        Me.Controls.Add(Me.DivDef2)
         Me.Controls.Add(Me.DefSet2)
-        Me.Controls.Add(Me.TextBox40)
+        Me.Controls.Add(Me.division2)
         Me.Controls.Add(Me.TextBox41)
         Me.Controls.Add(Me.TextBox42)
         Me.Controls.Add(Me.TextBox43)
@@ -2230,9 +2232,9 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox34)
         Me.Controls.Add(Me.TextBox33)
         Me.Controls.Add(Me.TextBox32)
-        Me.Controls.Add(Me.TextBox27)
+        Me.Controls.Add(Me.DivDef1)
         Me.Controls.Add(Me.DefSet1)
-        Me.Controls.Add(Me.TextBox29)
+        Me.Controls.Add(Me.division1)
         Me.Controls.Add(Me.TextBox26)
         Me.Controls.Add(Me.TextBox23)
         Me.Controls.Add(Me.TextBox24)
@@ -2520,21 +2522,36 @@ Public Class Form1
     Private flag_light As String    '連続点灯かどうかの監視フラグ
     Private flag_cnt As String      '投入時のカウント処理用
     Private flag_ch As String       '同一CHかどうかの監視
-    'Private flag_def As String      '同一不良かどうかの監視
+    'Private flag_def As String     '同一不良かどうかの監視
 
     Private cntdef1 As Integer     '不良カウント動作低
     Private cntdef2 As Integer     '不良カウント動作高
     Private cntdef3 As Integer     '不良カウント復帰低
     Private cntdef4 As Integer　　 '不良カウント復帰高
     Private cntdef5 As Integer     '不良カウント耐圧絶縁
-    Private cntdef6 As Integer    '不良カウント回路抵抗
+    Private cntdef6 As Integer     '不良カウント回路抵抗
 
     Private cntgood1 As Integer     '良品カウント動作低
     Private cntgood2 As Integer     '良品カウント動作高
     Private cntgood3 As Integer     '良品カウント復帰低
     Private cntgood4 As Integer　　 '良品カウント復帰高
     Private cntgood5 As Integer     '良品カウント耐圧絶縁
-    Private cntgood6 As Integer　   '良品カウント回路抵抗
+    Private cntgood6 As Integer     '良品カウント回路抵抗
+
+
+    Private logdef1 As Integer     '区分内不良カウント動作低
+    Private logdef2 As Integer     '区分内不良カウント動作高
+    Private logdef3 As Integer     '区分内不良カウント復帰低
+    Private logdef4 As Integer　　 '区分内不良カウント復帰高
+    Private logdef5 As Integer     '区分内不良カウント耐圧絶縁
+    Private logdef6 As Integer     '区分内不良カウント回路抵抗
+
+    Private logslot1 As Integer     '区分カウント動作低
+    Private logslot2 As Integer     '区分カウント動作高
+    Private logslot3 As Integer     '区分カウント復帰低
+    Private logslot4 As Integer　　 '区分カウント復帰高
+    Private logslot5 As Integer     '区分カウント耐圧絶縁
+    Private logslot6 As Integer     '区分カウント回路抵抗
 
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
@@ -2880,12 +2897,12 @@ Public Class Form1
     Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '変更が加わった場合
         Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
 
-        a = Slot_Calc(5)    'Slot_Calcに数字を渡し計算結果を受け取る
-        b = Slot_Calc(8)    '0~数字の数までのテーブルに投入されている数の合計が帰ってくる
-        c = Slot_Calc(14)　 'それを各アルファベットに格納
-        d = Slot_Calc(19)
-        e = Slot_Calc(32)
-        f = Slot_Calc(38)
+        'a = Slot_Calc(5)    'Slot_Calcに数字を渡し計算結果を受け取る
+        'b = Slot_Calc(8)    '0~数字の数までのテーブルに投入されている数の合計が帰ってくる
+        'c = Slot_Calc(14)　 'それを各アルファベットに格納
+        'd = Slot_Calc(19)
+        'e = Slot_Calc(32)
+        'f = Slot_Calc(38)
 
         'Debug.WriteLine(a & "動作")
         'Debug.WriteLine(b & "動作")
@@ -2895,12 +2912,12 @@ Public Class Form1
         'Debug.WriteLine(f & "回路")
 
 
-        Slot2.Text = Slot1.Text - a                                                     '検査数の反映(動作低)       
-        Slot3.Text = Slot1.Text - b - cntdef1                                           '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
-        Slot4.Text = Slot1.Text - c - cntdef1 - cntdef2                                 '検査数の反映(復帰高)
-        Slot5.Text = Slot1.Text - d - cntdef1 - cntdef2 - cntdef3                       '検査数の反映(復帰低)
-        Slot6.Text = Slot1.Text - e - cntdef1 - cntdef2 - cntdef3 - cntdef4             '検査数の反映(耐圧絶縁)
-        Slot7.Text = Slot1.Text - f - cntdef1 - cntdef2 - cntdef3 - cntdef4 - cntdef5   '検査数の反映(回路抵抗)
+        Slot2.Text = cntdef1 + cntgood1    '検査数の反映(動作低)       
+        Slot3.Text = cntdef2 + cntgood2    '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
+        Slot4.Text = cntdef3 + cntgood3    '検査数の反映(復帰高)
+        Slot5.Text = cntdef4 + cntgood4    '検査数の反映(復帰低)
+        Slot6.Text = cntdef5 + cntgood5    '検査数の反映(耐圧絶縁)
+        Slot7.Text = cntdef6 + cntgood6    '検査数の反映(回路抵抗)
 
 
 
@@ -2911,6 +2928,13 @@ Public Class Form1
         Good5.Text = cntgood5    '良品数の反映(耐圧絶縁)
         Good6.Text = cntgood6    '良品数の反映(回路抵抗)
 
+        DefLbl1.Text = cntdef1   '不良数の反映(動作低)
+        DefLbl2.Text = cntdef2   '不良数の反映(動作高)
+        DefLbl3.Text = cntdef3   '不良数の反映(復帰高)
+        DefLbl4.Text = cntdef4   '不良数の反映(復帰低)
+        DefLbl5.Text = cntdef5   '不良数の反映(耐圧絶縁)
+        DefLbl6.Text = cntdef6   '不良数の反映(回路抵抗)
+
 
         'Good1.Text = a - cntdef1     '良品数の反映(動作低)
         'Good2.Text = b - cntdef2     '良品数の反映(動作高)
@@ -2920,12 +2944,7 @@ Public Class Form1
         'Good6.Text = f - cntdef6     '良品数の反映(回路抵抗)
 
 
-        DefLbl1.Text = cntdef1
-        DefLbl2.Text = cntdef2
-        DefLbl3.Text = cntdef3
-        DefLbl4.Text = cntdef4
-        DefLbl5.Text = cntdef5
-        DefLbl6.Text = cntdef6
+
 
 
         If cntdef1 <> 0 Then
@@ -2952,7 +2971,7 @@ Public Class Form1
 
     '～～～～～～～～～～～～～～～～～～～不良数の警告処理～～～～～～～～～～～～～～～～～～～～～～～～～～
 
-    Private Sub Slot_LabelChanged2(sender As Object, ev As EventArgs) Handles Slot1.TextChanged '投入数に変更が加わった場合
+    Private Sub Slot_LabelChanged2(sender As Object, e As EventArgs) Handles Slot1.TextChanged '投入数に変更が加わった場合
         If DefSet1.Text = "" Then
         Else
             If DefLbl1.Text >= DefSet1.Text Then                       '不良数がセットした不良値以上になったとき
@@ -3005,15 +3024,46 @@ Public Class Form1
     '～～～～～～～～～～～～～～～～～～～ここまで～～～～～～～～～～～～～～～～～～～～～～～～～～
 
 
-    Private Function Slot_Calc(num As Integer) As Integer       '計算を担当する処理　Slot_Calc(数字)で呼び出されて数字に対応した計算を行う
-        Dim slotsum As Integer, i As Integer
+    Private Sub division_textchamge1(sender As Object, e As EventArgs) Handles division1.TextChanged
+        logslot1 = Slot2.Text
+        logdef1 = DefLbl1.Text
+    End Sub
 
-        For i = 0 To num Step 1                                 '受け取った数字の数だけForを繰り返す
-            slotsum = slotsum + Table(i)                        'slotsumにTable(0~数字)の合計を入れる
-        Next i
-        Return slotsum                                          'slotsumを計算結果として返す
+    Private Sub division_textchamge2(sender As Object, e As EventArgs) Handles division2.TextChanged
+        logslot2 = Slot3.Text
+        logdef2 = DefLbl2.Text
+    End Sub
 
-    End Function
+    Private Sub division_textchamge3(sender As Object, e As EventArgs) Handles division3.TextChanged
+        logslot3 = Slot4.Text
+        logdef3 = DefLbl3.Text
+    End Sub
+
+    Private Sub division_textchamge4(sender As Object, e As EventArgs) Handles division4.TextChanged
+        logslot4 = Slot5.Text
+        logdef4 = DefLbl4.Text
+    End Sub
+
+    Private Sub division_textchamge5(sender As Object, e As EventArgs) Handles division5.TextChanged
+        logslot5 = Slot6.Text
+        logdef5 = DefLbl5.Text
+    End Sub
+
+    Private Sub division_textchamge6(sender As Object, e As EventArgs) Handles division6.TextChanged
+        logslot6 = Slot7.Text
+        logdef6 = DefLbl6.Text
+    End Sub
+
+
+    'Private Function Slot_Calc(num As Integer) As Integer       '計算を担当する処理　Slot_Calc(数字)で呼び出されて数字に対応した計算を行う
+    '    Dim slotsum As Integer, i As Integer
+
+    '    For i = 0 To num Step 1                                 '受け取った数字の数だけForを繰り返す
+    '        slotsum = slotsum + Table(i)                        'slotsumにTable(0~数字)の合計を入れる
+    '    Next i
+    '    Return slotsum                                          'slotsumを計算結果として返す
+
+    'End Function
 
 
 
@@ -3025,9 +3075,13 @@ Public Class Form1
 
         If OnlineCheck.Checked = True Then                                          　'チェックが入っているかどうかの確認
             If (sacomUsbIoOpen(pio_id) = True) Then                                   'チェックが入っている場合　USBPIOと通信開始　
-                OnlinePic.BackColor = Color.LightGreen                              　'INDNUMはID数値のコンボボックス、Online状態を明るい緑に変更
+                OnlinePic.BackColor = Color.LightGreen                               'INDNUMはID数値のコンボボックス、Online状態を明るい緑に変更
+                PictureBox4.BackColor = Color.Gainsboro
+                Label1.BackColor = Color.Gainsboro
             Else
                 MsgBox("オープンできませんでした")                                    '***オープンに失敗した場合orチェックが取り消された場合
+                PictureBox4.BackColor = Color.Red
+                Label1.BackColor = Color.Red
             End If
         Else
             sacomUsbIoClose(pio_id)                                                   'USBPIOと通信を終了
@@ -3048,7 +3102,7 @@ Public Class Form1
         'DataSaveのチェックボックス処理を記述
 
 
-        '↓今の検査数がどうなっているか確かめることができるテスト機能
+        '↓今の検査数がどうなっているか確かめることができるテスト機能 
         'Debug.WriteLine("1.2.3.4.5.6.7.8.9.0.1.2.3")
         'Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
         'Debug.WriteLine("-------------------------")
@@ -3060,6 +3114,8 @@ Public Class Form1
         AlertImg5.BackColor = Color.Red
         AlertImg6.BackColor = Color.Red
 
+        PictureBox4.BackColor = Color.Gainsboro
+        Label1.BackColor = Color.Gainsboro
 
     End Sub
 
@@ -3183,6 +3239,8 @@ Public Class Form1
     Private Sub Timesave6(sender As Object, e As EventArgs) Handles AlertImg6.BackColorChanged
         TimeStamp6.Text = Label28.Text
     End Sub
+
+
 End Class
 
 
