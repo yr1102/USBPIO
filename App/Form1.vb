@@ -190,6 +190,7 @@ Public Class Form1
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Timer4 As Timer
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -359,6 +360,7 @@ Public Class Form1
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2154,7 +2156,7 @@ Public Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(56, 51)
         Me.Button1.TabIndex = 344
-        Me.Button1.Text = " "
+        Me.Button1.Text = "ğŒ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "İ’è"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
@@ -2567,6 +2569,13 @@ Public Class Form1
     Private logslot5 As Integer     '‹æ•ªƒJƒEƒ“ƒg‘Ïˆ³â‰
     Private logslot6 As Integer     '‹æ•ªƒJƒEƒ“ƒg‰ñ˜H’ïR
 
+    Public flashalert1 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì’á
+    Public flashalert2 As Integer     '•s—ÇƒJƒEƒ“ƒg“®ì‚
+    Public flashalert3 As Integer     '•s—ÇƒJƒEƒ“ƒg•œ‹A’á
+    Public flashalert4 As Integer@@ '•s—ÇƒJƒEƒ“ƒg•œ‹A‚
+    Public flashalert5 As Integer     '•s—ÇƒJƒEƒ“ƒg‘Ïˆ³â‰
+    Public flashalert6 As Integer     '•s—ÇƒJƒEƒ“ƒg‰ñ˜H’ïR
+
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
         '‚±‚±‚©‚ç
@@ -2581,6 +2590,8 @@ Public Class Form1
         Timer3.Interval = 5000 '5•b‚ÌƒCƒ“ƒ^[ƒoƒ‹‚Åî•ñ‚ğXV
         Timer3.Enabled = True 'ƒ^ƒCƒ}[‚ğ—LŒø‚É‚·‚é
 
+        Timer4.Interval = 1500 '5•b‚ÌƒCƒ“ƒ^[ƒoƒ‹‚Åî•ñ‚ğXV
+        Timer4.Enabled = True 'ƒ^ƒCƒ}[‚ğ—LŒø‚É‚·‚é
 
     End Sub
     'Timer
@@ -2812,6 +2823,7 @@ Public Class Form1
 
 
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
+
     End Sub
 
     '```````````````````•s—Ç‚ğ”»’è‚·‚é€–Ú``````````````````````````
@@ -3235,6 +3247,8 @@ Public Class Form1
         PictureBox4.BackColor = Color.Gainsboro
         Label1.BackColor = Color.Gainsboro
 
+        flashalert1 = 1
+
         Debug.WriteLine(cntdef1)
         'Debug.WriteLine(DivDef1.Text)
     End Sub
@@ -3256,7 +3270,7 @@ Public Class Form1
 
 
 
-    Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick         'ã‚Ìƒ^ƒCƒ}[‚ªXV‚³‚ê‚é‚½‚Ñ‚ÉƒCƒxƒ“ƒg”­¶
+    Private Sub Timer2_Tick(sender As System.Object, e As System.EventArgs) Handles Timer2.Tick         'ƒ^ƒCƒ}[‚ªXV‚³‚ê‚é‚½‚Ñ‚ÉƒCƒxƒ“ƒg”­¶
 
 
         Dim Dy As Integer = DateAndTime.Day(Now)    ' dayŠÖ”‚Å–{“ú‚Ì“ú‚ğæ“¾
@@ -3272,12 +3286,23 @@ Public Class Form1
 
         Label28.Text = Hr & "" & Min & "•ª" & Sec & "•b"
 
+        If flashalert1 = 1 Then
+            AlertImg1.BackColor = Color.Red
+            flashalert1 = 2
+        End If
+
+
     End Sub
 
 
 
     '```````````````````‚±‚±‚Ü‚Å```````````````````````````
-
+    Private Sub Timer4_Tick(sender As System.Object, e As System.EventArgs) Handles Timer4.Tick         'ƒ^ƒCƒ}[‚ªXV‚³‚ê‚é‚½‚Ñ‚ÉƒCƒxƒ“ƒg”­¶
+        If flashalert1 = 2 Then
+            AlertImg1.BackColor = Color.DarkRed
+            flashalert1 = 1
+        End If
+    End Sub
 
     '`````````````````ƒAƒ‰[ƒ€o—Í‹@”\‚ÌƒeƒXƒg`````````````````````
     Sub PlayBackgroundSoundFile()                                             'Œx‰¹Ä¶‹@”\

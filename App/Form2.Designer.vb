@@ -27,9 +27,9 @@ Partial Class Form2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(94, 286)
+        Me.Button1.Location = New System.Drawing.Point(27, 52)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(256, 124)
+        Me.Button1.Size = New System.Drawing.Size(128, 46)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "カウンターのリセット"
         Me.Button1.UseVisualStyleBackColor = True
@@ -38,7 +38,7 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(753, 162)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form2"
         Me.Text = "条件設定"

@@ -14,7 +14,6 @@ Partial Class LoginForm1
             MyBase.Dispose(disposing)
         End Try
     End Sub
-    Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
     Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
@@ -30,24 +29,13 @@ Partial Class LoginForm1
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.UsernameTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'LogoPictureBox
-        '
-        Me.LogoPictureBox.InitialImage = Nothing
-        Me.LogoPictureBox.Location = New System.Drawing.Point(1, 24)
-        Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 166)
-        Me.LogoPictureBox.TabIndex = 0
-        Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
@@ -112,7 +100,6 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.UsernameTextBox)
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
-        Me.Controls.Add(Me.LogoPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -120,7 +107,6 @@ Partial Class LoginForm1
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "ログイン"
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
