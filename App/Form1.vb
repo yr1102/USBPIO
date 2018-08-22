@@ -189,6 +189,7 @@ Public Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -357,6 +358,7 @@ Public Class Form1
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -864,7 +866,7 @@ Public Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label2.Location = New System.Drawing.Point(713, 632)
+        Me.Label2.Location = New System.Drawing.Point(408, 639)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 19)
         Me.Label2.TabIndex = 13
@@ -2145,12 +2147,23 @@ Public Class Form1
         Me.Label1.TabIndex = 343
         Me.Label1.Text = "通信" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "エラー"
         '
+        'Button1
+        '
+        Me.Button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Button1.Location = New System.Drawing.Point(473, 585)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(56, 51)
+        Me.Button1.TabIndex = 344
+        Me.Button1.Text = " "
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(846, 660)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.DefRate6)
@@ -2313,6 +2326,7 @@ Public Class Form1
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
         Me.Text = " "
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2511,10 +2525,10 @@ Public Class Form1
 
 
     Private Const pio_id As Integer = 0   'USBPIO のID　4号機は0番を使用
-    Private cntslot As Integer      '投入をslotと表現　投入のカウント
+    Public cntslot As Integer      '投入をslotと表現　投入のカウント
     Private numtable As Integer = 0  '1テーブルあたりの投入数
     Private cnttable As Integer = 0   'テーブルにいくつあるかを記憶する変数
-    Public Table(38) As Short      '各テーブル用の配列　検査項目は38番目(回路抵抗の前)までわかればいいので全テーブル分(54個)確保しない
+    'Public Table(38) As Short      '各テーブル用の配列　検査項目は38番目(回路抵抗の前)までわかればいいので全テーブル分(54個)確保しない
     Private i As Short              'テーブル配列用for文のカウントアップ
 
     Private cntred As Integer       '赤点灯の回数をカウントしておく
@@ -2524,19 +2538,19 @@ Public Class Form1
     Private flag_ch As String       '同一CHかどうかの監視
     'Private flag_def As String     '同一不良かどうかの監視
 
-    Private cntdef1 As Integer     '不良カウント動作低
-    Private cntdef2 As Integer     '不良カウント動作高
-    Private cntdef3 As Integer     '不良カウント復帰低
-    Private cntdef4 As Integer　　 '不良カウント復帰高
-    Private cntdef5 As Integer     '不良カウント耐圧絶縁
-    Private cntdef6 As Integer     '不良カウント回路抵抗
+    Public cntdef1 As Integer     '不良カウント動作低
+    Public cntdef2 As Integer     '不良カウント動作高
+    Public cntdef3 As Integer     '不良カウント復帰低
+    Public cntdef4 As Integer　　 '不良カウント復帰高
+    Public cntdef5 As Integer     '不良カウント耐圧絶縁
+    Public cntdef6 As Integer     '不良カウント回路抵抗
 
-    Private cntgood1 As Integer     '良品カウント動作低
-    Private cntgood2 As Integer     '良品カウント動作高
-    Private cntgood3 As Integer     '良品カウント復帰低
-    Private cntgood4 As Integer　　 '良品カウント復帰高
-    Private cntgood5 As Integer     '良品カウント耐圧絶縁
-    Private cntgood6 As Integer     '良品カウント回路抵抗
+    Public cntgood1 As Integer     '良品カウント動作低
+    Public cntgood2 As Integer     '良品カウント動作高
+    Public cntgood3 As Integer     '良品カウント復帰低
+    Public cntgood4 As Integer　　 '良品カウント復帰高
+    Public cntgood5 As Integer     '良品カウント耐圧絶縁
+    Public cntgood6 As Integer     '良品カウント回路抵抗
 
 
     Private logdef1 As Integer     '区分内不良カウント動作低
@@ -2710,6 +2724,7 @@ Public Class Form1
             End If
 
             If flag_ch <> "CH4" Then
+                Def_count(dathex, "CH4")
 
                 'For i = 0 To 37 Step 1                                        '検査数の反映処理
                 '    Table(38 - i) = Table(37 - i)
@@ -2736,12 +2751,12 @@ Public Class Form1
                 ''Debug.WriteLine(f & "回路")
 
 
-                Slot2.Text = cntgood1 + cntdef1    '検査数の反映(動作低)       
-                Slot3.Text = cntgood2 + cntdef2    '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
-                Slot4.Text = cntgood3 + cntdef3    '検査数の反映(復帰高)
-                Slot5.Text = cntgood4 + cntdef4    '検査数の反映(復帰低)
-                Slot6.Text = cntgood5 + cntdef5    '検査数の反映(耐圧絶縁)
-                Slot7.Text = cntgood6 + cntdef6    '検査数の反映(回路抵抗)
+                'Slot2.Text = cntgood1 + cntdef1    '検査数の反映(動作低)       
+                'Slot3.Text = cntgood2 + cntdef2    '検査数の反映(動作高)　検査数は前検査工程での不良の数減るので同じとは限らない
+                'Slot4.Text = cntgood3 + cntdef3    '検査数の反映(復帰高)
+                'Slot5.Text = cntgood4 + cntdef4    '検査数の反映(復帰低)
+                'Slot6.Text = cntgood5 + cntdef5    '検査数の反映(耐圧絶縁)
+                'Slot7.Text = cntgood6 + cntdef6    '検査数の反映(回路抵抗)
 
 
 
@@ -2834,24 +2849,24 @@ Public Class Form1
 
 
 
-            If datdef Like "?E??" Then
+            If datdef Like "??E?" Then
                 cntdef3 += 1
-            ElseIf datdef Like "?D??" Then
+            ElseIf datdef Like "??D?" Then
                 cntgood3 += 1
-            ElseIf datdef Like "?B??" Then
+            ElseIf datdef Like "??B?" Then
                 cntdef4 += 1
-            ElseIf datdef Like "?A??" Then
+            ElseIf datdef Like "??A?" Then
                 cntdef3 += 1
                 cntdef4 += 1
-            ElseIf datdef Like "?9??" Then
+            ElseIf datdef Like "??9?" Then
                 cntgood3 += 1
                 cntdef4 += 1
-            ElseIf datdef Like "?7??" Then
+            ElseIf datdef Like "??7?" Then
                 cntgood4 += 1
-            ElseIf datdef Like "?6??" Then
+            ElseIf datdef Like "??6?" Then
                 cntdef3 += 1
                 cntgood4 += 1
-            ElseIf datdef Like "?5??" Then
+            ElseIf datdef Like "??5?" Then
                 cntgood3 += 1
                 cntgood4 += 1
 
@@ -2860,24 +2875,24 @@ Public Class Form1
 
 
 
-            If datdef Like "?E??" Then
+            If datdef Like "???E" Then
                 cntdef1 += 1
-            ElseIf datdef Like "?D??" Then
+            ElseIf datdef Like "???D" Then
                 cntgood1 += 1
-            ElseIf datdef Like "?B??" Then
+            ElseIf datdef Like "???B" Then
                 cntdef2 += 1
-            ElseIf datdef Like "?A??" Then
+            ElseIf datdef Like "???A" Then
                 cntdef1 += 1
                 cntdef2 += 1
-            ElseIf datdef Like "?9??" Then
+            ElseIf datdef Like "???9" Then
                 cntgood1 += 1
                 cntdef2 += 1
-            ElseIf datdef Like "?7??" Then
+            ElseIf datdef Like "???7" Then
                 cntgood2 += 1
-            ElseIf datdef Like "?6??" Then
+            ElseIf datdef Like "???6" Then
                 cntdef1 += 1
                 cntgood2 += 1
-            ElseIf datdef Like "?5??" Then
+            ElseIf datdef Like "???5" Then
                 cntgood1 += 1
                 cntgood2 += 1
 
@@ -3210,16 +3225,18 @@ Public Class Form1
         'Debug.WriteLine(Table(0) & "." & Table(1) & "." & Table(2) & "." & Table(3) & "." & Table(4) & "." & Table(5) & "." & Table(6) & "." & Table(7) & "." & Table(8) & "." & Table(9) & "." & Table(10) & "." & Table(11) & "." & Table(12))
         'Debug.WriteLine("-------------------------")
 
-        AlertImg1.BackColor = Color.Red
-        AlertImg2.BackColor = Color.Red
-        AlertImg3.BackColor = Color.Red
-        AlertImg4.BackColor = Color.Red
-        AlertImg5.BackColor = Color.Red
-        AlertImg6.BackColor = Color.Red
+        'AlertImg1.BackColor = Color.Red
+        'AlertImg2.BackColor = Color.Red
+        'AlertImg3.BackColor = Color.Red
+        'AlertImg4.BackColor = Color.Red
+        'AlertImg5.BackColor = Color.Red
+        'AlertImg6.BackColor = Color.Red
 
         PictureBox4.BackColor = Color.Gainsboro
         Label1.BackColor = Color.Gainsboro
 
+        Debug.WriteLine(cntdef1)
+        'Debug.WriteLine(DivDef1.Text)
     End Sub
 
 
@@ -3343,8 +3360,10 @@ Public Class Form1
         TimeStamp6.Text = Label28.Text
     End Sub
 
-
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim f As New LoginForm1
+        f.Show(Me)
+    End Sub
 End Class
 
 
