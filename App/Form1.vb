@@ -130,12 +130,12 @@ Public Class Form1
     Friend WithEvents TextBox42 As TextBox
     Friend WithEvents TextBox43 As TextBox
     Friend WithEvents TextBox44 As TextBox
-    Friend WithEvents TextBox37 As TextBox
-    Friend WithEvents TextBox36 As TextBox
-    Friend WithEvents TextBox35 As TextBox
-    Friend WithEvents TextBox34 As TextBox
-    Friend WithEvents TextBox33 As TextBox
-    Friend WithEvents TextBox32 As TextBox
+    Friend WithEvents Comment6 As TextBox
+    Friend WithEvents Comment5 As TextBox
+    Friend WithEvents Comment4 As TextBox
+    Friend WithEvents Comment3 As TextBox
+    Friend WithEvents Comment2 As TextBox
+    Friend WithEvents Comment1 As TextBox
     Friend WithEvents DivDef1 As TextBox
     Friend WithEvents DefSet1 As TextBox
     Friend WithEvents division1 As TextBox
@@ -191,6 +191,12 @@ Public Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer4 As Timer
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -301,12 +307,12 @@ Public Class Form1
         Me.TextBox42 = New System.Windows.Forms.TextBox()
         Me.TextBox43 = New System.Windows.Forms.TextBox()
         Me.TextBox44 = New System.Windows.Forms.TextBox()
-        Me.TextBox37 = New System.Windows.Forms.TextBox()
-        Me.TextBox36 = New System.Windows.Forms.TextBox()
-        Me.TextBox35 = New System.Windows.Forms.TextBox()
-        Me.TextBox34 = New System.Windows.Forms.TextBox()
-        Me.TextBox33 = New System.Windows.Forms.TextBox()
-        Me.TextBox32 = New System.Windows.Forms.TextBox()
+        Me.Comment6 = New System.Windows.Forms.TextBox()
+        Me.Comment5 = New System.Windows.Forms.TextBox()
+        Me.Comment4 = New System.Windows.Forms.TextBox()
+        Me.Comment3 = New System.Windows.Forms.TextBox()
+        Me.Comment2 = New System.Windows.Forms.TextBox()
+        Me.Comment1 = New System.Windows.Forms.TextBox()
         Me.DivDef1 = New System.Windows.Forms.TextBox()
         Me.DefSet1 = New System.Windows.Forms.TextBox()
         Me.division1 = New System.Windows.Forms.TextBox()
@@ -361,6 +367,12 @@ Public Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1556,65 +1568,65 @@ Public Class Form1
         Me.TextBox44.Size = New System.Drawing.Size(89, 27)
         Me.TextBox44.TabIndex = 265
         '
-        'TextBox37
+        'Comment6
         '
-        Me.TextBox37.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox37.Location = New System.Drawing.Point(706, 499)
-        Me.TextBox37.Multiline = True
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox37.TabIndex = 27
+        Me.Comment6.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Comment6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Comment6.Location = New System.Drawing.Point(706, 499)
+        Me.Comment6.Multiline = True
+        Me.Comment6.Name = "Comment6"
+        Me.Comment6.Size = New System.Drawing.Size(108, 76)
+        Me.Comment6.TabIndex = 27
         '
-        'TextBox36
+        'Comment5
         '
-        Me.TextBox36.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox36.Location = New System.Drawing.Point(599, 499)
-        Me.TextBox36.Multiline = True
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox36.TabIndex = 26
+        Me.Comment5.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Comment5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Comment5.Location = New System.Drawing.Point(599, 499)
+        Me.Comment5.Multiline = True
+        Me.Comment5.Name = "Comment5"
+        Me.Comment5.Size = New System.Drawing.Size(108, 76)
+        Me.Comment5.TabIndex = 26
         '
-        'TextBox35
+        'Comment4
         '
-        Me.TextBox35.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox35.Location = New System.Drawing.Point(492, 499)
-        Me.TextBox35.Multiline = True
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox35.TabIndex = 25
+        Me.Comment4.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Comment4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Comment4.Location = New System.Drawing.Point(492, 499)
+        Me.Comment4.Multiline = True
+        Me.Comment4.Name = "Comment4"
+        Me.Comment4.Size = New System.Drawing.Size(108, 76)
+        Me.Comment4.TabIndex = 25
         '
-        'TextBox34
+        'Comment3
         '
-        Me.TextBox34.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox34.Location = New System.Drawing.Point(385, 499)
-        Me.TextBox34.Multiline = True
-        Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox34.TabIndex = 24
+        Me.Comment3.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Comment3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Comment3.Location = New System.Drawing.Point(385, 499)
+        Me.Comment3.Multiline = True
+        Me.Comment3.Name = "Comment3"
+        Me.Comment3.Size = New System.Drawing.Size(108, 76)
+        Me.Comment3.TabIndex = 24
         '
-        'TextBox33
+        'Comment2
         '
-        Me.TextBox33.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox33.Location = New System.Drawing.Point(278, 499)
-        Me.TextBox33.Multiline = True
-        Me.TextBox33.Name = "TextBox33"
-        Me.TextBox33.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox33.TabIndex = 23
+        Me.Comment2.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Comment2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Comment2.Location = New System.Drawing.Point(278, 499)
+        Me.Comment2.Multiline = True
+        Me.Comment2.Name = "Comment2"
+        Me.Comment2.Size = New System.Drawing.Size(108, 76)
+        Me.Comment2.TabIndex = 23
         '
-        'TextBox32
+        'Comment1
         '
-        Me.TextBox32.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.TextBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox32.Location = New System.Drawing.Point(171, 499)
-        Me.TextBox32.Multiline = True
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(108, 76)
-        Me.TextBox32.TabIndex = 22
+        Me.Comment1.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Comment1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Comment1.Location = New System.Drawing.Point(171, 499)
+        Me.Comment1.Multiline = True
+        Me.Comment1.Name = "Comment1"
+        Me.Comment1.Size = New System.Drawing.Size(108, 76)
+        Me.Comment1.TabIndex = 22
         '
         'DivDef1
         '
@@ -2152,6 +2164,7 @@ Public Class Form1
         'Button1
         '
         Me.Button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Location = New System.Drawing.Point(473, 585)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(56, 51)
@@ -2159,12 +2172,81 @@ Public Class Form1
         Me.Button1.Text = "条件" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "設定"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Timer4
+        '
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.Location = New System.Drawing.Point(234, 551)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(44, 23)
+        Me.Button2.TabIndex = 345
+        Me.Button2.Text = "送信"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Location = New System.Drawing.Point(341, 551)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(44, 23)
+        Me.Button3.TabIndex = 346
+        Me.Button3.Text = "送信"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Location = New System.Drawing.Point(448, 551)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(44, 23)
+        Me.Button4.TabIndex = 347
+        Me.Button4.Text = "送信"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button5.Location = New System.Drawing.Point(555, 551)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(44, 23)
+        Me.Button5.TabIndex = 348
+        Me.Button5.Text = "送信"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button6.Location = New System.Drawing.Point(662, 551)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(44, 23)
+        Me.Button6.TabIndex = 349
+        Me.Button6.Text = "送信"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button7.Location = New System.Drawing.Point(769, 551)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(44, 23)
+        Me.Button7.TabIndex = 350
+        Me.Button7.Text = "送信"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(846, 660)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
@@ -2241,12 +2323,12 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox42)
         Me.Controls.Add(Me.TextBox43)
         Me.Controls.Add(Me.TextBox44)
-        Me.Controls.Add(Me.TextBox37)
-        Me.Controls.Add(Me.TextBox36)
-        Me.Controls.Add(Me.TextBox35)
-        Me.Controls.Add(Me.TextBox34)
-        Me.Controls.Add(Me.TextBox33)
-        Me.Controls.Add(Me.TextBox32)
+        Me.Controls.Add(Me.Comment6)
+        Me.Controls.Add(Me.Comment5)
+        Me.Controls.Add(Me.Comment4)
+        Me.Controls.Add(Me.Comment3)
+        Me.Controls.Add(Me.Comment2)
+        Me.Controls.Add(Me.Comment1)
         Me.Controls.Add(Me.DivDef1)
         Me.Controls.Add(Me.DefSet1)
         Me.Controls.Add(Me.division1)
@@ -2576,21 +2658,30 @@ Public Class Form1
     Public flashalert5 As Integer     '不良カウント耐圧絶縁
     Public flashalert6 As Integer     '不良カウント回路抵抗
 
+    Private flag_time1 As Integer = 0      'タイムスタンプ用のフラグ
+    Private flag_time2 As Integer = 0    'タイムスタンプ用のフラグ
+    Private flag_time3 As Integer = 0    'タイムスタンプ用のフラグ
+    Private flag_time4 As Integer = 0   'タイムスタンプ用のフラグ
+    Private flag_time5 As Integer = 0    'タイムスタンプ用のフラグ
+    Private flag_time6 As Integer = 0    'タイムスタンプ用のフラグ
+
+
+
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
         'ここから
         'Timer1の設定
         Label2.Text = "表示します。"
-        Timer1.Interval = 100 '0.1秒のインターバルで情報を更新
+        Timer1.Interval = 100 '0.1秒のインターバルで情報を更新　信号の変化をチェックする間隔
         Timer1.Enabled = True 'タイマーを有効にする
 
-        Timer2.Interval = 1000 '1秒のインターバルで情報を更新
+        Timer2.Interval = 1000 '1秒のインターバルで情報を更新　
         Timer2.Enabled = True 'タイマーを有効にする
 
         Timer3.Interval = 5000 '5秒のインターバルで情報を更新
         Timer3.Enabled = True 'タイマーを有効にする
 
-        Timer4.Interval = 1500 '5秒のインターバルで情報を更新
+        Timer4.Interval = 1500 '1.5秒のインターバルで情報を更新　今の所点滅処理専用
         Timer4.Enabled = True 'タイマーを有効にする
 
     End Sub
@@ -3002,14 +3093,14 @@ Public Class Form1
         If DefSet1.Text = "" Then
         Else
             If DefLbl1.Text >= DefSet1.Text Then                       '不良数がセットした不良値以上になったとき
-                AlertImg1.BackColor = Color.Red                        '警告ボックスを赤色に変更
+                flashalert1 = 1                      'flashalertを1に(このとき警告ボックスを赤色になる
             End If
         End If
 
         If DefSet2.Text = "" Then                                      '各警告ボックスごとにこの処理を行う
         Else
             If DefLbl2.Text >= DefSet2.Text Then
-                AlertImg2.BackColor = Color.Red
+                flashalert2 = 1
             End If
         End If
 
@@ -3017,7 +3108,7 @@ Public Class Form1
 
         Else
             If DefLbl3.Text >= DefSet3.Text Then
-                AlertImg3.BackColor = Color.Red
+                flashalert3 = 1
             End If
 
         End If
@@ -3026,7 +3117,7 @@ Public Class Form1
 
         Else
             If DefLbl4.Text >= DefSet4.Text Then
-                AlertImg4.BackColor = Color.Red
+                flashalert4 = 1
             End If
         End If
 
@@ -3034,7 +3125,7 @@ Public Class Form1
 
         Else
             If DefLbl5.Text >= DefSet5.Text Then
-                AlertImg5.BackColor = Color.Red
+                flashalert5 = 1
             End If
         End If
 
@@ -3042,7 +3133,7 @@ Public Class Form1
 
         Else
             If DefLbl6.Text >= DefSet6.Text Then
-                AlertImg6.BackColor = Color.Red
+                flashalert6 = 1
             End If
 
         End If
@@ -3108,7 +3199,7 @@ Public Class Form1
 
             If Slot2.Text - logslot1 <= division1.Text Then
                 If DefLbl1.Text - logdef1 >= DivDef1.Text Then
-                    AlertImg1.BackColor = Color.Red
+                    flashalert1 = 1
                 End If
             Else
                 logslot1 = Slot2.Text
@@ -3122,7 +3213,7 @@ Public Class Form1
         If division2.Text <> "" And DivDef2.Text <> "" Then
             If Slot3.Text - logslot2 <= division2.Text Then
                 If DefLbl2.Text - logdef2 >= DivDef2.Text Then
-                    AlertImg2.BackColor = Color.Red
+                    flashalert2 = 1
                 End If
             Else
                 logslot2 = Slot3.Text
@@ -3135,7 +3226,7 @@ Public Class Form1
         If division3.Text <> "" And DivDef3.Text <> "" Then
             If Slot4.Text - logslot3 <= division3.Text Then
                 If DefLbl3.Text - logdef3 >= DivDef3.Text Then
-                    AlertImg3.BackColor = Color.Red
+                    flashalert3 = 1
                 End If
             Else
                 logslot3 = Slot4.Text
@@ -3148,7 +3239,7 @@ Public Class Form1
         If division4.Text <> "" And DivDef4.Text <> "" Then
             If Slot5.Text - logslot4 <= division4.Text Then
                 If DefLbl4.Text - logdef4 >= DivDef4.Text Then
-                    AlertImg4.BackColor = Color.Red
+                    flashalert4 = 1
                 End If
             Else
                 logslot4 = Slot5.Text
@@ -3162,7 +3253,7 @@ Public Class Form1
         If division5.Text <> "" And DivDef5.Text <> "" Then
             If Slot6.Text - logslot5 <= division5.Text Then
                 If DefLbl5.Text - logdef5 >= DivDef5.Text Then
-                    AlertImg5.BackColor = Color.Red
+                    flashalert5 = 1
                 End If
             Else
                 logslot5 = Slot6.Text
@@ -3175,7 +3266,7 @@ Public Class Form1
         If division6.Text <> "" And DivDef6.Text <> "" Then
             If Slot6.Text - logslot5 <= division5.Text Then
                 If DefLbl6.Text - logdef6 >= DivDef6.Text Then
-                    AlertImg6.BackColor = Color.Red
+                    flashalert6 = 1
                 End If
             Else
                 logslot6 = Slot7.Text
@@ -3249,8 +3340,8 @@ Public Class Form1
 
         flashalert1 = 1
 
-        Debug.WriteLine(cntdef1)
-        'Debug.WriteLine(DivDef1.Text)
+        'Debug.WriteLine(cntdef1)
+        Debug.WriteLine(flag_time1)
     End Sub
 
 
@@ -3291,6 +3382,30 @@ Public Class Form1
             flashalert1 = 2
         End If
 
+        If flashalert2 = 1 Then
+            AlertImg2.BackColor = Color.Red
+            flashalert2 = 2
+        End If
+
+        If flashalert3 = 1 Then
+            AlertImg3.BackColor = Color.Red
+            flashalert3 = 2
+        End If
+
+        If flashalert4 = 1 Then
+            AlertImg4.BackColor = Color.Red
+            flashalert4 = 2
+        End If
+
+        If flashalert5 = 1 Then
+            AlertImg5.BackColor = Color.Red
+            flashalert5 = 2
+        End If
+
+        If flashalert6 = 1 Then
+            AlertImg6.BackColor = Color.Red
+            flashalert6 = 2
+        End If
 
     End Sub
 
@@ -3301,7 +3416,39 @@ Public Class Form1
         If flashalert1 = 2 Then
             AlertImg1.BackColor = Color.DarkRed
             flashalert1 = 1
+            flag_time1 = 1
         End If
+
+        If flashalert2 = 2 Then
+            AlertImg2.BackColor = Color.DarkRed
+            flashalert2 = 1
+            flag_time2 = 1
+        End If
+
+        If flashalert3 = 2 Then
+            AlertImg3.BackColor = Color.DarkRed
+            flashalert3 = 1
+            flag_time3 = 1
+        End If
+
+        If flashalert4 = 2 Then
+            AlertImg4.BackColor = Color.DarkRed
+            flashalert4 = 1
+            flag_time4 = 1
+        End If
+
+        If flashalert5 = 2 Then
+            AlertImg5.BackColor = Color.DarkRed
+            flashalert5 = 1
+            flag_time5 = 1
+        End If
+
+        If flashalert6 = 2 Then
+            AlertImg6.BackColor = Color.DarkRed
+            flashalert6 = 1
+            flag_time6 = 1
+        End If
+
     End Sub
 
     '～～～～～～～～～～～～～～～～～アラーム出力機能のテスト～～～～～～～～～～～～～～～～～～～～～
@@ -3367,27 +3514,53 @@ Public Class Form1
 
 
     Private Sub Timesave1(sender As Object, e As EventArgs) Handles AlertImg1.BackColorChanged　　　　'警告表示が赤に変わったときタイムスタンプを行う処理
-        TimeStamp1.Text = Label28.Text
+        If flag_time1 = 0 Then
+            TimeStamp1.Text = Label28.Text
+        End If
+
     End Sub
     Private Sub Timesave2(sender As Object, e As EventArgs) Handles AlertImg2.BackColorChanged
-        TimeStamp2.Text = Label28.Text
+        If flag_time2 = 0 Then
+            TimeStamp2.Text = Label28.Text
+        End If
     End Sub
     Private Sub Timesave3(sender As Object, e As EventArgs) Handles AlertImg3.BackColorChanged
-        TimeStamp3.Text = Label28.Text
+        If flag_time3 Then
+            TimeStamp3.Text = Label28.Text
+        End If
     End Sub
     Private Sub Timesave4(sender As Object, e As EventArgs) Handles AlertImg4.BackColorChanged
-        TimeStamp4.Text = Label28.Text
+        If flag_time4 = 0 Then
+            TimeStamp4.Text = Label28.Text
+        End If
     End Sub
     Private Sub Timesave5(sender As Object, e As EventArgs) Handles AlertImg5.BackColorChanged
-        TimeStamp5.Text = Label28.Text
+        If flag_time5 = 0 Then
+            TimeStamp5.Text = Label28.Text
+        End If
     End Sub
     Private Sub Timesave6(sender As Object, e As EventArgs) Handles AlertImg6.BackColorChanged
-        TimeStamp6.Text = Label28.Text
+        If flag_time6 = 0 Then
+            TimeStamp6.Text = Label28.Text
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim f As New LoginForm1
         f.Show(Me)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        If Comment1.Text = "" Then
+            MsgBox("コメントを入力してください")
+        Else
+            Comment1.Text = ""
+            flashalert1 = 0
+        flag_time1 = 0
+        AlertImg1.BackColor = Color.Transparent
+        TimeStamp1.Text = "hh:mm:ss"
+        End If
     End Sub
 End Class
 

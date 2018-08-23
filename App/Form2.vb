@@ -22,4 +22,8 @@
         Form1.Slot1.Text = 0
 
     End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
