@@ -191,12 +191,12 @@ Public Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer4 As Timer
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents ButtonComment1 As Button
+    Friend WithEvents ButtonComment2 As Button
+    Friend WithEvents ButtonComment3 As Button
+    Friend WithEvents ButtonComment4 As Button
+    Friend WithEvents ButtonComment5 As Button
+    Friend WithEvents ButtonComment6 As Button
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -367,12 +367,12 @@ Public Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.ButtonComment1 = New System.Windows.Forms.Button()
+        Me.ButtonComment2 = New System.Windows.Forms.Button()
+        Me.ButtonComment3 = New System.Windows.Forms.Button()
+        Me.ButtonComment4 = New System.Windows.Forms.Button()
+        Me.ButtonComment5 = New System.Windows.Forms.Button()
+        Me.ButtonComment6 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2175,65 +2175,65 @@ Public Class Form1
         'Timer4
         '
         '
-        'Button2
+        'ButtonComment1
         '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(234, 551)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(44, 23)
-        Me.Button2.TabIndex = 345
-        Me.Button2.Text = "送信"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonComment1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonComment1.Location = New System.Drawing.Point(234, 551)
+        Me.ButtonComment1.Name = "ButtonComment1"
+        Me.ButtonComment1.Size = New System.Drawing.Size(44, 23)
+        Me.ButtonComment1.TabIndex = 345
+        Me.ButtonComment1.Text = "送信"
+        Me.ButtonComment1.UseVisualStyleBackColor = True
         '
-        'Button3
+        'ButtonComment2
         '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(341, 551)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(44, 23)
-        Me.Button3.TabIndex = 346
-        Me.Button3.Text = "送信"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ButtonComment2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonComment2.Location = New System.Drawing.Point(341, 551)
+        Me.ButtonComment2.Name = "ButtonComment2"
+        Me.ButtonComment2.Size = New System.Drawing.Size(44, 23)
+        Me.ButtonComment2.TabIndex = 346
+        Me.ButtonComment2.Text = "送信"
+        Me.ButtonComment2.UseVisualStyleBackColor = True
         '
-        'Button4
+        'ButtonComment3
         '
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Location = New System.Drawing.Point(448, 551)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(44, 23)
-        Me.Button4.TabIndex = 347
-        Me.Button4.Text = "送信"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.ButtonComment3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonComment3.Location = New System.Drawing.Point(448, 551)
+        Me.ButtonComment3.Name = "ButtonComment3"
+        Me.ButtonComment3.Size = New System.Drawing.Size(44, 23)
+        Me.ButtonComment3.TabIndex = 347
+        Me.ButtonComment3.Text = "送信"
+        Me.ButtonComment3.UseVisualStyleBackColor = True
         '
-        'Button5
+        'ButtonComment4
         '
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Location = New System.Drawing.Point(555, 551)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(44, 23)
-        Me.Button5.TabIndex = 348
-        Me.Button5.Text = "送信"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.ButtonComment4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonComment4.Location = New System.Drawing.Point(555, 551)
+        Me.ButtonComment4.Name = "ButtonComment4"
+        Me.ButtonComment4.Size = New System.Drawing.Size(44, 23)
+        Me.ButtonComment4.TabIndex = 348
+        Me.ButtonComment4.Text = "送信"
+        Me.ButtonComment4.UseVisualStyleBackColor = True
         '
-        'Button6
+        'ButtonComment5
         '
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button6.Location = New System.Drawing.Point(662, 551)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(44, 23)
-        Me.Button6.TabIndex = 349
-        Me.Button6.Text = "送信"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.ButtonComment5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonComment5.Location = New System.Drawing.Point(662, 551)
+        Me.ButtonComment5.Name = "ButtonComment5"
+        Me.ButtonComment5.Size = New System.Drawing.Size(44, 23)
+        Me.ButtonComment5.TabIndex = 349
+        Me.ButtonComment5.Text = "送信"
+        Me.ButtonComment5.UseVisualStyleBackColor = True
         '
-        'Button7
+        'ButtonComment6
         '
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button7.Location = New System.Drawing.Point(769, 551)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(44, 23)
-        Me.Button7.TabIndex = 350
-        Me.Button7.Text = "送信"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.ButtonComment6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonComment6.Location = New System.Drawing.Point(769, 551)
+        Me.ButtonComment6.Name = "ButtonComment6"
+        Me.ButtonComment6.Size = New System.Drawing.Size(44, 23)
+        Me.ButtonComment6.TabIndex = 350
+        Me.ButtonComment6.Text = "送信"
+        Me.ButtonComment6.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -2241,12 +2241,12 @@ Public Class Form1
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(846, 660)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.ButtonComment6)
+        Me.Controls.Add(Me.ButtonComment5)
+        Me.Controls.Add(Me.ButtonComment4)
+        Me.Controls.Add(Me.ButtonComment3)
+        Me.Controls.Add(Me.ButtonComment2)
+        Me.Controls.Add(Me.ButtonComment1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
@@ -3550,16 +3550,83 @@ Public Class Form1
         f.Show(Me)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    Private Sub CommentSubmit1(sender As Object, e As EventArgs) Handles ButtonComment1.Click
 
         If Comment1.Text = "" Then
             MsgBox("コメントを入力してください")
         Else
             Comment1.Text = ""
             flashalert1 = 0
-        flag_time1 = 0
-        AlertImg1.BackColor = Color.Transparent
-        TimeStamp1.Text = "hh:mm:ss"
+            flag_time1 = 0
+            AlertImg1.BackColor = Color.Transparent
+            TimeStamp1.Text = "hh:mm:ss"
+        End If
+    End Sub
+
+    Private Sub CommentSubmit2(sender As Object, e As EventArgs) Handles ButtonComment2.Click
+
+        If Comment2.Text = "" Then
+            MsgBox("コメントを入力してください")
+        Else
+            Comment2.Text = ""
+            flashalert2 = 0
+            flag_time2 = 0
+            AlertImg2.BackColor = Color.Transparent
+            TimeStamp2.Text = "hh:mm:ss"
+        End If
+    End Sub
+
+    Private Sub CommentSubmit3(sender As Object, e As EventArgs) Handles ButtonComment3.Click
+
+        If Comment3.Text = "" Then
+            MsgBox("コメントを入力してください")
+        Else
+            Comment3.Text = ""
+            flashalert3 = 0
+            flag_time3 = 0
+            AlertImg3.BackColor = Color.Transparent
+            TimeStamp3.Text = "hh:mm:ss"
+        End If
+    End Sub
+
+    Private Sub CommentSubmit4(sender As Object, e As EventArgs) Handles ButtonComment4.Click
+
+        If Comment4.Text = "" Then
+            MsgBox("コメントを入力してください")
+        Else
+            Comment4.Text = ""
+            flashalert4 = 0
+            flag_time4 = 0
+            AlertImg4.BackColor = Color.Transparent
+            TimeStamp4.Text = "hh:mm:ss"
+        End If
+    End Sub
+
+
+    Private Sub CommentSubmit5(sender As Object, e As EventArgs) Handles ButtonComment5.Click
+
+        If Comment5.Text = "" Then
+            MsgBox("コメントを入力してください")
+        Else
+            Comment5.Text = ""
+            flashalert5 = 0
+            flag_time5 = 0
+            AlertImg5.BackColor = Color.Transparent
+            TimeStamp5.Text = "hh:mm:ss"
+        End If
+    End Sub
+
+    Private Sub CommentSubmit6(sender As Object, e As EventArgs) Handles ButtonComment6.Click
+
+        If Comment6.Text = "" Then
+            MsgBox("コメントを入力してください")
+        Else
+            Comment6.Text = ""
+            flashalert6 = 0
+            flag_time6 = 0
+            AlertImg6.BackColor = Color.Transparent
+            TimeStamp6.Text = "hh:mm:ss"
         End If
     End Sub
 End Class
