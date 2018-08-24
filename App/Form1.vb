@@ -83,12 +83,6 @@ Public Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents AlertImg6 As PictureBox
-    Friend WithEvents AlertImg5 As PictureBox
-    Friend WithEvents AlertImg4 As PictureBox
-    Friend WithEvents AlertImg3 As PictureBox
-    Friend WithEvents AlertImg2 As PictureBox
-    Friend WithEvents AlertImg1 As PictureBox
     Friend WithEvents TimeStamp6 As TextBox
     Friend WithEvents TimeStamp5 As TextBox
     Friend WithEvents TimeStamp4 As TextBox
@@ -191,12 +185,12 @@ Public Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer4 As Timer
-    Friend WithEvents ButtonComment1 As Button
-    Friend WithEvents ButtonComment2 As Button
-    Friend WithEvents ButtonComment3 As Button
-    Friend WithEvents ButtonComment4 As Button
-    Friend WithEvents ButtonComment5 As Button
-    Friend WithEvents ButtonComment6 As Button
+    Friend WithEvents Alert1 As Label
+    Friend WithEvents Alert2 As Label
+    Friend WithEvents Alert3 As Label
+    Friend WithEvents Alert4 As Label
+    Friend WithEvents Alert5 As Label
+    Friend WithEvents Alert6 As Label
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -260,12 +254,6 @@ Public Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.AlertImg6 = New System.Windows.Forms.PictureBox()
-        Me.AlertImg5 = New System.Windows.Forms.PictureBox()
-        Me.AlertImg4 = New System.Windows.Forms.PictureBox()
-        Me.AlertImg3 = New System.Windows.Forms.PictureBox()
-        Me.AlertImg2 = New System.Windows.Forms.PictureBox()
-        Me.AlertImg1 = New System.Windows.Forms.PictureBox()
         Me.TimeStamp6 = New System.Windows.Forms.TextBox()
         Me.TimeStamp5 = New System.Windows.Forms.TextBox()
         Me.TimeStamp4 = New System.Windows.Forms.TextBox()
@@ -367,23 +355,17 @@ Public Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
-        Me.ButtonComment1 = New System.Windows.Forms.Button()
-        Me.ButtonComment2 = New System.Windows.Forms.Button()
-        Me.ButtonComment3 = New System.Windows.Forms.Button()
-        Me.ButtonComment4 = New System.Windows.Forms.Button()
-        Me.ButtonComment5 = New System.Windows.Forms.Button()
-        Me.ButtonComment6 = New System.Windows.Forms.Button()
+        Me.Alert1 = New System.Windows.Forms.Label()
+        Me.Alert2 = New System.Windows.Forms.Label()
+        Me.Alert3 = New System.Windows.Forms.Label()
+        Me.Alert4 = New System.Windows.Forms.Label()
+        Me.Alert5 = New System.Windows.Forms.Label()
+        Me.Alert6 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SavePic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlertImg6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlertImg5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlertImg4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlertImg3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlertImg2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AlertImg1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefImg4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1021,66 +1003,6 @@ Public Class Form1
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(172, 76)
         Me.TextBox3.TabIndex = 227
-        '
-        'AlertImg6
-        '
-        Me.AlertImg6.BackColor = System.Drawing.Color.Transparent
-        Me.AlertImg6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlertImg6.Location = New System.Drawing.Point(715, 452)
-        Me.AlertImg6.Name = "AlertImg6"
-        Me.AlertImg6.Size = New System.Drawing.Size(89, 41)
-        Me.AlertImg6.TabIndex = 311
-        Me.AlertImg6.TabStop = False
-        '
-        'AlertImg5
-        '
-        Me.AlertImg5.BackColor = System.Drawing.Color.Transparent
-        Me.AlertImg5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlertImg5.Location = New System.Drawing.Point(608, 452)
-        Me.AlertImg5.Name = "AlertImg5"
-        Me.AlertImg5.Size = New System.Drawing.Size(89, 41)
-        Me.AlertImg5.TabIndex = 310
-        Me.AlertImg5.TabStop = False
-        '
-        'AlertImg4
-        '
-        Me.AlertImg4.BackColor = System.Drawing.Color.Transparent
-        Me.AlertImg4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlertImg4.Location = New System.Drawing.Point(501, 452)
-        Me.AlertImg4.Name = "AlertImg4"
-        Me.AlertImg4.Size = New System.Drawing.Size(89, 41)
-        Me.AlertImg4.TabIndex = 309
-        Me.AlertImg4.TabStop = False
-        '
-        'AlertImg3
-        '
-        Me.AlertImg3.BackColor = System.Drawing.Color.Transparent
-        Me.AlertImg3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlertImg3.Location = New System.Drawing.Point(394, 452)
-        Me.AlertImg3.Name = "AlertImg3"
-        Me.AlertImg3.Size = New System.Drawing.Size(89, 41)
-        Me.AlertImg3.TabIndex = 308
-        Me.AlertImg3.TabStop = False
-        '
-        'AlertImg2
-        '
-        Me.AlertImg2.BackColor = System.Drawing.Color.Transparent
-        Me.AlertImg2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlertImg2.Location = New System.Drawing.Point(287, 452)
-        Me.AlertImg2.Name = "AlertImg2"
-        Me.AlertImg2.Size = New System.Drawing.Size(89, 41)
-        Me.AlertImg2.TabIndex = 307
-        Me.AlertImg2.TabStop = False
-        '
-        'AlertImg1
-        '
-        Me.AlertImg1.BackColor = System.Drawing.Color.Transparent
-        Me.AlertImg1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlertImg1.Location = New System.Drawing.Point(181, 452)
-        Me.AlertImg1.Name = "AlertImg1"
-        Me.AlertImg1.Size = New System.Drawing.Size(89, 41)
-        Me.AlertImg1.TabIndex = 306
-        Me.AlertImg1.TabStop = False
         '
         'TimeStamp6
         '
@@ -2175,65 +2097,71 @@ Public Class Form1
         'Timer4
         '
         '
-        'ButtonComment1
+        'Alert1
         '
-        Me.ButtonComment1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonComment1.Location = New System.Drawing.Point(234, 551)
-        Me.ButtonComment1.Name = "ButtonComment1"
-        Me.ButtonComment1.Size = New System.Drawing.Size(44, 23)
-        Me.ButtonComment1.TabIndex = 345
-        Me.ButtonComment1.Text = "送信"
-        Me.ButtonComment1.UseVisualStyleBackColor = True
+        Me.Alert1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Alert1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Alert1.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Alert1.Location = New System.Drawing.Point(181, 451)
+        Me.Alert1.Name = "Alert1"
+        Me.Alert1.Size = New System.Drawing.Size(89, 42)
+        Me.Alert1.TabIndex = 351
+        Me.Alert1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ButtonComment2
+        'Alert2
         '
-        Me.ButtonComment2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonComment2.Location = New System.Drawing.Point(341, 551)
-        Me.ButtonComment2.Name = "ButtonComment2"
-        Me.ButtonComment2.Size = New System.Drawing.Size(44, 23)
-        Me.ButtonComment2.TabIndex = 346
-        Me.ButtonComment2.Text = "送信"
-        Me.ButtonComment2.UseVisualStyleBackColor = True
+        Me.Alert2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Alert2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Alert2.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Alert2.Location = New System.Drawing.Point(287, 451)
+        Me.Alert2.Name = "Alert2"
+        Me.Alert2.Size = New System.Drawing.Size(89, 42)
+        Me.Alert2.TabIndex = 352
+        Me.Alert2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ButtonComment3
+        'Alert3
         '
-        Me.ButtonComment3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonComment3.Location = New System.Drawing.Point(448, 551)
-        Me.ButtonComment3.Name = "ButtonComment3"
-        Me.ButtonComment3.Size = New System.Drawing.Size(44, 23)
-        Me.ButtonComment3.TabIndex = 347
-        Me.ButtonComment3.Text = "送信"
-        Me.ButtonComment3.UseVisualStyleBackColor = True
+        Me.Alert3.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Alert3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Alert3.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Alert3.Location = New System.Drawing.Point(394, 451)
+        Me.Alert3.Name = "Alert3"
+        Me.Alert3.Size = New System.Drawing.Size(89, 42)
+        Me.Alert3.TabIndex = 353
+        Me.Alert3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ButtonComment4
+        'Alert4
         '
-        Me.ButtonComment4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonComment4.Location = New System.Drawing.Point(555, 551)
-        Me.ButtonComment4.Name = "ButtonComment4"
-        Me.ButtonComment4.Size = New System.Drawing.Size(44, 23)
-        Me.ButtonComment4.TabIndex = 348
-        Me.ButtonComment4.Text = "送信"
-        Me.ButtonComment4.UseVisualStyleBackColor = True
+        Me.Alert4.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Alert4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Alert4.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Alert4.Location = New System.Drawing.Point(501, 451)
+        Me.Alert4.Name = "Alert4"
+        Me.Alert4.Size = New System.Drawing.Size(89, 42)
+        Me.Alert4.TabIndex = 354
+        Me.Alert4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ButtonComment5
+        'Alert5
         '
-        Me.ButtonComment5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonComment5.Location = New System.Drawing.Point(662, 551)
-        Me.ButtonComment5.Name = "ButtonComment5"
-        Me.ButtonComment5.Size = New System.Drawing.Size(44, 23)
-        Me.ButtonComment5.TabIndex = 349
-        Me.ButtonComment5.Text = "送信"
-        Me.ButtonComment5.UseVisualStyleBackColor = True
+        Me.Alert5.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Alert5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Alert5.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Alert5.Location = New System.Drawing.Point(608, 452)
+        Me.Alert5.Name = "Alert5"
+        Me.Alert5.Size = New System.Drawing.Size(89, 42)
+        Me.Alert5.TabIndex = 355
+        Me.Alert5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ButtonComment6
+        'Alert6
         '
-        Me.ButtonComment6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ButtonComment6.Location = New System.Drawing.Point(769, 551)
-        Me.ButtonComment6.Name = "ButtonComment6"
-        Me.ButtonComment6.Size = New System.Drawing.Size(44, 23)
-        Me.ButtonComment6.TabIndex = 350
-        Me.ButtonComment6.Text = "送信"
-        Me.ButtonComment6.UseVisualStyleBackColor = True
+        Me.Alert6.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Alert6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Alert6.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
+        Me.Alert6.Location = New System.Drawing.Point(715, 452)
+        Me.Alert6.Name = "Alert6"
+        Me.Alert6.Size = New System.Drawing.Size(89, 42)
+        Me.Alert6.TabIndex = 356
+        Me.Alert6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
@@ -2241,12 +2169,12 @@ Public Class Form1
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(846, 660)
-        Me.Controls.Add(Me.ButtonComment6)
-        Me.Controls.Add(Me.ButtonComment5)
-        Me.Controls.Add(Me.ButtonComment4)
-        Me.Controls.Add(Me.ButtonComment3)
-        Me.Controls.Add(Me.ButtonComment2)
-        Me.Controls.Add(Me.ButtonComment1)
+        Me.Controls.Add(Me.Alert6)
+        Me.Controls.Add(Me.Alert5)
+        Me.Controls.Add(Me.Alert4)
+        Me.Controls.Add(Me.Alert3)
+        Me.Controls.Add(Me.Alert2)
+        Me.Controls.Add(Me.Alert1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
@@ -2276,12 +2204,6 @@ Public Class Form1
         Me.Controls.Add(Me.Slot4)
         Me.Controls.Add(Me.Slot3)
         Me.Controls.Add(Me.Slot2)
-        Me.Controls.Add(Me.AlertImg6)
-        Me.Controls.Add(Me.AlertImg5)
-        Me.Controls.Add(Me.AlertImg4)
-        Me.Controls.Add(Me.AlertImg3)
-        Me.Controls.Add(Me.AlertImg2)
-        Me.Controls.Add(Me.AlertImg1)
         Me.Controls.Add(Me.TimeStamp6)
         Me.Controls.Add(Me.TimeStamp5)
         Me.Controls.Add(Me.TimeStamp4)
@@ -2418,12 +2340,6 @@ Public Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SavePic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OnlinePic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlertImg6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlertImg5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlertImg4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlertImg3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlertImg2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AlertImg1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefImg4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2651,12 +2567,12 @@ Public Class Form1
     Private logslot5 As Integer     '区分カウント耐圧絶縁
     Private logslot6 As Integer     '区分カウント回路抵抗
 
-    Public flashalert1 As Integer     '不良カウント動作低
-    Public flashalert2 As Integer     '不良カウント動作高
-    Public flashalert3 As Integer     '不良カウント復帰低
-    Public flashalert4 As Integer　　 '不良カウント復帰高
-    Public flashalert5 As Integer     '不良カウント耐圧絶縁
-    Public flashalert6 As Integer     '不良カウント回路抵抗
+    Public flashalert1 As Integer     '警告処理動作低
+    Public flashalert2 As Integer     '警告処理動作高
+    Public flashalert3 As Integer     '警告処理復帰低
+    Public flashalert4 As Integer　　 '警告処理復帰高
+    Public flashalert5 As Integer     '警告処理耐圧絶縁
+    Public flashalert6 As Integer     '警告処理回路抵抗
 
     Private flag_time1 As Integer = 0      'タイムスタンプ用のフラグ
     Private flag_time2 As Integer = 0    'タイムスタンプ用のフラグ
@@ -2691,8 +2607,8 @@ Public Class Form1
         Dim dathex As String   'HEX化したdatを文字列として格納しておくための変数　String定義に変換しないとwithを使用できない
 
 
-        sacomUsbIoRead(pio_id, dat)             'PIOを呼び出して現在の情報を入手
-        Label2.Text = Hex(dat)                  'ラベル2に現在の入力情報を16進数で表示
+        sacomUsbIoRead(pio_id, dat)      'PIOを呼び出して現在の情報を入手
+        Label2.Text = Hex(dat)           'ラベル2に現在の入力情報を16進数で表示
         dathex = Hex(dat)
 
         Slot1.Text = cntslot             'ラベル1に現在の投入数を表示
@@ -3378,32 +3294,43 @@ Public Class Form1
         Label28.Text = Hr & "時" & Min & "分" & Sec & "秒"
 
         If flashalert1 = 1 Then
-            AlertImg1.BackColor = Color.Red
+            Alert1.BackColor = Color.Red
+            Alert1.ForeColor = Color.White
+
+            Alert1.Text = "コメント入力後ここをクリック"
             flashalert1 = 2
         End If
 
         If flashalert2 = 1 Then
-            AlertImg2.BackColor = Color.Red
+            Alert2.BackColor = Color.Red
+            Alert2.ForeColor = Color.White
+
             flashalert2 = 2
         End If
 
         If flashalert3 = 1 Then
-            AlertImg3.BackColor = Color.Red
+            Alert3.BackColor = Color.Red
+            Alert3.ForeColor = Color.White
+
             flashalert3 = 2
         End If
 
         If flashalert4 = 1 Then
-            AlertImg4.BackColor = Color.Red
+            Alert4.BackColor = Color.Red
+            Alert4.ForeColor = Color.White
+
             flashalert4 = 2
         End If
 
         If flashalert5 = 1 Then
-            AlertImg5.BackColor = Color.Red
+            Alert5.BackColor = Color.Red
+            Alert5.ForeColor = Color.White
             flashalert5 = 2
         End If
 
         If flashalert6 = 1 Then
-            AlertImg6.BackColor = Color.Red
+            Alert6.BackColor = Color.Red
+            Alert6.ForeColor = Color.White
             flashalert6 = 2
         End If
 
@@ -3414,37 +3341,38 @@ Public Class Form1
     '～～～～～～～～～～～～～～～～～～～ここまで～～～～～～～～～～～～～～～～～～～～～～～～～～～
     Private Sub Timer4_Tick(sender As System.Object, e As System.EventArgs) Handles Timer4.Tick         'タイマーが更新されるたびにイベント発生
         If flashalert1 = 2 Then
-            AlertImg1.BackColor = Color.DarkRed
+            Alert1.BackColor = Color.DarkRed
+
             flashalert1 = 1
             flag_time1 = 1
         End If
 
         If flashalert2 = 2 Then
-            AlertImg2.BackColor = Color.DarkRed
+            Alert2.BackColor = Color.DarkRed
             flashalert2 = 1
             flag_time2 = 1
         End If
 
         If flashalert3 = 2 Then
-            AlertImg3.BackColor = Color.DarkRed
+            Alert3.BackColor = Color.DarkRed
             flashalert3 = 1
             flag_time3 = 1
         End If
 
         If flashalert4 = 2 Then
-            AlertImg4.BackColor = Color.DarkRed
+            Alert4.BackColor = Color.DarkRed
             flashalert4 = 1
             flag_time4 = 1
         End If
 
         If flashalert5 = 2 Then
-            AlertImg5.BackColor = Color.DarkRed
+            Alert5.BackColor = Color.DarkRed
             flashalert5 = 1
             flag_time5 = 1
         End If
 
         If flashalert6 = 2 Then
-            AlertImg6.BackColor = Color.DarkRed
+            Alert6.BackColor = Color.DarkRed
             flashalert6 = 1
             flag_time6 = 1
         End If
@@ -3513,33 +3441,33 @@ Public Class Form1
 
 
 
-    Private Sub Timesave1(sender As Object, e As EventArgs) Handles AlertImg1.BackColorChanged　　　　'警告表示が赤に変わったときタイムスタンプを行う処理
+    Private Sub Timesave1(sender As Object, e As EventArgs) Handles Alert1.BackColorChanged　　　'警告表示が赤に変わったときタイムスタンプを行う処理
         If flag_time1 = 0 Then
             TimeStamp1.Text = Label28.Text
         End If
 
     End Sub
-    Private Sub Timesave2(sender As Object, e As EventArgs) Handles AlertImg2.BackColorChanged
+    Private Sub Timesave2(sender As Object, e As EventArgs) Handles Alert2.BackColorChanged
         If flag_time2 = 0 Then
             TimeStamp2.Text = Label28.Text
         End If
     End Sub
-    Private Sub Timesave3(sender As Object, e As EventArgs) Handles AlertImg3.BackColorChanged
+    Private Sub Timesave3(sender As Object, e As EventArgs) Handles Alert3.BackColorChanged
         If flag_time3 Then
             TimeStamp3.Text = Label28.Text
         End If
     End Sub
-    Private Sub Timesave4(sender As Object, e As EventArgs) Handles AlertImg4.BackColorChanged
+    Private Sub Timesave4(sender As Object, e As EventArgs) Handles Alert4.BackColorChanged
         If flag_time4 = 0 Then
             TimeStamp4.Text = Label28.Text
         End If
     End Sub
-    Private Sub Timesave5(sender As Object, e As EventArgs) Handles AlertImg5.BackColorChanged
+    Private Sub Timesave5(sender As Object, e As EventArgs) Handles Alert5.BackColorChanged
         If flag_time5 = 0 Then
             TimeStamp5.Text = Label28.Text
         End If
     End Sub
-    Private Sub Timesave6(sender As Object, e As EventArgs) Handles AlertImg6.BackColorChanged
+    Private Sub Timesave6(sender As Object, e As EventArgs) Handles Alert6.BackColorChanged
         If flag_time6 = 0 Then
             TimeStamp6.Text = Label28.Text
         End If
@@ -3551,82 +3479,95 @@ Public Class Form1
     End Sub
 
 
-    Private Sub CommentSubmit1(sender As Object, e As EventArgs) Handles ButtonComment1.Click
 
-        If Comment1.Text = "" Then
-            MsgBox("コメントを入力してください")
-        Else
-            Comment1.Text = ""
-            flashalert1 = 0
-            flag_time1 = 0
-            AlertImg1.BackColor = Color.Transparent
-            TimeStamp1.Text = "hh:mm:ss"
+    Private Sub AlertClick1(sender As Object, e As EventArgs) Handles Alert1.Click
+        If Alert1.Text <> "" Then
+            If Comment1.Text = "" Then
+                MsgBox("コメントを入力してください")
+            Else
+                Comment1.Text = ""
+                flashalert1 = 0
+                flag_time1 = 0
+                Alert1.BackColor = Color.Transparent
+                Alert1.Text = ""
+                TimeStamp1.Text = "hh:mm:ss"
+            End If
         End If
     End Sub
 
-    Private Sub CommentSubmit2(sender As Object, e As EventArgs) Handles ButtonComment2.Click
+    Private Sub AlertClick2(sender As Object, e As EventArgs) Handles Alert2.Click
+        If Alert2.Text <> "" Then
+            If Comment2.Text = "" Then
+                MsgBox("コメントを入力してください")
+            Else
+                Comment2.Text = ""
+                flashalert2 = 0
+                flag_time2 = 0
+                Alert2.BackColor = Color.Transparent
+                Alert2.Text = ""
 
-        If Comment2.Text = "" Then
-            MsgBox("コメントを入力してください")
-        Else
-            Comment2.Text = ""
-            flashalert2 = 0
-            flag_time2 = 0
-            AlertImg2.BackColor = Color.Transparent
-            TimeStamp2.Text = "hh:mm:ss"
+                TimeStamp2.Text = "hh:mm:ss"
+            End If
         End If
     End Sub
 
-    Private Sub CommentSubmit3(sender As Object, e As EventArgs) Handles ButtonComment3.Click
-
-        If Comment3.Text = "" Then
-            MsgBox("コメントを入力してください")
-        Else
-            Comment3.Text = ""
-            flashalert3 = 0
-            flag_time3 = 0
-            AlertImg3.BackColor = Color.Transparent
-            TimeStamp3.Text = "hh:mm:ss"
+    Private Sub AlertClick3(sender As Object, e As EventArgs) Handles Alert3.Click
+        If Alert3.Text <> "" Then
+            If Comment3.Text = "" Then
+                MsgBox("コメントを入力してください")
+            Else
+                Comment3.Text = ""
+                flashalert3 = 0
+                flag_time3 = 0
+                Alert3.BackColor = Color.Transparent
+                Alert3.Text = ""
+                TimeStamp3.Text = "hh:mm:ss"
+            End If
         End If
     End Sub
 
-    Private Sub CommentSubmit4(sender As Object, e As EventArgs) Handles ButtonComment4.Click
-
-        If Comment4.Text = "" Then
-            MsgBox("コメントを入力してください")
-        Else
-            Comment4.Text = ""
-            flashalert4 = 0
-            flag_time4 = 0
-            AlertImg4.BackColor = Color.Transparent
-            TimeStamp4.Text = "hh:mm:ss"
+    Private Sub AlertClick4(sender As Object, e As EventArgs) Handles Alert4.Click
+        If Alert4.Text <> "" Then
+            If Comment4.Text = "" Then
+                MsgBox("コメントを入力してください")
+            Else
+                Comment4.Text = ""
+                flashalert4 = 0
+                flag_time4 = 0
+                Alert4.BackColor = Color.Transparent
+                Alert4.Text = ""
+                TimeStamp4.Text = "hh:mm:ss"
+            End If
         End If
     End Sub
 
-
-    Private Sub CommentSubmit5(sender As Object, e As EventArgs) Handles ButtonComment5.Click
-
-        If Comment5.Text = "" Then
-            MsgBox("コメントを入力してください")
-        Else
-            Comment5.Text = ""
-            flashalert5 = 0
-            flag_time5 = 0
-            AlertImg5.BackColor = Color.Transparent
-            TimeStamp5.Text = "hh:mm:ss"
+    Private Sub AlertClick5(sender As Object, e As EventArgs) Handles Alert5.Click
+        If Alert5.Text <> "" Then
+            If Comment5.Text = "" Then
+                MsgBox("コメントを入力してください")
+            Else
+                Comment5.Text = ""
+                flashalert5 = 0
+                flag_time5 = 0
+                Alert5.BackColor = Color.Transparent
+                Alert5.Text = ""
+                TimeStamp5.Text = "hh:mm:ss"
+            End If
         End If
     End Sub
 
-    Private Sub CommentSubmit6(sender As Object, e As EventArgs) Handles ButtonComment6.Click
-
-        If Comment6.Text = "" Then
-            MsgBox("コメントを入力してください")
-        Else
-            Comment6.Text = ""
-            flashalert6 = 0
-            flag_time6 = 0
-            AlertImg6.BackColor = Color.Transparent
-            TimeStamp6.Text = "hh:mm:ss"
+    Private Sub AlertClick6(sender As Object, e As EventArgs) Handles Alert6.Click
+        If Alert6.Text <> "" Then
+            If Comment6.Text = "" Then
+                MsgBox("コメントを入力してください")
+            Else
+                Comment6.Text = ""
+                flashalert6 = 0
+                flag_time6 = 0
+                Alert6.BackColor = Color.Transparent
+                Alert6.Text = ""
+                TimeStamp6.Text = "hh:mm:ss"
+            End If
         End If
     End Sub
 End Class
