@@ -91,35 +91,35 @@ Public Class Form1
     Friend WithEvents TimeStamp1 As TextBox
     Friend WithEvents DivDef6 As TextBox
     Friend WithEvents DefSet6 As TextBox
-    Friend WithEvents division6 As TextBox
+    Friend WithEvents Division6 As TextBox
     Friend WithEvents TextBox69 As TextBox
     Friend WithEvents TextBox70 As TextBox
     Friend WithEvents TextBox71 As TextBox
     Friend WithEvents TextBox72 As TextBox
     Friend WithEvents DivDef5 As TextBox
     Friend WithEvents DefSet5 As TextBox
-    Friend WithEvents division5 As TextBox
+    Friend WithEvents Division5 As TextBox
     Friend WithEvents TextBox62 As TextBox
     Friend WithEvents TextBox63 As TextBox
     Friend WithEvents TextBox64 As TextBox
     Friend WithEvents TextBox65 As TextBox
     Friend WithEvents DivDef4 As TextBox
     Friend WithEvents DefSet4 As TextBox
-    Friend WithEvents division4 As TextBox
+    Friend WithEvents Division4 As TextBox
     Friend WithEvents TextBox55 As TextBox
     Friend WithEvents TextBox56 As TextBox
     Friend WithEvents TextBox57 As TextBox
     Friend WithEvents TextBox58 As TextBox
     Friend WithEvents DivDef3 As TextBox
     Friend WithEvents DefSet3 As TextBox
-    Friend WithEvents division3 As TextBox
+    Friend WithEvents Division3 As TextBox
     Friend WithEvents TextBox48 As TextBox
     Friend WithEvents TextBox49 As TextBox
     Friend WithEvents TextBox50 As TextBox
     Friend WithEvents TextBox51 As TextBox
     Friend WithEvents DivDef2 As TextBox
     Friend WithEvents DefSet2 As TextBox
-    Friend WithEvents division2 As TextBox
+    Friend WithEvents Division2 As TextBox
     Friend WithEvents TextBox41 As TextBox
     Friend WithEvents TextBox42 As TextBox
     Friend WithEvents TextBox43 As TextBox
@@ -132,7 +132,7 @@ Public Class Form1
     Friend WithEvents Comment1 As TextBox
     Friend WithEvents DivDef1 As TextBox
     Friend WithEvents DefSet1 As TextBox
-    Friend WithEvents division1 As TextBox
+    Friend WithEvents Division1 As TextBox
     Friend WithEvents TextBox26 As TextBox
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents TextBox24 As TextBox
@@ -262,35 +262,35 @@ Public Class Form1
         Me.TimeStamp1 = New System.Windows.Forms.TextBox()
         Me.DivDef6 = New System.Windows.Forms.TextBox()
         Me.DefSet6 = New System.Windows.Forms.TextBox()
-        Me.division6 = New System.Windows.Forms.TextBox()
+        Me.Division6 = New System.Windows.Forms.TextBox()
         Me.TextBox69 = New System.Windows.Forms.TextBox()
         Me.TextBox70 = New System.Windows.Forms.TextBox()
         Me.TextBox71 = New System.Windows.Forms.TextBox()
         Me.TextBox72 = New System.Windows.Forms.TextBox()
         Me.DivDef5 = New System.Windows.Forms.TextBox()
         Me.DefSet5 = New System.Windows.Forms.TextBox()
-        Me.division5 = New System.Windows.Forms.TextBox()
+        Me.Division5 = New System.Windows.Forms.TextBox()
         Me.TextBox62 = New System.Windows.Forms.TextBox()
         Me.TextBox63 = New System.Windows.Forms.TextBox()
         Me.TextBox64 = New System.Windows.Forms.TextBox()
         Me.TextBox65 = New System.Windows.Forms.TextBox()
         Me.DivDef4 = New System.Windows.Forms.TextBox()
         Me.DefSet4 = New System.Windows.Forms.TextBox()
-        Me.division4 = New System.Windows.Forms.TextBox()
+        Me.Division4 = New System.Windows.Forms.TextBox()
         Me.TextBox55 = New System.Windows.Forms.TextBox()
         Me.TextBox56 = New System.Windows.Forms.TextBox()
         Me.TextBox57 = New System.Windows.Forms.TextBox()
         Me.TextBox58 = New System.Windows.Forms.TextBox()
         Me.DivDef3 = New System.Windows.Forms.TextBox()
         Me.DefSet3 = New System.Windows.Forms.TextBox()
-        Me.division3 = New System.Windows.Forms.TextBox()
+        Me.Division3 = New System.Windows.Forms.TextBox()
         Me.TextBox48 = New System.Windows.Forms.TextBox()
         Me.TextBox49 = New System.Windows.Forms.TextBox()
         Me.TextBox50 = New System.Windows.Forms.TextBox()
         Me.TextBox51 = New System.Windows.Forms.TextBox()
         Me.DivDef2 = New System.Windows.Forms.TextBox()
         Me.DefSet2 = New System.Windows.Forms.TextBox()
-        Me.division2 = New System.Windows.Forms.TextBox()
+        Me.Division2 = New System.Windows.Forms.TextBox()
         Me.TextBox41 = New System.Windows.Forms.TextBox()
         Me.TextBox42 = New System.Windows.Forms.TextBox()
         Me.TextBox43 = New System.Windows.Forms.TextBox()
@@ -303,7 +303,7 @@ Public Class Form1
         Me.Comment1 = New System.Windows.Forms.TextBox()
         Me.DivDef1 = New System.Windows.Forms.TextBox()
         Me.DefSet1 = New System.Windows.Forms.TextBox()
-        Me.division1 = New System.Windows.Forms.TextBox()
+        Me.Division1 = New System.Windows.Forms.TextBox()
         Me.TextBox26 = New System.Windows.Forms.TextBox()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
@@ -1114,17 +1114,17 @@ Public Class Form1
         Me.DefSet6.TabIndex = 19
         Me.DefSet6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'division6
+        'Division6
         '
-        Me.division6.BackColor = System.Drawing.SystemColors.Menu
-        Me.division6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.division6.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.division6.Location = New System.Drawing.Point(715, 360)
-        Me.division6.Multiline = True
-        Me.division6.Name = "division6"
-        Me.division6.Size = New System.Drawing.Size(89, 27)
-        Me.division6.TabIndex = 20
-        Me.division6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Division6.BackColor = System.Drawing.SystemColors.Menu
+        Me.Division6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Division6.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Division6.Location = New System.Drawing.Point(715, 360)
+        Me.Division6.Multiline = True
+        Me.Division6.Name = "Division6"
+        Me.Division6.Size = New System.Drawing.Size(89, 27)
+        Me.Division6.TabIndex = 20
+        Me.Division6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox69
         '
@@ -1194,17 +1194,17 @@ Public Class Form1
         Me.DefSet5.TabIndex = 16
         Me.DefSet5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'division5
+        'Division5
         '
-        Me.division5.BackColor = System.Drawing.SystemColors.Menu
-        Me.division5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.division5.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.division5.Location = New System.Drawing.Point(608, 360)
-        Me.division5.Multiline = True
-        Me.division5.Name = "division5"
-        Me.division5.Size = New System.Drawing.Size(89, 27)
-        Me.division5.TabIndex = 17
-        Me.division5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Division5.BackColor = System.Drawing.SystemColors.Menu
+        Me.Division5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Division5.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Division5.Location = New System.Drawing.Point(608, 360)
+        Me.Division5.Multiline = True
+        Me.Division5.Name = "Division5"
+        Me.Division5.Size = New System.Drawing.Size(89, 27)
+        Me.Division5.TabIndex = 17
+        Me.Division5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox62
         '
@@ -1274,17 +1274,17 @@ Public Class Form1
         Me.DefSet4.TabIndex = 13
         Me.DefSet4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'division4
+        'Division4
         '
-        Me.division4.BackColor = System.Drawing.SystemColors.Menu
-        Me.division4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.division4.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.division4.Location = New System.Drawing.Point(501, 360)
-        Me.division4.Multiline = True
-        Me.division4.Name = "division4"
-        Me.division4.Size = New System.Drawing.Size(89, 27)
-        Me.division4.TabIndex = 14
-        Me.division4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Division4.BackColor = System.Drawing.SystemColors.Menu
+        Me.Division4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Division4.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Division4.Location = New System.Drawing.Point(501, 360)
+        Me.Division4.Multiline = True
+        Me.Division4.Name = "Division4"
+        Me.Division4.Size = New System.Drawing.Size(89, 27)
+        Me.Division4.TabIndex = 14
+        Me.Division4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox55
         '
@@ -1354,17 +1354,17 @@ Public Class Form1
         Me.DefSet3.TabIndex = 10
         Me.DefSet3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'division3
+        'Division3
         '
-        Me.division3.BackColor = System.Drawing.SystemColors.Menu
-        Me.division3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.division3.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.division3.Location = New System.Drawing.Point(394, 360)
-        Me.division3.Multiline = True
-        Me.division3.Name = "division3"
-        Me.division3.Size = New System.Drawing.Size(89, 27)
-        Me.division3.TabIndex = 11
-        Me.division3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Division3.BackColor = System.Drawing.SystemColors.Menu
+        Me.Division3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Division3.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Division3.Location = New System.Drawing.Point(394, 360)
+        Me.Division3.Multiline = True
+        Me.Division3.Name = "Division3"
+        Me.Division3.Size = New System.Drawing.Size(89, 27)
+        Me.Division3.TabIndex = 11
+        Me.Division3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox48
         '
@@ -1434,17 +1434,17 @@ Public Class Form1
         Me.DefSet2.TabIndex = 7
         Me.DefSet2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'division2
+        'Division2
         '
-        Me.division2.BackColor = System.Drawing.SystemColors.Menu
-        Me.division2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.division2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.division2.Location = New System.Drawing.Point(287, 360)
-        Me.division2.Multiline = True
-        Me.division2.Name = "division2"
-        Me.division2.Size = New System.Drawing.Size(89, 27)
-        Me.division2.TabIndex = 8
-        Me.division2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Division2.BackColor = System.Drawing.SystemColors.Menu
+        Me.Division2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Division2.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Division2.Location = New System.Drawing.Point(287, 360)
+        Me.Division2.Multiline = True
+        Me.Division2.Name = "Division2"
+        Me.Division2.Size = New System.Drawing.Size(89, 27)
+        Me.Division2.TabIndex = 8
+        Me.Division2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox41
         '
@@ -1574,17 +1574,17 @@ Public Class Form1
         Me.DefSet1.TabIndex = 4
         Me.DefSet1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'division1
+        'Division1
         '
-        Me.division1.BackColor = System.Drawing.SystemColors.Menu
-        Me.division1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.division1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
-        Me.division1.Location = New System.Drawing.Point(181, 360)
-        Me.division1.Multiline = True
-        Me.division1.Name = "division1"
-        Me.division1.Size = New System.Drawing.Size(89, 27)
-        Me.division1.TabIndex = 5
-        Me.division1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Division1.BackColor = System.Drawing.SystemColors.Menu
+        Me.Division1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Division1.Font = New System.Drawing.Font("MS UI Gothic", 14.0!)
+        Me.Division1.Location = New System.Drawing.Point(181, 360)
+        Me.Division1.Multiline = True
+        Me.Division1.Name = "Division1"
+        Me.Division1.Size = New System.Drawing.Size(89, 27)
+        Me.Division1.TabIndex = 5
+        Me.Division1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox26
         '
@@ -2212,35 +2212,35 @@ Public Class Form1
         Me.Controls.Add(Me.TimeStamp1)
         Me.Controls.Add(Me.DivDef6)
         Me.Controls.Add(Me.DefSet6)
-        Me.Controls.Add(Me.division6)
+        Me.Controls.Add(Me.Division6)
         Me.Controls.Add(Me.TextBox69)
         Me.Controls.Add(Me.TextBox70)
         Me.Controls.Add(Me.TextBox71)
         Me.Controls.Add(Me.TextBox72)
         Me.Controls.Add(Me.DivDef5)
         Me.Controls.Add(Me.DefSet5)
-        Me.Controls.Add(Me.division5)
+        Me.Controls.Add(Me.Division5)
         Me.Controls.Add(Me.TextBox62)
         Me.Controls.Add(Me.TextBox63)
         Me.Controls.Add(Me.TextBox64)
         Me.Controls.Add(Me.TextBox65)
         Me.Controls.Add(Me.DivDef4)
         Me.Controls.Add(Me.DefSet4)
-        Me.Controls.Add(Me.division4)
+        Me.Controls.Add(Me.Division4)
         Me.Controls.Add(Me.TextBox55)
         Me.Controls.Add(Me.TextBox56)
         Me.Controls.Add(Me.TextBox57)
         Me.Controls.Add(Me.TextBox58)
         Me.Controls.Add(Me.DivDef3)
         Me.Controls.Add(Me.DefSet3)
-        Me.Controls.Add(Me.division3)
+        Me.Controls.Add(Me.Division3)
         Me.Controls.Add(Me.TextBox48)
         Me.Controls.Add(Me.TextBox49)
         Me.Controls.Add(Me.TextBox50)
         Me.Controls.Add(Me.TextBox51)
         Me.Controls.Add(Me.DivDef2)
         Me.Controls.Add(Me.DefSet2)
-        Me.Controls.Add(Me.division2)
+        Me.Controls.Add(Me.Division2)
         Me.Controls.Add(Me.TextBox41)
         Me.Controls.Add(Me.TextBox42)
         Me.Controls.Add(Me.TextBox43)
@@ -2253,7 +2253,7 @@ Public Class Form1
         Me.Controls.Add(Me.Comment1)
         Me.Controls.Add(Me.DivDef1)
         Me.Controls.Add(Me.DefSet1)
-        Me.Controls.Add(Me.division1)
+        Me.Controls.Add(Me.Division1)
         Me.Controls.Add(Me.TextBox26)
         Me.Controls.Add(Me.TextBox23)
         Me.Controls.Add(Me.TextBox24)
@@ -2526,10 +2526,10 @@ Public Class Form1
 
     Private Const pio_id As Integer = 0   'USBPIO ÇÃIDÅ@4çÜã@ÇÕ0î‘Çégóp
     Public cntslot As Integer      'ìäì¸ÇslotÇ∆ï\åªÅ@ìäì¸ÇÃÉJÉEÉìÉg
-    Private numtable As Integer = 0  '1ÉeÅ[ÉuÉãÇ†ÇΩÇËÇÃìäì¸êî
+    'Private numtable As Integer = 0  '1ÉeÅ[ÉuÉãÇ†ÇΩÇËÇÃìäì¸êî
     Private cnttable As Integer = 0   'ÉeÅ[ÉuÉãÇ…Ç¢Ç≠Ç¬Ç†ÇÈÇ©ÇãLâØÇ∑ÇÈïœêî
     'Public Table(38) As Short      'äeÉeÅ[ÉuÉãópÇÃîzóÒÅ@åüç∏çÄñ⁄ÇÕ38î‘ñ⁄(âÒòHíÔçRÇÃëO)Ç‹Ç≈ÇÌÇ©ÇÍÇŒÇ¢Ç¢ÇÃÇ≈ëSÉeÅ[ÉuÉãï™(54å¬)ämï€ÇµÇ»Ç¢
-    Private i As Short              'ÉeÅ[ÉuÉãîzóÒópforï∂ÇÃÉJÉEÉìÉgÉAÉbÉv
+    'Private i As Short              'ÉeÅ[ÉuÉãîzóÒópforï∂ÇÃÉJÉEÉìÉgÉAÉbÉv
 
     Private cntred As Integer       'ê‘ì_ìîÇÃâÒêîÇÉJÉEÉìÉgÇµÇƒÇ®Ç≠
     Private cntyellow As Integer    'â©ì_ìîÇÃâÒêîÇÉJÉEÉìÉgÇµÇƒÇ®Ç≠
@@ -2954,7 +2954,6 @@ Public Class Form1
         Slot7.Text = cntdef6 + cntgood6    'åüç∏êîÇÃîΩâf(âÒòHíÔçR)
 
 
-
         Good1.Text = cntgood1    'ó«ïiêîÇÃîΩâf(ìÆçÏí·)
         Good2.Text = cntgood2    'ó«ïiêîÇÃîΩâf(ìÆçÏçÇ)
         Good3.Text = cntgood3  Å@'ó«ïiêîÇÃîΩâf(ïúãAçÇ)
@@ -3111,9 +3110,9 @@ Public Class Form1
 
     Private Sub Division_Check1(sender As Object, e As EventArgs) Handles Slot2.TextChanged
 
-        If division1.Text <> "" And DivDef1.Text <> "" Then
+        If Division1.Text <> "" And DivDef1.Text <> "" Then
 
-            If Slot2.Text - logslot1 <= division1.Text Then
+            If Slot2.Text - logslot1 <= Division1.Text Then
                 If DefLbl1.Text - logdef1 >= DivDef1.Text Then
                     flashalert1 = 1
                 End If
@@ -3126,8 +3125,8 @@ Public Class Form1
 
     Private Sub Division_Check2(sender As Object, e As EventArgs) Handles Slot3.TextChanged
 
-        If division2.Text <> "" And DivDef2.Text <> "" Then
-            If Slot3.Text - logslot2 <= division2.Text Then
+        If Division2.Text <> "" And DivDef2.Text <> "" Then
+            If Slot3.Text - logslot2 <= Division2.Text Then
                 If DefLbl2.Text - logdef2 >= DivDef2.Text Then
                     flashalert2 = 1
                 End If
@@ -3139,8 +3138,8 @@ Public Class Form1
     End Sub
     Private Sub Division_Check3(sender As Object, e As EventArgs) Handles Slot4.TextChanged
 
-        If division3.Text <> "" And DivDef3.Text <> "" Then
-            If Slot4.Text - logslot3 <= division3.Text Then
+        If Division3.Text <> "" And DivDef3.Text <> "" Then
+            If Slot4.Text - logslot3 <= Division3.Text Then
                 If DefLbl3.Text - logdef3 >= DivDef3.Text Then
                     flashalert3 = 1
                 End If
@@ -3152,8 +3151,8 @@ Public Class Form1
     End Sub
 
     Private Sub Division_Check4(sender As Object, e As EventArgs) Handles Slot5.TextChanged
-        If division4.Text <> "" And DivDef4.Text <> "" Then
-            If Slot5.Text - logslot4 <= division4.Text Then
+        If Division4.Text <> "" And DivDef4.Text <> "" Then
+            If Slot5.Text - logslot4 <= Division4.Text Then
                 If DefLbl4.Text - logdef4 >= DivDef4.Text Then
                     flashalert4 = 1
                 End If
@@ -3166,8 +3165,8 @@ Public Class Form1
 
 
     Private Sub Division_Check5(sender As Object, e As EventArgs) Handles Slot6.TextChanged
-        If division5.Text <> "" And DivDef5.Text <> "" Then
-            If Slot6.Text - logslot5 <= division5.Text Then
+        If Division5.Text <> "" And DivDef5.Text <> "" Then
+            If Slot6.Text - logslot5 <= Division5.Text Then
                 If DefLbl5.Text - logdef5 >= DivDef5.Text Then
                     flashalert5 = 1
                 End If
@@ -3179,8 +3178,8 @@ Public Class Form1
     End Sub
 
     Private Sub Division_Check6(sender As Object, e As EventArgs) Handles Slot7.TextChanged
-        If division6.Text <> "" And DivDef6.Text <> "" Then
-            If Slot6.Text - logslot5 <= division5.Text Then
+        If Division6.Text <> "" And DivDef6.Text <> "" Then
+            If Slot6.Text - logslot5 <= Division5.Text Then
                 If DefLbl6.Text - logdef6 >= DivDef6.Text Then
                     flashalert6 = 1
                 End If
@@ -3251,16 +3250,87 @@ Public Class Form1
         'AlertImg5.BackColor = Color.Red
         'AlertImg6.BackColor = Color.Red
 
-        PictureBox4.BackColor = Color.Gainsboro
-        Label1.BackColor = Color.Gainsboro
 
         flashalert1 = 1
 
         'Debug.WriteLine(cntdef1)
         Debug.WriteLine(flag_time1)
+
+
+
     End Sub
 
 
+    'Public Sub ExportExcel(ByVal dt As DataTable, e As EventArgs) Handles SaveCheck.CheckedChanged
+    '    Dim xlApp As Object = Nothing
+    '    Dim xlBooks As Object = Nothing
+    '    Dim xlBook As Object = Nothing
+    '    Dim xlSheet As Object = Nothing
+    '    Dim xlCells As Object = Nothing
+    '    Dim xlRange As Object = Nothing
+    '    Dim xlCellStart As Object = Nothing
+    '    Dim xlCellEnd As Object = Nothing
+
+    '    Try
+    '        xlApp = CreateObject("Excel.Application")
+    '        xlBooks = xlApp.Workbooks
+    '        xlBook = xlApp.Workbooks.Add
+    '        xlSheet = xlBook.WorkSheets(1)
+    '        xlCells = xlSheet.Cells
+
+    '        Dim dc As DataColumn
+    '        Dim columnData(dt.Rows.Count, 1) As Object
+    '        Dim row As Integer = 1
+    '        Dim col As Integer = 1
+
+    '        For col = 1 To dt.Columns.Count
+    '            row = 1
+    '            dc = dt.Columns(col - 1)
+    '            'ÉwÉbÉ_Å[çsÇÃèoóÕ
+    '            xlCells(row, col).value = dc.ColumnName
+    '            row = row + 1
+
+    '            ' óÒÉfÅ[É^ÇîzóÒÇ…äiî[
+    '            For i As Integer = 0 To dt.Rows.Count - 1
+    '                columnData(i, 0) = String.Format(dt.Rows(i)(col - 1))
+    '            Next
+    '            xlCellStart = xlCells(row, col)
+    '            xlCellEnd = xlCells(row + dt.Rows.Count - 1, col)
+    '            xlRange = xlSheet.Range(xlCellStart, xlCellEnd)
+    '            ' ExcelèëéÆê›íË
+    '            Select Case dc.DataType.Name
+    '                Case "String"
+    '                    xlRange.NumberFormatLocal = "@"
+    '                Case "DateTime"
+    '                    xlRange.NumberFormatLocal = "yyyy/mm/dd"
+    '                    'Case "Decimal"
+    '                    '    xlRange.NumberFormatLocal = "#,###"
+    '            End Select
+    '            xlRange.value = columnData
+    '        Next
+
+    '        xlCells.EntireColumn.AutoFit()
+    '        xlRange = xlSheet.UsedRange
+    '        xlRange.Borders.LineStyle = 1   'xlContinuous
+    '        xlApp.Visible = True
+
+    '    Catch
+    '        xlApp.DisplayAlerts = False
+    '        xlApp.Quit()
+    '        Throw
+    '    Finally
+    '        If xlCellStart IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlCellStart)
+    '        If xlCellEnd IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlCellEnd)
+    '        If xlRange IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlRange)
+    '        If xlCells IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlCells)
+    '        If xlSheet IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlSheet)
+    '        If xlBooks IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlBooks)
+    '        If xlBook IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlBook)
+    '        If xlApp IsNot Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(xlApp)
+
+    '        GC.Collect()
+    '    End Try
+    'End Sub
     'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Ç±Ç±Ç‹Ç≈Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
 
 
