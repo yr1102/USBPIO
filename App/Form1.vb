@@ -191,6 +191,9 @@ Public Class Form1
     Friend WithEvents Alert4 As Label
     Friend WithEvents Alert5 As Label
     Friend WithEvents Alert6 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox3 As PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -361,6 +364,9 @@ Public Class Form1
         Me.Alert4 = New System.Windows.Forms.Label()
         Me.Alert5 = New System.Windows.Forms.Label()
         Me.Alert6 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -862,6 +868,7 @@ Public Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(408, 639)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 19)
@@ -2163,12 +2170,48 @@ Public Class Form1
         Me.Alert6.TabIndex = 356
         Me.Alert6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Button2
+        '
+        Me.Button2.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.Location = New System.Drawing.Point(722, 584)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(56, 51)
+        Me.Button2.TabIndex = 357
+        Me.Button2.Text = "生産" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "データ"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Location = New System.Drawing.Point(635, 584)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(56, 51)
+        Me.Button3.TabIndex = 358
+        Me.Button3.Text = "稼働" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "データ"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Location = New System.Drawing.Point(556, 584)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(56, 51)
+        Me.Button4.TabIndex = 359
+        Me.Button4.Text = "警告" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "データ"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 12)
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(846, 660)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Alert6)
         Me.Controls.Add(Me.Alert5)
         Me.Controls.Add(Me.Alert4)
@@ -3523,7 +3566,7 @@ Public Class Form1
         End If
     End Sub
     Private Sub Timesave3(sender As Object, e As EventArgs) Handles Alert3.BackColorChanged
-        If flag_time3 Then
+        If flag_time3 = 0 Then
             TimeStamp3.Text = Label28.Text
         End If
     End Sub

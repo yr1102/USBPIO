@@ -24,12 +24,24 @@
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Timer1.Interval = 100 '0.1秒のインターバルで情報を更新　信号の変化をチェックする間隔
+        Timer1.Enabled = True 'タイマーを有効にする
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Form1.PictureBox4.BackColor = Color.Gainsboro
         Form1.Label1.BackColor = Color.Gainsboro
+    End Sub
+
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label1.Text = Form1.Label2.Text
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Close()
+
     End Sub
 End Class
