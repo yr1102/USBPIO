@@ -2624,7 +2624,9 @@ Public Class Form1
     Private flag_time5 As Integer = 0    'タイムスタンプ用のフラグ
     Private flag_time6 As Integer = 0    'タイムスタンプ用のフラグ
 
-
+    Public red_light As Integer     'パトライト状態を記録(赤)
+    Public yellow_light As Integer  'パトライト状態を記録(黄)
+    Public green_light As Integer　 'パトライト状態を記録(緑)
 
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
@@ -2658,7 +2660,6 @@ Public Class Form1
 
         'Label4.Text = cntred　　　　　　カウント表示現在停止中
         'Label5.Text = cntyellow
-
 
 
 
