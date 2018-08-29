@@ -2673,6 +2673,9 @@ Public Class Form1
         If dathex.StartsWith("5") Then                                      'dathex‚É“ü‚Á‚Ä‚¢‚éî•ñ‚ğƒ`ƒFƒbƒN@startswith‚Í16bitî•ñ‚ÌÅ‰‚Ì4bit‚Ì‚İ‚ğQÆ‚·‚é‹@”\‚Å‚ ‚é
             '’l‚ª5‚¾‚Á‚½ê‡CH‚Íƒpƒgƒ‰ƒCƒgî•ñ‚ğÚ‚¹‚½CH5‚É‚È‚éB
 
+            green_light = 0
+            yellow_light = 0
+            red_light = 0
 
 
             If dathex.EndsWith("8") Then                                    'dathex‚É“ü‚Á‚Ä‚¢‚éî•ñ‚ğƒ`ƒFƒbƒN@endwith‚Í16bitî•ñ‚ÌÅŒã‚Ì4bit‚Ì‚İ‚ğQÆ‚·‚é‹@”\‚Å‚ ‚é
@@ -2682,11 +2685,18 @@ Public Class Form1
 
                 flag_light = "8"                                            '“_“”ó‘Ô(flag_light)‚É8‚ğ‘‚«‚ñ‚Å‚¨‚­A‚ ‚Æ‚Åd—v‚É‚È‚é
 
+                green_light = 1
+                yellow_light = 1
+                red_light = 1
 
             ElseIf dathex.EndsWith("9") Then                                '’l‚ª9‚Å‚ ‚Á‚½ê‡‚Ìˆ—A‚±‚Ìê‡‚Í‰©F‚ÆÔF‚Ì“_“”‚É‚È‚éB
                 PictureBox1.BackColor = Color.DarkGreen
                 PictureBox2.BackColor = Color.Yellow                        'PictureBox2,3‚ğ–¾‚é‚­‚·‚é
                 PictureBox3.BackColor = Color.Red
+
+                green_light = 0
+                yellow_light = 1
+                red_light = 1
 
                 If flag_light <> "9" Then                                   '“_“”“_–Åƒ`ƒFƒbƒNˆ—‚ğ‚¢‚ê‚é@“_“”ó‘Ô(flag_light)‚Ìî•ñ‚ğ‚à‚Æ‚É
                     If flag_light = "B" Then                                '‰©F“_“”‰ñ”oc(ou)ntyellowp@ÔF“_“”‰ñ”oc(ou)ntredp‚É“_“”‰ñ”‚ğ1‘‚â‚·‚Æ‚¢‚¤‚±‚Æ‚ğs‚Á‚Ä‚¢‚é
@@ -2709,6 +2719,9 @@ Public Class Form1
                 PictureBox2.BackColor = Color.DarkGoldenrod
                 PictureBox3.BackColor = Color.Red
 
+                green_light = 1
+                yellow_light = 0
+                red_light = 1
 
                 If flag_light <> "A" Then
                     If flag_light = "B" Then
@@ -2729,6 +2742,10 @@ Public Class Form1
                 PictureBox2.BackColor = Color.DarkGoldenrod
                 PictureBox3.BackColor = Color.Red
 
+                green_light = 0
+                yellow_light = 0
+                red_light = 1
+
                 If flag_light <> "B" Then
                     If flag_light = "A" Then
                         flag_light = "B"
@@ -2748,6 +2765,10 @@ Public Class Form1
                 PictureBox2.BackColor = Color.Yellow
                 PictureBox3.BackColor = Color.DarkRed
 
+                green_light = 1
+                yellow_light = 1
+                red_light = 0
+
                 If flag_light <> "C" Then
                     cntyellow += 1
                 End If
@@ -2757,6 +2778,10 @@ Public Class Form1
                 PictureBox1.BackColor = Color.DarkGreen
                 PictureBox2.BackColor = Color.Yellow
                 PictureBox3.BackColor = Color.Red
+
+                green_light = 0
+                yellow_light = 1
+                red_light = 1
 
                 If flag_light <> "D" Then
                     cntyellow += 1
@@ -2769,8 +2794,17 @@ Public Class Form1
                 PictureBox3.BackColor = Color.DarkRed
                 flag_light = "E"
 
+                green_light = 0
+                yellow_light = 0
+                red_light = 0
 
             End If
+
+            text_patlite = Label28.Text & "," & green_light & "," & yellow_light & "," & red_light
+            Writer_pat.WriteLine(text_patlite)
+
+
+
         End If
         '```````````````````‚±‚±‚Ü‚Å``````````````````````````
 
@@ -3282,8 +3316,14 @@ Public Class Form1
                 MsgBox("»•iŒ^®‚ğ“ü—Í‚µ‚Ä‚­‚¾‚¢")
             Else
                 SavePic.BackColor = Color.LightGreen                               'Saveó‘Ô‚ğ–¾‚é‚¢—Î‚É•ÏX
+
                 filepat &= Product.Text & "_" & Label27.Text & "patlite"
                 filepat &= ".txt"
+
+                Writer_pat.WriteLine("ƒpƒgƒ‰ƒCƒg‹L˜^ƒf[ƒ^,,," & Label27.Text)
+                Writer_pat.WriteLine("")
+                Writer_pat.WriteLine("ŠÔ,—Î,‰©,Ô")
+
             End If
         Else
             If Product.Text <> "" Then
