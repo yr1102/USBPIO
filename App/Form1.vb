@@ -77,7 +77,7 @@ Public Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Product As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -251,7 +251,7 @@ Public Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Product = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -943,17 +943,17 @@ Public Class Form1
         Me.TextBox5.TabIndex = 3
         Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'TextBox4
+        'Product
         '
-        Me.TextBox4.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
-        Me.TextBox4.Location = New System.Drawing.Point(689, 57)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(120, 26)
-        Me.TextBox4.TabIndex = 2
-        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Product.BackColor = System.Drawing.SystemColors.Menu
+        Me.Product.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Product.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
+        Me.Product.Location = New System.Drawing.Point(689, 57)
+        Me.Product.Multiline = True
+        Me.Product.Name = "Product"
+        Me.Product.Size = New System.Drawing.Size(120, 26)
+        Me.Product.TabIndex = 2
+        Me.Product.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox6
         '
@@ -2239,7 +2239,7 @@ Public Class Form1
         Me.Controls.Add(Me.DefLbl2)
         Me.Controls.Add(Me.DefLbl1)
         Me.Controls.Add(Me.Good1)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Product)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Slot7)
         Me.Controls.Add(Me.Slot6)
@@ -2627,6 +2627,10 @@ Public Class Form1
     Public red_light As Integer     'パトライト状態を記録(赤)
     Public yellow_light As Integer  'パトライト状態を記録(黄)
     Public green_light As Integer　 'パトライト状態を記録(緑)
+
+    Public text_patlite As String      'パトライト状態をlog保存するためのデータ
+    Public filepat As String
+    Private Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
 
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
@@ -3267,15 +3271,27 @@ Public Class Form1
             sacomUsbIoClose(pio_id)                                                   'USBPIOと通信を終了
             OnlinePic.BackColor = Color.DarkGreen                                     'Online状態を暗い緑のままに
         End If
+
+
     End Sub
 
-    Private Sub SaveCheck_CheckedChanged(sender As Object, e As EventArgs) Handles SaveCheck.CheckedChanged
+    Public Sub SaveCheck_CheckedChanged(sender As Object, e As EventArgs) Handles SaveCheck.CheckedChanged
 
         If SaveCheck.Checked = True Then                                       'チェックが入っているかどうかの確認
-
-            SavePic.BackColor = Color.LightGreen                               'Save状態を明るい緑に変更
+            If Product.Text = "" Then
+                MsgBox("製品型式を入力してくだい")
+            Else
+                SavePic.BackColor = Color.LightGreen                               'Save状態を明るい緑に変更
+                filepat &= Product.Text & "_" & Label27.Text & "patlite"
+                filepat &= ".txt"
+            End If
         Else
-            SavePic.BackColor = Color.DarkGreen                                'Save状態を暗い緑のままに
+            If Product.Text <> "" Then
+                SavePic.BackColor = Color.DarkGreen                                'Save状態を暗い緑のままに
+                Writer_pat.Close()
+                Writer_pat.Dispose()
+                My.Computer.FileSystem.RenameFile("C:\Users\eigyou3\Desktop\patlite.txt", filepat)
+            End If
         End If
 
 
@@ -3298,9 +3314,6 @@ Public Class Form1
         flashalert1 = 1
 
         'Debug.WriteLine(cntdef1)
-        Debug.WriteLine(flag_time1)
-
-
 
     End Sub
 
