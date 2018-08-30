@@ -76,7 +76,7 @@ Public Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Lot As TextBox
     Friend WithEvents Product As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label3 As Label
@@ -250,7 +250,7 @@ Public Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Lot = New System.Windows.Forms.TextBox()
         Me.Product = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -931,17 +931,17 @@ Public Class Form1
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox5
+        'Lot
         '
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
-        Me.TextBox5.Location = New System.Drawing.Point(689, 80)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(120, 27)
-        Me.TextBox5.TabIndex = 3
-        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Lot.BackColor = System.Drawing.SystemColors.Menu
+        Me.Lot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Lot.Font = New System.Drawing.Font("MS UI Gothic", 15.0!)
+        Me.Lot.Location = New System.Drawing.Point(689, 80)
+        Me.Lot.Multiline = True
+        Me.Lot.Name = "Lot"
+        Me.Lot.Size = New System.Drawing.Size(120, 27)
+        Me.Lot.TabIndex = 3
+        Me.Lot.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Product
         '
@@ -2319,7 +2319,7 @@ Public Class Form1
         Me.Controls.Add(Me.TextBox19)
         Me.Controls.Add(Me.TextBox18)
         Me.Controls.Add(Me.TextBox17)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.Lot)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label30)
@@ -2630,7 +2630,10 @@ Public Class Form1
 
     Public text_patlite As String      'パトライト状態をlog保存するためのデータ
     Public filepat As String
-    Private Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
+    Public Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
+    'Public Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
+    'Writer_alert As New IO.StreamWriter("C:\Users\eigyou3\Desktop\alert.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
+    'Private Writer_def As New IO.StreamWriter("C:\Users\eigyou3\Desktop\def.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
 
 
     Private Sub Form1_Load2(sender As System.Object, e As System.EventArgs) Handles MyBase.Shown, MyBase.Load
@@ -3094,7 +3097,7 @@ Public Class Form1
             End If
         End If
 
-        If DefSet2.Text = "" Then                                      '各警告ボックスごとにこの処理を行う
+        If DefSet2.Text = "" Then                    '各警告ボックスごとにこの処理を行う
         Else
             If DefLbl2.Text >= DefSet2.Text Then
                 flashalert2 = 1
@@ -3317,10 +3320,12 @@ Public Class Form1
             Else
                 SavePic.BackColor = Color.LightGreen                               'Save状態を明るい緑に変更
 
-                filepat &= Product.Text & "_" & Label27.Text & "patlite"
-                filepat &= ".txt"
 
-                Writer_pat.WriteLine("パトライト記録データ,,," & Label27.Text)
+
+                filepat &= Product.Text + Lot.Text & "_" & Label27.Text & "patlite"
+                    filepat &= ".txt"
+
+                    Writer_pat.WriteLine("パトライト記録データ,,," & Label27.Text)
                 Writer_pat.WriteLine("")
                 Writer_pat.WriteLine("時間,緑,黄,赤")
 
@@ -3331,6 +3336,9 @@ Public Class Form1
                 Writer_pat.Close()
                 Writer_pat.Dispose()
                 My.Computer.FileSystem.RenameFile("C:\Users\eigyou3\Desktop\patlite.txt", filepat)
+
+                Application.Restart()
+
             End If
         End If
 
