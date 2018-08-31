@@ -2629,6 +2629,8 @@ Public Class Form1
     Public green_light As Integer　 'パトライト状態を記録(緑)
 
     Public text_patlite As String      'パトライト状態をlog保存するためのデータ
+    Private datasave_flag As Integer = 0 'datasave警告のフラグ
+
     Public filepat As String
     Public Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
     'Public Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
@@ -3319,13 +3321,14 @@ Public Class Form1
                 MsgBox("製品型式を入力してくだい")
             Else
                 SavePic.BackColor = Color.LightGreen                               'Save状態を明るい緑に変更
+                datasave_flag = 1
 
 
 
                 filepat &= Product.Text + Lot.Text & "_" & Label27.Text & "patlite"
-                    filepat &= ".txt"
+                filepat &= ".txt"
 
-                    Writer_pat.WriteLine("パトライト記録データ,,," & Label27.Text)
+                Writer_pat.WriteLine("パトライト記録データ,,," & Label27.Text)
                 Writer_pat.WriteLine("")
                 Writer_pat.WriteLine("時間,緑,黄,赤")
 
@@ -3333,6 +3336,7 @@ Public Class Form1
         Else
             If Product.Text <> "" Then
                 SavePic.BackColor = Color.DarkGreen                                'Save状態を暗い緑のままに
+                datasave_flag = 0
                 Writer_pat.Close()
                 Writer_pat.Dispose()
                 My.Computer.FileSystem.RenameFile("C:\Users\eigyou3\Desktop\patlite.txt", filepat)
@@ -3468,8 +3472,8 @@ Public Class Form1
 
         Label28.Text = Hr & "時" & Min & "分" & Sec & "秒"
 
-        If flashalert1 = 1 Then
-            Alert1.BackColor = Color.Red
+        If flashalert1 = 1 Then             'flashの点滅処理　alert=1を受け取ったら　赤にしalret=2を返す　2を受け取ると　暗い赤とaler=1t返す処理がある
+            Alert1.BackColor = Color.Red    'この繰り返しで点滅を再現する
             Alert1.ForeColor = Color.White
 
             Alert1.Text = "コメント入力後ここをクリック"
@@ -3745,6 +3749,26 @@ Public Class Form1
             End If
         End If
     End Sub
+
+    Private Sub Change_product(sender As Object, e As EventArgs) Handles Product.TextChanged '製品型式変更の際にdatasaveのチェックが外れていない際にチェックを外すことを促す
+        If datasave_flag = 1 Then
+
+            Dim result As DialogResult = MessageBox.Show("Datasaveのチェックが外れていることを確認してください")
+
+        End If
+
+    End Sub
+
+    Private Sub Change_Lot(sender As Object, e As EventArgs) Handles Lot.TextChanged 'Lot No.変更の際にdatasaveのチェックが外れていない際にチェックを外すことを促す
+        If datasave_flag = 1 Then
+
+            Dim result As DialogResult = MessageBox.Show("Datasaveのチェックが外れていることを確認してください")
+
+        End If
+
+    End Sub
+
+
 End Class
 
 
