@@ -2634,7 +2634,7 @@ Public Class Form1
     Public filepat As String
     Public Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
     'Public Writer_pat As New IO.StreamWriter("C:\Users\eigyou3\Desktop\patlite.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
-    'Writer_alert As New IO.StreamWriter("C:\Users\eigyou3\Desktop\alert.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
+    Public Writer_alert As New IO.StreamWriter("C:\Users\eigyou3\Desktop\alert.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
     'Private Writer_def As New IO.StreamWriter("C:\Users\eigyou3\Desktop\def.txt", False, System.Text.Encoding.GetEncoding("UTF-8"))
 
 
