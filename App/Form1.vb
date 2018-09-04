@@ -3325,12 +3325,16 @@ Public Class Form1
 
 
 
-                filepat &= Product.Text + Lot.Text & "_" & Label27.Text & "patlite"
-                filepat &= ".txt"
+                filepat &= Product.Text + Lot.Text & "_" & Label27.Text
+
 
                 Writer_pat.WriteLine("パトライト記録データ,,," & Label27.Text)
                 Writer_pat.WriteLine("")
                 Writer_pat.WriteLine("時間,緑,黄,赤")
+
+                Writer_alert.WriteLine("警告データ,,," & Label27.Text)
+                Writer_alert.WriteLine("")
+                Writer_alert.WriteLine("時間,警告項目,コメント")
 
             End If
         Else
@@ -3339,8 +3343,10 @@ Public Class Form1
                 datasave_flag = 0
                 Writer_pat.Close()
                 Writer_pat.Dispose()
-                My.Computer.FileSystem.RenameFile("C:\Users\eigyou3\Desktop\patlite.txt", filepat)
-
+                Writer_alert.Close()
+                Writer_alert.Dispose()
+                My.Computer.FileSystem.RenameFile("C:\Users\eigyou3\Desktop\patlite.txt", filepat & "patlite.txt")
+                My.Computer.FileSystem.RenameFile("C:\Users\eigyou3\Desktop\alert.txt", filepat & "alert.txt")
                 Application.Restart()
 
             End If
@@ -3664,6 +3670,9 @@ Public Class Form1
             If Comment1.Text = "" Then
                 MsgBox("コメントを入力してください")
             Else
+
+                Writer_alert.WriteLine(TimeStamp1.Text & ",動作下限," & Comment1.Text)
+
                 Comment1.Text = ""
                 flashalert1 = 0
                 flag_time1 = 0
@@ -3679,6 +3688,9 @@ Public Class Form1
             If Comment2.Text = "" Then
                 MsgBox("コメントを入力してください")
             Else
+
+                Writer_alert.WriteLine(TimeStamp2.Text & ",動作上限," & Comment2.Text)
+
                 Comment2.Text = ""
                 flashalert2 = 0
                 flag_time2 = 0
@@ -3695,6 +3707,8 @@ Public Class Form1
             If Comment3.Text = "" Then
                 MsgBox("コメントを入力してください")
             Else
+                Writer_alert.WriteLine(TimeStamp3.Text & ",復帰上限," & Comment3.Text)
+
                 Comment3.Text = ""
                 flashalert3 = 0
                 flag_time3 = 0
@@ -3710,6 +3724,8 @@ Public Class Form1
             If Comment4.Text = "" Then
                 MsgBox("コメントを入力してください")
             Else
+                Writer_alert.WriteLine(TimeStamp4.Text & ",復帰下限," & Comment4.Text)
+
                 Comment4.Text = ""
                 flashalert4 = 0
                 flag_time4 = 0
@@ -3725,6 +3741,8 @@ Public Class Form1
             If Comment5.Text = "" Then
                 MsgBox("コメントを入力してください")
             Else
+                Writer_alert.WriteLine(TimeStamp5.Text & ",耐圧絶縁," & Comment5.Text)
+
                 Comment5.Text = ""
                 flashalert5 = 0
                 flag_time5 = 0
@@ -3740,6 +3758,9 @@ Public Class Form1
             If Comment6.Text = "" Then
                 MsgBox("コメントを入力してください")
             Else
+
+                Writer_alert.WriteLine(TimeStamp6.Text & ",回路抵抗," & Comment6.Text)
+
                 Comment6.Text = ""
                 flashalert6 = 0
                 flag_time6 = 0
