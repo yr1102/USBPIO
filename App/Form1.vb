@@ -881,7 +881,7 @@ Public Class Form1
         'Slot1
         '
         Me.Slot1.Font = New System.Drawing.Font("MS UI Gothic", 27.0!)
-        Me.Slot1.Location = New System.Drawing.Point(456, 68)
+        Me.Slot1.Location = New System.Drawing.Point(421, 67)
         Me.Slot1.Name = "Slot1"
         Me.Slot1.Size = New System.Drawing.Size(88, 35)
         Me.Slot1.TabIndex = 226
@@ -891,7 +891,7 @@ Public Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(470, 45)
+        Me.Label6.Location = New System.Drawing.Point(435, 44)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(49, 14)
         Me.Label6.TabIndex = 224
@@ -901,7 +901,7 @@ Public Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("MS UI Gothic", 10.0!)
-        Me.Label5.Location = New System.Drawing.Point(350, 45)
+        Me.Label5.Location = New System.Drawing.Point(315, 44)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 14)
         Me.Label5.TabIndex = 223
@@ -912,7 +912,7 @@ Public Class Form1
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(424, 63)
+        Me.TextBox2.Location = New System.Drawing.Point(389, 62)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(144, 44)
@@ -925,7 +925,7 @@ Public Class Form1
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("MS UI Gothic", 27.25!)
         Me.TextBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.TextBox1.Location = New System.Drawing.Point(337, 63)
+        Me.TextBox1.Location = New System.Drawing.Point(302, 62)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(96, 44)
         Me.TextBox1.TabIndex = 0
@@ -2799,7 +2799,7 @@ Public Class Form1
                 PictureBox3.BackColor = Color.DarkRed
                 flag_light = "E"
 
-                green_light = 0
+                green_light = 1
                 yellow_light = 0
                 red_light = 0
 
@@ -2830,41 +2830,6 @@ Public Class Form1
 
             If flag_ch <> "CH4" Then
                 Def_count(dathex, "CH4")
-
-                'For i = 0 To 37 Step 1                                        'åüç∏êîÇÃîΩâfèàóù
-                '    Table(38 - i) = Table(37 - i)
-                'Next
-                'Table(0) = cnttable
-                'cnttable = 0
-                'Def_count(dathex, "CH4")
-
-
-                'Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
-
-                'a = Slot_Calc(5)
-                'b = Slot_Calc(8)
-                'c = Slot_Calc(14)
-                'd = Slot_Calc(19)
-                'e = Slot_Calc(32)
-                'f = Slot_Calc(38)
-
-                ''Debug.WriteLine(a & "ìÆçÏ")
-                ''Debug.WriteLine(b & "ìÆçÏ")
-                ''Debug.WriteLine(c & "ïúãA")
-                ''Debug.WriteLine(d & "ïúãA")
-                ''Debug.WriteLine(e & "ê‚âè")
-                ''Debug.WriteLine(f & "âÒòH")
-
-
-                'Slot2.Text = cntgood1 + cntdef1    'åüç∏êîÇÃîΩâf(ìÆçÏí·)       
-                'Slot3.Text = cntgood2 + cntdef2    'åüç∏êîÇÃîΩâf(ìÆçÏçÇ)Å@åüç∏êîÇÕëOåüç∏çHíˆÇ≈ÇÃïsó«ÇÃêîå∏ÇÈÇÃÇ≈ìØÇ∂Ç∆ÇÕå¿ÇÁÇ»Ç¢
-                'Slot4.Text = cntgood3 + cntdef3    'åüç∏êîÇÃîΩâf(ïúãAçÇ)
-                'Slot5.Text = cntgood4 + cntdef4    'åüç∏êîÇÃîΩâf(ïúãAí·)
-                'Slot6.Text = cntgood5 + cntdef5    'åüç∏êîÇÃîΩâf(ëœà≥ê‚âè)
-                'Slot7.Text = cntgood6 + cntdef6    'åüç∏êîÇÃîΩâf(âÒòHíÔçR)
-
-
-
             End If
 
         ElseIf dathex.StartsWith("8") Or dathex.StartsWith("9") Then      'CH3É`ÉFÉbÉN
@@ -3015,7 +2980,7 @@ Public Class Form1
     'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Ç±Ç±Ç‹Ç≈Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
 
 
-    Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Slot1.TextChanged 'ïœçXÇ™â¡ÇÌÇ¡ÇΩèÍçá
+    Private Sub Slot_LabelChanged(sender As Object, ev As EventArgs) Handles Timer1.Tick '0.1ïbÇ…àÍâÒçXêV
         Dim a As Integer = 0, b As Integer = 0, c As Integer = 0, d As Integer = 0, e As Integer = 0, f As Integer = 0
 
         'a = Slot_Calc(5)    'Slot_CalcÇ…êîéöÇìnÇµåvéZåãâ ÇéÛÇØéÊÇÈ
@@ -3091,7 +3056,7 @@ Public Class Form1
 
     'Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`ïsó«êîÇÃåxçêèàóùÅ`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`Å`
 
-    Private Sub Slot_LabelChanged2(sender As Object, e As EventArgs) Handles Slot1.TextChanged 'ìäì¸êîÇ…ïœçXÇ™â¡ÇÌÇ¡ÇΩèÍçá
+    Private Sub Slot_LabelChanged2(sender As Object, e As EventArgs) Handles Timer1.Tick 'ìäì¸êîÇ…ïœçXÇ™â¡ÇÌÇ¡ÇΩèÍçá
         If DefSet1.Text = "" Then
         Else
             If DefLbl1.Text >= DefSet1.Text Then                       'ïsó«êîÇ™ÉZÉbÉgÇµÇΩïsó«ílà»è„Ç…Ç»Ç¡ÇΩÇ∆Ç´
