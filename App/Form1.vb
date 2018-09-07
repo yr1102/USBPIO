@@ -3443,7 +3443,7 @@ Public Class Form1
 
         Label28.Text = Hr & "時" & Min & "分" & Sec & "秒"
 
-        If flashalert1 = 1 Then             'flashの点滅処理　alert=1を受け取ったら　赤にしalret=2を返す　2を受け取ると　暗い赤とaler=1t返す処理がある
+        If flashalert1 = 1 Then             'flashの点滅処理　alert=1を受け取ったら　赤にしalret=2を返す　他の処理にて=2を受け取ると　暗い赤とalert=1返す処理がある
             Alert1.BackColor = Color.Red    'この繰り返しで点滅を再現する
             Alert1.ForeColor = Color.White
 
